@@ -106,6 +106,12 @@ export function canonicalLegislationKey(raw: string): string {
   const yearShort = year ? year.slice(2) : '';
   const number = nums.find((n) => n !== year && n !== yearShort) || nums[0] || '';
 
+  // Ato sem número nem ano — "Constituição da República Federativa do Brasil",
+  // "Boas Práticas", "manual do fabricante". Sem o texto na chave, todos eles
+  // colapsavam em `OUTRO||` e qualquer menção sem número resolvia para o
+  // primeiro verbete desse feitio.
+  if (!number && !year) return `${type}|${up.replace(/\s+/g, ' ').trim()}`;
+
   return `${type}|${number}|${year}`;
 }
 

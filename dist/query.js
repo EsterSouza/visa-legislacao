@@ -88,6 +88,12 @@ export function canonicalLegislationKey(raw) {
     const nums = (tail.match(/\d[\d.]*/g) || []).map((n) => n.replace(/\./g, '').replace(/^0+(?=\d)/, ''));
     const yearShort = year ? year.slice(2) : '';
     const number = nums.find((n) => n !== year && n !== yearShort) || nums[0] || '';
+    // Ato sem número nem ano — "Constituição da República Federativa do Brasil",
+    // "Boas Práticas", "manual do fabricante". Sem o texto na chave, todos eles
+    // colapsavam em `OUTRO||` e qualquer menção sem número resolvia para o
+    // primeiro verbete desse feitio.
+    if (!number && !year)
+        return `${type}|${up.replace(/\s+/g, ' ').trim()}`;
     return `${type}|${number}|${year}`;
 }
 const BY_KEY = new Map(LEGISLATION_LIBRARY.map((entry) => [canonicalLegislationKey(entry.name), entry]));

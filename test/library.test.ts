@@ -76,6 +76,14 @@ describe('chave canônica', () => {
     );
   });
 
+  it('não funde dois atos sem número numa chave só', () => {
+    // Regressão: sem número nem ano a chave era `OUTRO||` para todo mundo, e
+    // qualquer menção sem número resolvia para o primeiro verbete desse feitio.
+    expect(canonicalLegislationKey('Constituição da República Federativa do Brasil')).not.toBe(
+      canonicalLegislationKey('Critério técnico de higiene das mãos'),
+    );
+  });
+
   it('não confunde "CBO 5162-10" nem "NR-32" com ano', () => {
     expect(canonicalLegislationKey('CBO 5162-10')).toBe('CBO|5162|');
     expect(canonicalLegislationKey('NR-32')).toBe('NR|32|');

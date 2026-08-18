@@ -917,6 +917,18 @@ export const LEGISLATION_LIBRARY = [
         status: 'vigente',
         verifiedAt: V,
     },
+    // Estava só no banco do InspecVISA, fora da biblioteca — o que fazia a citação
+    // sair sem autoria no relatório. Trazida para cá na unificação.
+    {
+        name: 'Constituição da República Federativa do Brasil',
+        authority: 'BRASIL',
+        summary: 'Base constitucional do direito à saúde (art. 196) e da proteção à pessoa idosa: define a saúde como direito de todos e dever do Estado e atribui à família, à sociedade e ao Estado a defesa da dignidade e do direito à vida da pessoa idosa.',
+        url: 'https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm',
+        abnt: `BRASIL. [Constituição (1988)]. Constituição da República Federativa do Brasil. Brasília, DF: Senado Federal, 1988. Disponível em: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm`,
+        segments: ['ilpi', 'saude'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V,
+    },
     // ── Vindas do PastaVISA — vigência ainda não apurada ──────────────────────
     {
         name: 'Lei Federal nº 12.305/2010',
