@@ -20,6 +20,15 @@ formatAbnt('RDC 222/2018');
 
 Pela linha de comando: `npm run consultar -- --help`.
 
+## Distribuição
+
+O `dist/` é versionado de propósito: os consumidores instalam pelo tarball https do
+GitHub, sem git e sem chave SSH no pipeline (npm normaliza dependência `github:` para
+`git+ssh` no lockfile, o que quebra build na Vercel e no Docker).
+
+`npm install` roda `prepare`, que recompila o `dist`. **Commite o `dist` junto com a
+mudança do `src`** e publique uma tag nova; é ela que os apps apontam.
+
 ## Editar a base
 
 Os verbetes ficam em [`src/library.ts`](src/library.ts), que é a única cópia — nos
