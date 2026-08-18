@@ -84,22 +84,29 @@ export function canonicalLegislationKey(raw: string): string {
   const searchFrom = typeMatch ? typeMatch.index! + typeMatch[0].length : 0;
   const tail = up.slice(searchFrom);
 
-  // Ato numerado com ano: o ano é o que separa dois atos homônimos. Basta 1
-  // dígito antes da barra — "Portaria CVS nº 5/2025" e "Portaria CVS 5/2013" são
-  // atos distintos e colidiam quando se exigiam 3+ dígitos aqui.
-  const numbered = tail.match(/(\d[\d.]*)\s*[/-]\s*(\d{2,4})\b/);
-  if (numbered) {
-    const num = numbered[1].replace(/\./g, '');
-    let year = numbered[2];
-    if (year.length === 2) year = (Number(year) > 50 ? '19' : '20') + year;
-    return `${type}|${num}|${year}`;
+  // Ano de 4 dígitos quando existir; senão, ano de 2 dígitos colado ao número do
+  // ato por barra ("Portaria SVS/MS nº 344/98", "Decreto-Rio 45585/18"). Exige-se
+  // número de ato com 3+ dígitos e separador "/" para não ler "NR-32" nem
+  // "CBO 5162-10" como ano.
+  const yearMatch = up.match(/\b(19|20)\d{2}\b/);
+  let year = yearMatch ? yearMatch[0] : '';
+  if (!year) {
+    const short = tail.match(/\d[\d.]{2,}\/(\d{2})\b/);
+    if (short) {
+      const yy = Number(short[1]);
+      year = String(yy >= 30 ? 1900 + yy : 2000 + yy);
+    }
   }
 
-  // Ato sem ano na citação ("NR-32", "ABNT NBR 9050").
-  const bare = tail.match(/[-\s]?(\d[\d.]*)\b/);
-  if (bare) return `${type}|${bare[1].replace(/\./g, '')}|`;
+  // Número principal: primeira sequência de dígitos diferente do ano, sem ponto de
+  // milhar e sem zeros à esquerda ("002/2020" e "2/2020" são o mesmo ato).
+  const nums = (tail.match(/\d[\d.]*/g) || []).map((n) =>
+    n.replace(/\./g, '').replace(/^0+(?=\d)/, ''),
+  );
+  const yearShort = year ? year.slice(2) : '';
+  const number = nums.find((n) => n !== year && n !== yearShort) || nums[0] || '';
 
-  return `${type}|${up.slice(0, 20)}`;
+  return `${type}|${number}|${year}`;
 }
 
 const BY_KEY = new Map<string, LegislationEntry>(

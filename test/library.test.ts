@@ -59,11 +59,26 @@ describe('chave canônica', () => {
   });
 
   it('separa atos de mesmo número e anos diferentes', () => {
-    // Regressão: os dois colapsavam na mesma chave e uma Portaria de 2013 podia
-    // ser citada no relatório como se fosse a de 2025.
     expect(canonicalLegislationKey('Portaria CVS 5/2013')).not.toBe(
       canonicalLegislationKey('Portaria CVS nº 5/2025'),
     );
+  });
+
+  it('ignora zero à esquerda no número do ato', () => {
+    expect(canonicalLegislationKey('Portaria IVISA-RIO nº 002/2020')).toBe(
+      canonicalLegislationKey('Portaria IVISA-RIO 2/2020'),
+    );
+  });
+
+  it('lê ano de dois dígitos colado ao número', () => {
+    expect(canonicalLegislationKey('Portaria SVS/MS nº 344/98')).toBe(
+      canonicalLegislationKey('Portaria SVS/MS nº 344/1998'),
+    );
+  });
+
+  it('não confunde "CBO 5162-10" nem "NR-32" com ano', () => {
+    expect(canonicalLegislationKey('CBO 5162-10')).toBe('CBO|5162|');
+    expect(canonicalLegislationKey('NR-32')).toBe('NR|32|');
   });
 
   it('não confunde número de artigo com número do ato', () => {
