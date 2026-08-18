@@ -2,9 +2,9 @@ export type {
   LegislationEntry,
   LegislationSegment,
   LegislationStatus,
-} from './types';
+} from './types.js';
 
-export { LEGISLATION_LIBRARY } from './library';
+export { LEGISLATION_LIBRARY } from './library.js';
 
 export {
   applicableLegislation,
@@ -18,6 +18,6 @@ export {
   searchLegislation,
   type LegislationFilter,
   type LegislationScope,
-} from './query';
+} from './query.js';
 
-export { UF_OPTIONS, isRioState, normalizeStateName, toUF } from './uf';
+export { UF_OPTIONS, isRioState, normalizeStateName, toUF } from './uf.js';

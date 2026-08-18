@@ -24,7 +24,7 @@
 // 6. `abnt` é a referência NBR 6023 completa quando existir. Sem ela,
 //    `formatAbnt` monta a forma curta a partir de authority + name + summary.
 
-import type { LegislationEntry } from './types';
+import type { LegislationEntry } from './types.js';
 
 /** Data da última varredura de vigência feita em bloco na biblioteca. */
 const V = '2026-08-05';

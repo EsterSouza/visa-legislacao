@@ -1,9 +1,9 @@
 // Consulta da base unificada: identificação do ato, aplicabilidade territorial e
 // por segmento, busca avançada e formatação ABNT.
 
-import { LEGISLATION_LIBRARY } from './library';
-import type { LegislationEntry, LegislationSegment, LegislationStatus } from './types';
-import { toUF } from './uf';
+import { LEGISLATION_LIBRARY } from './library.js';
+import type { LegislationEntry, LegislationSegment, LegislationStatus } from './types.js';
+import { toUF } from './uf.js';
 
 // ── Identificação do ato ─────────────────────────────────────────────────────
 

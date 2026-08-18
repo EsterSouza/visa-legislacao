@@ -7,8 +7,8 @@
 //   npx tsx src/cli.ts --pendentes
 //   npx tsx src/cli.ts --abnt "RDC 222/2018"
 
-import { findLegislation, formatAbnt, pendingVerification, searchLegislation } from './query';
-import type { LegislationEntry, LegislationSegment, LegislationStatus } from './types';
+import { findLegislation, formatAbnt, pendingVerification, searchLegislation } from './query.js';
+import type { LegislationEntry, LegislationSegment, LegislationStatus } from './types.js';
 
 const SEGMENTOS: LegislationSegment[] = ['estetica', 'ilpi', 'alimentos', 'saude'];
 
