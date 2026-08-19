@@ -29,6 +29,9 @@ import type { LegislationEntry } from './types.js';
 /** Data da última varredura de vigência feita em bloco na biblioteca. */
 const V = '2026-08-05';
 
+/** Varredura dos atos que entraram na base sem checagem de vigência. */
+const V2 = '2026-08-19';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -981,7 +984,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm',
     abnt: `BRASIL. Lei nº 12.305, de 2 de agosto de 2010. Institui a Política Nacional de Resíduos Sólidos e dá outras providências. Brasília, DF, 2010. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm`,
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 12.592/2012',
@@ -990,7 +994,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12592.htm',
     abnt: `BRASIL. Lei nº 12.592, de 18 de janeiro de 2012. Dispõe sobre o exercício das atividades profissionais de Cabeleireiro, Barbeiro, Esteticista, Manicure, Pedicure, Depilador e Maquiador. Brasília, DF, 2012. Disponível em: http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12592.htm`,
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 13.643/2018',
@@ -999,7 +1004,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13643.htm',
     abnt: `BRASIL. Lei nº 13.643, de 3 de abril de 2018. Regulamenta as profissões de Esteticista, que compreende o Esteticista e Cosmetólogo, e de Técnico em Estética. Brasília, DF, 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13643.htm`,
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 14.648/2023',
@@ -1008,7 +1014,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14648.htm',
     abnt: `BRASIL. Lei nº 14.648, de 4 de agosto de 2023. Autoriza a ozonioterapia no território nacional. Brasília, DF, 2023. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14648.htm`,
     segments: ['saude', 'estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 14.737/2023',
@@ -1017,7 +1024,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14737.htm',
     abnt: `BRASIL. Lei nº 14.737, de 27 de novembro de 2023. Amplia o direito da mulher de ter acompanhante nos atendimentos realizados em serviços de saúde públicos e privados. Brasília, DF, 2023. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14737.htm`,
     segments: ['saude'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 15.378/2026',
@@ -1026,7 +1034,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15378.htm',
     abnt: `BRASIL. Lei nº 15.378, de 27 de março de 2026. Institui o Estatuto dos Direitos do Paciente. Brasília, DF, 2026. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15378.htm`,
     segments: ['saude', 'estetica', 'ilpi'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'RDC Anvisa nº 55/2008',
@@ -1035,7 +1044,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2008/rdc0055_06_08_2008.html',
     abnt: `BRASIL. Ministério da Saúde. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 55, de 6 de agosto de 2008. Dispõe sobre o registro de produtos utilizados no procedimento de pigmentação artificial permanente da pele, e dá outras providências. Brasília, DF, 2008. Disponível em: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2008/rdc0055_06_08_2008.html`,
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'RDC Anvisa nº 622/2022',
@@ -1044,7 +1054,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000622&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2022&seq_ato=000&cod_modulo=134&cod_menu=1696',
     abnt: `BRASIL. Ministério da Saúde. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 622, de 9 de março de 2022. Dispõe sobre o funcionamento de empresas especializadas na prestação de serviço de controle de vetores e pragas urbanas. Brasília, DF, 2022. Disponível em: https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000622&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2022&seq_ato=000&cod_modulo=134&cod_menu=1696`,
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Portaria GM/MS nº 2.048/2002',
@@ -1053,7 +1064,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://bvsms.saude.gov.br/bvs/saudelegis/gm/2002/prt2048_05_11_2002.html',
     abnt: `BRASIL. Ministério da Saúde. Portaria nº 2.048, de 5 de novembro de 2002. Aprova o Regulamento Técnico dos Sistemas Estaduais de Urgência e Emergência. Brasília, DF, 2002. Disponível em: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2002/prt2048_05_11_2002.html`,
     segments: ['saude'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Federal nº 7.498/1986',
@@ -1062,7 +1074,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'http://www.planalto.gov.br/ccivil_03/leis/l7498.htm',
     abnt: `BRASIL. Lei nº 7.498, de 25 de junho de 1986. Dispõe sobre a regulamentação do exercício da enfermagem e dá outras providências. Brasília, DF, 1986. Disponível em: http://www.planalto.gov.br/ccivil_03/leis/l7498.htm`,
     segments: ['saude', 'estetica', 'ilpi'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 564/2017',
@@ -1071,7 +1084,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'http://www.cofen.gov.br/resolucao-cofen-no-5642017_59145.html',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 564, de 6 de novembro de 2017. Aprova o novo Código de Ética dos Profissionais de Enfermagem. Brasília, DF, 2017. Disponível em: http://www.cofen.gov.br/resolucao-cofen-no-5642017_59145.html`,
     segments: ['saude', 'estetica', 'ilpi'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 568/2018',
@@ -1080,7 +1094,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.cofen.gov.br/resolucao-cofen-no-0568-2018/',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 568, de 9 de fevereiro de 2018. Aprova o Regulamento dos Consultórios de Enfermagem e Clínicas de Enfermagem. Brasília, DF, 2018. Disponível em: https://www.cofen.gov.br/resolucao-cofen-no-0568-2018/`,
     segments: ['saude', 'estetica'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 626/2020',
@@ -1089,7 +1104,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'http://www.cofen.gov.br/resolucao-cofen-no-626-2020_77398.html',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 626, de 20 de fevereiro de 2020. Regulamenta a atuação do Enfermeiro na área da Estética. Brasília, DF, 2020. Disponível em: http://www.cofen.gov.br/resolucao-cofen-no-626-2020_77398.html`,
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Parecer Normativo COFEN nº 1/2020',
@@ -1098,7 +1114,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.cofen.gov.br/parecer-normativo-no-001-2020/',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Parecer Normativo nº 001, de 17 de janeiro de 2020. Dispõe sobre a atuação do Enfermeiro na Ozonioterapia. Brasília, DF, 2020. Disponível em: https://www.cofen.gov.br/parecer-normativo-no-001-2020/`,
     segments: ['estetica', 'saude'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 713/2022',
@@ -1107,7 +1124,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.cofen.gov.br/resolucao-cofen-no-713-2022/',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 713, de 8 de novembro de 2022. Atualiza a norma de atuação dos profissionais de enfermagem no Atendimento Pré-Hospitalar móvel Terrestre e Aquaviário. Brasília, DF, 2022. Disponível em: https://www.cofen.gov.br/resolucao-cofen-no-713-2022/`,
     segments: ['saude'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 739/2024',
@@ -1116,7 +1134,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.cofen.gov.br/resolucao-cofen-no-739-de-05-de-fevereiro-de-2024/',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 739, de 5 de fevereiro de 2024. Normatiza a atuação da Enfermagem nas Práticas Integrativas e Complementares em Saúde. Brasília, DF, 2024. Disponível em: https://www.cofen.gov.br/resolucao-cofen-no-739-de-05-de-fevereiro-de-2024/`,
     segments: ['saude', 'estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Resolução COFEN nº 801/2026',
@@ -1125,7 +1144,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.cofen.gov.br/resolucao-cofen-no-801-de-14-de-janeiro-de-2026/',
     abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 801, de 14 de janeiro de 2026. Estabelece diretrizes para a prescrição de medicamentos pelo enfermeiro, e dá outras providências. Brasília, DF, 2026. Disponível em: https://www.cofen.gov.br/resolucao-cofen-no-801-de-14-de-janeiro-de-2026/`,
     segments: ['saude', 'estetica', 'ilpi'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Manual Anvisa de Limpeza e Desinfecção de Superfícies (2012)',
@@ -1134,7 +1154,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     url: 'https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/manual-de-limpeza-e-desinfeccao-de-superficies.pdf',
     abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Segurança do paciente em serviços de saúde: limpeza e desinfecção de superfícies. Brasília: ANVISA, 2012. Disponível em: https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/manual-de-limpeza-e-desinfeccao-de-superficies.pdf`,
     segments: ['saude', 'estetica', 'ilpi'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Manual SES/MG de Biossegurança para Serviços de Embelezamento (2024)',
@@ -1144,7 +1165,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `MINAS GERAIS. Secretaria de Estado de Saúde. Manual de Biossegurança para os Serviços de Embelezamento/Estética, Podologia, Colocação de Piercing, Pigmentação Artificial da Pele e Afins. Belo Horizonte, 2024. Disponível em: https://docs.uberlandia.mg.gov.br/wp-content/uploads/2024/12/Manual-de-Biosseguranca-para-os-servicos-de-embelezamento.pdf`,
     uf: 'MG',
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Complementar RJ nº 197/2018',
@@ -1155,7 +1177,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Decreto Rio nº 23.915/2004',
@@ -1166,38 +1189,39 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
     segments: ['estetica'],
-    status: 'nao_verificado',
-  },
-  {
-    name: 'Resolução SMS/RJ nº 2.748/2011',
-    authority: 'RIO DE JANEIRO (Município). Secretaria Municipal de Saúde (SMS)',
-    summary: 'Dispõe sobre o Licenciamento Sanitário dos estabelecimentos de embelezamento e de esteticismo e congêneres de interesse à saúde.',
-    url: '',
-    abnt: `RIO DE JANEIRO (Município). Resolução SMS nº 2.748, de 2011. Dispõe sobre o Licenciamento Sanitário a que estão sujeitos os estabelecimentos de embelezamento e de esteticismo e os congêneres de interesse à saúde; estabelece procedimentos específicos para a proteção da saúde dos usuários e dos profissionais. Rio de Janeiro, RJ, 2011.`,
-    uf: 'RJ',
-    municipio: 'Rio de Janeiro',
-    segments: ['estetica'],
-    status: 'nao_verificado',
+    // Art. 71, V do Decreto Rio nº 45.585/2018: "Ficam revogados, a partir de 1º de
+    // janeiro de 2019: [...] V - o Decreto nº 23.915, de 13 de janeiro de 2004".
+    // O 45.585/2018 também já caiu (art. 72, I do Decreto Rio nº 57.501/2026), por isso
+    // replacedBy aponta o decreto em vigor hoje, não o revogador imediato.
+    status: 'revogada',
+    replacedBy: 'Decreto Rio nº 57.501/2026',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Estadual PR nº 13.331/2001',
     authority: 'PARANÁ (Estado)',
     summary: 'Dispõe sobre a organização, regulamentação, fiscalização e controle das ações dos serviços de saúde no Estado do Paraná.',
-    url: 'https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=4775',
-    abnt: `PARANÁ. Assembleia Legislativa. Lei nº 13.331, de 23 de novembro de 2001. Dispõe sobre a organização, regulamentação, fiscalização e controle das ações dos serviços de saúde no Estado do Paraná. Diário Oficial do Estado do Paraná, Curitiba, PR, 23 nov. 2001. Disponível em: https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=4775`,
+    url: 'https://leisestaduais.com.br/pr/lei-ordinaria-n-13331-2001-parana-dispoe-sobre-organizacao-regulamentacao-fiscalizacao-e-controle-de-acoes-dos-servicos-de-saude-do-estado-do-parana',
+    abnt: `PARANÁ. Assembleia Legislativa. Lei nº 13.331, de 23 de novembro de 2001. Dispõe sobre a organização, regulamentação, fiscalização e controle das ações dos serviços de saúde no Estado do Paraná. Diário Oficial do Estado do Paraná, Curitiba, PR, 23 nov. 2001. Disponível em: https://leisestaduais.com.br/pr/lei-ordinaria-n-13331-2001-parana-dispoe-sobre-organizacao-regulamentacao-fiscalizacao-e-controle-de-acoes-dos-servicos-de-saude-do-estado-do-parana`,
     uf: 'PR',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    // Vigência apurada por via indireta: o Decreto 5.711/2002, que a regulamenta, consta
+    // como "Alterado" no portal oficial do PR, com alterações até 2021 (Decreto 8.848/2021).
+    // A URL anterior (legislacao.pr.gov.br codAto=4775) devolvia a Lei 11.828/1997 e foi
+    // trocada pela fonte indicada pela mantenedora da base.
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Decreto Estadual PR nº 5.711/2002',
     authority: 'PARANÁ (Estado)',
     summary: 'Regulamenta a Lei nº 13.331/2001, que dispõe sobre as ações dos serviços de saúde no Estado do Paraná.',
-    url: 'https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=18285',
-    abnt: `PARANÁ. Decreto nº 5.711, de 5 de maio de 2002. Regulamenta a Lei nº 13.331, de 23 de novembro de 2001, que dispõe sobre as ações dos serviços de saúde no Estado do Paraná. Diário Oficial do Estado do Paraná, Curitiba, PR, 6 maio 2002. Disponível em: https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=18285`,
+    url: 'https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=32060',
+    abnt: `PARANÁ. Decreto nº 5.711, de 23 de maio de 2002. Regulamenta a Lei nº 13.331, de 23 de novembro de 2001, que dispõe sobre as ações dos serviços de saúde no Estado do Paraná. Diário Oficial do Estado do Paraná, Curitiba, PR, 24 maio 2002. Disponível em: https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=exibir&codAto=32060`,
     uf: 'PR',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Estadual PR nº 18.925/2016',
@@ -1207,7 +1231,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `PARANÁ. Assembleia Legislativa. Lei nº 18.925, de 2016. Dispõe sobre a responsabilidade técnica nos estabelecimentos de estética e cosmetologia. Diário Oficial do Estado do Paraná, Curitiba, PR, 2016.`,
     uf: 'PR',
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Nota Técnica SESA/PR nº 1/2018',
@@ -1217,7 +1242,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `PARANÁ. Secretaria de Estado da Saúde. Nota Técnica nº 001, de 15 de janeiro de 2018. Orienta sobre os procedimentos de estética a serem desenvolvidos em estabelecimentos de interesse à saúde e os profissionais habilitados para executá-los. Curitiba, PR, 2018. Disponível em: https://www.saude.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-05/notatecnica_estetica2018.pdf`,
     uf: 'PR',
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Estadual SC nº 6.320/1983',
@@ -1227,7 +1253,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `SANTA CATARINA. Assembleia Legislativa. Lei nº 6.320, de 20 de dezembro de 1983. Dispõe sobre normas sanitárias no Estado de Santa Catarina (Código Sanitário). Diário Oficial do Estado de Santa Catarina, Florianópolis, SC, 20 dez. 1983. Disponível em: https://leisestaduais.com.br/sc/lei-ordinaria-n-6320-1983-santa-catarina`,
     uf: 'SC',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Estadual SC nº 18.630/2023',
@@ -1237,7 +1264,8 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `SANTA CATARINA. Assembleia Legislativa. Lei nº 18.630, de 30 de janeiro de 2023. Dispõe sobre os centros de saúde estética e dá outras providências. Diário Oficial do Estado de Santa Catarina, Florianópolis, SC, 30 jan. 2023. Disponível em: https://www.legisweb.com.br/legislacao/?id=441987`,
     uf: 'SC',
     segments: ['estetica'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Complementar AM nº 70/2009',
@@ -1247,17 +1275,21 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     abnt: `AMAZONAS. Assembleia Legislativa. Lei Complementar nº 70, de 3 de dezembro de 2009. Institui, no âmbito do Estado do Amazonas, o Código de Saúde e dá outras providências. Diário Oficial do Estado do Amazonas, Manaus, AM, 3 dez. 2009. Disponível em: https://sapl.al.am.leg.br/media/sapl/public/normajuridica/2009/861/861_texto_integral.pdf`,
     uf: 'AM',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Estadual PA nº 5.199/1984',
     authority: 'PARÁ (Estado)',
     summary: 'Dispõe sobre o Sistema de Saúde do Estado do Pará e aprova a legislação básica sobre promoção, proteção e recuperação da saúde.',
     url: '',
-    abnt: `PARÁ. Assembleia Legislativa. Lei nº 5.199, de 10 de dezembro de 1984. Dispõe sobre o Sistema de Saúde do Estado do Pará e aprova a legislação básica sobre promoção, proteção e recuperação da saúde. Diário Oficial do Estado do Pará, Belém, PA, 10 dez. 1984.`,
+    abnt: `PARÁ. Assembleia Legislativa. Lei nº 5.199, de 10 de dezembro de 1984. Dispõe sobre o Sistema de Saúde do Estado do Pará e aprova a legislação básica sobre promoção, proteção e recuperação da saúde. Diário Oficial do Estado do Pará, Belém, PA, 31 dez. 1984.`,
     uf: 'PA',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    // Vigência apurada por via indireta: o Decreto Estadual PA nº 3.614/2023 alterou o
+    // Decreto nº 3.948/1985, que regulamenta esta lei. Não localizada revogação.
+    status: 'vigente',
+    verifiedAt: V2,
   },
   {
     name: 'Lei Municipal nº 17.333/2008 - Marabá',
@@ -1268,6 +1300,7 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     uf: 'PA',
     municipio: 'Marabá',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
-    status: 'nao_verificado',
+    status: 'vigente',
+    verifiedAt: V2,
   },
 ];

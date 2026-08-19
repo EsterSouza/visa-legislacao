@@ -179,9 +179,14 @@ describe('busca avançada', () => {
   });
 
   it('lista o que ainda falta verificar', () => {
+    // Sem exigir fila cheia: fila vazia é o estado desejado, não uma falha. O que
+    // importa é a função devolver exatamente quem não teve vigência apurada.
     const pendentes = pendingVerification();
-    expect(pendentes.length).toBeGreaterThan(0);
-    expect(pendentes.every((e) => !e.verifiedAt)).toBe(true);
+    const esperados = LEGISLATION_LIBRARY.filter(
+      (e) => e.status === 'nao_verificado' || !e.verifiedAt,
+    );
+    expect(pendentes).toHaveLength(esperados.length);
+    expect(pendentes.every((e) => e.status === 'nao_verificado' || !e.verifiedAt)).toBe(true);
   });
 });
 
