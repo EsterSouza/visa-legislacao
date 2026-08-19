@@ -1108,6 +1108,16 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     verifiedAt: V2,
   },
   {
+    name: 'Resolução COFEN nº 715/2023',
+    authority: 'BRASIL. Conselho Federal de Enfermagem (COFEN)',
+    summary: 'Exige do Enfermeiro pós-graduação lato sensu em estética, na forma da legislação do MEC, com no mínimo 100 horas de aulas práticas supervisionadas. Altera o art. 4º da Resolução COFEN nº 529/2016.',
+    url: 'https://www.cofen.gov.br/resolucao-cofen-no-715-2023/',
+    abnt: `CONSELHO FEDERAL DE ENFERMAGEM. Resolução COFEN nº 715, de 30 de janeiro de 2023. Altera a Resolução Cofen nº 529, de 9 de novembro de 2016. Brasília, DF, 2023. Disponível em: https://www.cofen.gov.br/resolucao-cofen-no-715-2023/`,
+    segments: ['estetica'],
+    status: 'vigente',
+    verifiedAt: V2,
+  },
+  {
     name: 'Parecer Normativo COFEN nº 1/2020',
     authority: 'BRASIL. Conselho Federal de Enfermagem (COFEN)',
     summary: 'Dispõe sobre a atuação do Enfermeiro na Ozonioterapia.',

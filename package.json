@@ -1,6 +1,6 @@
 {
   "name": "@visa/legislacao",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Base unificada de legislação sanitária brasileira — fonte única para InspecVISA, PastaVISA e TreinaVISA.",
   "license": "UNLICENSED",
   "type": "module",
