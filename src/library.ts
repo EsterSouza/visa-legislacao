@@ -32,6 +32,9 @@ const V = '2026-08-05';
 /** Varredura dos atos que entraram na base sem checagem de vigência. */
 const V2 = '2026-08-19';
 
+/** Curadoria pontual do reprocessamento de produtos médicos (RE 2.606/2006). */
+const V3 = '2026-08-22';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -118,6 +121,18 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     segments: ['saude', 'estetica'],
     status: 'vigente',
     verifiedAt: V,
+  },
+  {
+    name: 'RE Anvisa nº 2.606/2006',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Diretrizes para elaboração, validação e implantação dos protocolos de reprocessamento de produtos médicos: descrição do produto, número máximo de reprocessamentos, detalhamento das fases (limpeza, enxágue, secagem, desinfecção, empacotamento, esterilização, rotulagem e acondicionamento), validação e testes de segurança. É a norma que diz como reprocessar o que a RE Anvisa nº 2.605/2006 não proíbe.',
+    abnt: `BRASIL. Ministério da Saúde. Agência Nacional de Vigilância Sanitária. Resolução - RE nº 2.606, de 11 de agosto de 2006. Dispõe sobre as diretrizes para elaboração, validação e implantação de protocolos de reprocessamento de produtos médicos e dá outras providências. Brasília, DF, 2006. Disponível em: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2006/res2606_11_08_2006.html`,
+    url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2006/res2606_11_08_2006.html',
+    segments: ['saude', 'estetica'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V3,
+    researchNotes:
+      'Texto oficial conferido no AnvisaLegis (datalegis) em 22/08/2026: não há nota de revogação. Consta nota de alteração — o prazo de implantação do art. 17 foi prorrogado por 180 dias pela RE nº 2.305, de 31/07/2007 (prazo já vencido, a norma segue exigível). Art. 19: entra em vigor na data da publicação (DOU de 14/08/2006). Forma com a RDC Anvisa nº 156/2006 e a RE Anvisa nº 2.605/2006 o trio do reprocessamento: a 156 obriga a rotulagem e o registro, a 2.605 lista o que é proibido reprocessar e esta fixa o protocolo do que pode.',
   },
   {
     name: 'RDC Anvisa nº 56/2009',
