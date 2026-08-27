@@ -35,6 +35,9 @@ const V2 = '2026-08-19';
 /** Curadoria pontual do reprocessamento de produtos médicos (RE 2.606/2006). */
 const V3 = '2026-08-22';
 
+/** Curadoria da base de alimentos e do suplemento do Município do Rio. */
+const V4 = '2026-08-26';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -245,19 +248,20 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     status: 'vigente',
     verifiedAt: V,
     researchNotes:
-      'Curadoria REF-05 (15/08/2026) do roteiro Nacional de Alimentos (97 itens): todos os 97 têm ' +
-      'correspondência de conteúdo em algum subitem de 4.1 a 4.12 do texto oficial — 0 viraram ' +
-      '`good_practice`. Atenção: a numeração usada em src/data/templates_alimentos.ts ("item ' +
-      '4.1.1"…"4.7") NÃO bate com a numeração oficial (que vai até 4.1.17/4.8.20) — o roteiro parece ' +
-      'ter vindo de uma cartilha derivada, não do Regulamento Técnico direto; a correspondência de ' +
-      'conteúdo se mantém, só o número do item diverge. Detalhe item a item (id, citação atual, ' +
-      'artigo lido, decisão) em docs/referencias/ref05-alimentos-nacional-draft.md. 8 itens com ' +
-      'citação suspeita mas mantidos `legal` (a exigência existe, só pode estar na norma errada): ' +
-      'ali-f-006 (escadas/elevadores), ali-f-009/ali-f-011 (conforto térmico/coifa), ali-f-014 ' +
-      '(vaso sanitário com tampa), ali-f-034 (câmara fria com alarme — provável NR de segurança do ' +
-      'trabalho), ali-f-061 (30min/2h entre 12–18°C — parâmetro não está na RDC 216), ali-f-084 ' +
-      '(licenciamento de veículo — provável exigência municipal), ali-f-096 (contrato + PGR de ' +
-      'resíduos).',
+      'Revalidada em 26/08/2026 no texto oficial. A numeração dos 97 itens do roteiro legado de ' +
+      'alimentos não correspondia à estrutura oficial da RDC 216/2004. Exigências sem apoio federal ' +
+      'direto — inclusive limite local de manipulação, alarme de câmara fria, licenciamento de ' +
+      'veículo e PGR de lixo comum — não devem ser atribuídas a esta RDC. A base operacional foi ' +
+      'corrigida e os requisitos territoriais passaram aos suplementos regionais.',
+  },
+  {
+    name: 'RDC Anvisa nº 52/2014',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Altera a RDC nº 216/2004, inclusive seu âmbito de aplicação e as regras para serviços de alimentação em eventos de massa.',
+    url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2014/rdc0052_29_09_2014.html',
+    segments: ['alimentos'],
+    status: 'vigente',
+    verifiedAt: V4,
   },
   {
     name: 'RDC Anvisa nº 218/2005',
@@ -267,6 +271,34 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     segments: ['alimentos'],
     status: 'vigente',
     verifiedAt: V,
+  },
+  {
+    name: 'RDC Anvisa nº 724/2022',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Dispõe sobre os padrões microbiológicos dos alimentos e sua aplicação em toda a cadeia de alimentos.',
+    url: 'https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=06%2F07%2F2022&jornal=515&pagina=205',
+    segments: ['alimentos'],
+    status: 'vigente',
+    verifiedAt: V4,
+  },
+  {
+    name: 'IN Anvisa nº 161/2022',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Estabelece os padrões microbiológicos dos alimentos, inclusive para pescado e alimentos prontos para oferta ao consumidor.',
+    url: 'https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=06%2F07%2F2022&jornal=515&pagina=235',
+    segments: ['alimentos'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V4,
+    researchNotes: 'Alterada pela IN Anvisa nº 313/2024; consultar o texto modificador ao aplicar categorias e parâmetros.',
+  },
+  {
+    name: 'IN Anvisa nº 313/2024',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Altera a IN nº 161/2022 e seus padrões microbiológicos, inclusive disposições e categorias do Anexo I.',
+    url: 'https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=05%2F09%2F2024&jornal=515&pagina=70',
+    segments: ['alimentos'],
+    status: 'vigente',
+    verifiedAt: V4,
   },
 
   // ── Leis federais ────────────────────────────────────────────────────────
@@ -520,12 +552,12 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     name: 'Portaria IVISA-RIO nº 002/2020',
     authority: 'RIO DE JANEIRO (Município). Instituto Municipal de Vigilância Sanitária (IVISA-RIO)',
     summary: 'Regulamento técnico de Boas Práticas para estabelecimentos de alimentos no município do Rio de Janeiro; complementa a RDC 216/2004.',
-    url: 'https://vigilanciasanitaria.prefeitura.rio/licenciamento-sanitario/licenciamento-sanitario-legislacao/',
+    url: 'https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2023/03/Portaria-N-I-VISA-Rio-002-11.11.2020.pdf',
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
     segments: ['alimentos'],
     status: 'vigente',
-    verifiedAt: V,
+    verifiedAt: V4,
     researchNotes:
       'Texto oficial está no PDF, não na página de listagem que a URL do verbete aponta: ' +
       'vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2023/03/Portaria-N-I-VISA-Rio-' +
@@ -557,24 +589,26 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   {
     name: 'Decreto Rio nº 57.501/2026',
     authority: 'RIO DE JANEIRO (Município)',
-    summary: 'Código Sanitário do município do Rio de Janeiro.',
-    abnt: `RIO DE JANEIRO (Município). Decreto Rio nº 57.501, de 30 de janeiro de 2026. Atualiza o Código Sanitário do Município do Rio de Janeiro. Diário Oficial do Município, Rio de Janeiro, RJ, 30 jan. 2026. Disponível em: https://leis.org/32uo0`,
+    summary: 'Regulamenta o licenciamento sanitário, a fiscalização, as infrações e os procedimentos administrativos no Município do Rio de Janeiro; revoga o Decreto Rio nº 45.585/2018 a partir de 2 de fevereiro de 2026.',
+    abnt: `RIO DE JANEIRO (Município). Decreto Rio nº 57.501, de 30 de janeiro de 2026. Regulamenta o licenciamento sanitário e os procedimentos de vigilância sanitária no Município do Rio de Janeiro. Diário Oficial do Município, Rio de Janeiro, RJ, 30 jan. 2026. Disponível em: https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2026/04/Decreto-N%C2%B0-57501_2026.pdf`,
     url: 'https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2026/04/Decreto-N%C2%B0-57501_2026.pdf',
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
+    segments: ['alimentos', 'saude', 'estetica', 'ilpi'],
     status: 'vigente',
-    verifiedAt: V,
+    verifiedAt: V4,
   },
   {
-    name: 'Decreto Municipal 1.601/1992 (RJ Capital)',
+    name: 'Decreto Rio nº 6.235/1986',
     authority: 'RIO DE JANEIRO (Município)',
-    summary: 'Aprova o Regulamento de Alimentos do Município do Rio de Janeiro.',
-    url: 'http://www.rio.rj.gov.br/dlstatic/storage/proprio/arquivo/8/9/8/3134/Decreto1601.pdf',
+    summary: 'Aprova o Regulamento da Defesa e Proteção da Saúde no tocante a alimentos e à higiene habitacional e ambiental no Município do Rio de Janeiro.',
+    url: 'https://www.rio.rj.gov.br/dlstatic/10112/5125585/4150258/10decreto62351986.pdf',
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
     segments: ['alimentos'],
     status: 'vigente_com_alteracoes',
-    verifiedAt: V,
+    verifiedAt: V4,
+    researchNotes: 'Corrige o verbete legado que atribuía, sem confirmação, o Regulamento de Alimentos ao Decreto nº 1.601/1992.',
   },
   {
     name: 'Lei Municipal RJ nº 8.618/2024',
@@ -589,6 +623,27 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   },
 
   // ── Rio de Janeiro — estado ──────────────────────────────────────────────
+  {
+    name: 'Decreto Estadual RJ nº 6.538/1983',
+    authority: 'RIO DE JANEIRO (Estado)',
+    summary: 'Aprova o regulamento sobre alimentos, higiene e fiscalização sanitária no Estado do Rio de Janeiro.',
+    url: 'https://areal.rj.gov.br/wp-content/uploads/2022/12/DECRETO-LEI-ESTADUAL-6538-83.pdf',
+    uf: 'RJ',
+    segments: ['alimentos'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V4,
+    researchNotes: 'A vigência foi confirmada por sua citação expressa na Resolução SES/RJ nº 3.191/2023; o texto integral está em portal municipal oficial.',
+  },
+  {
+    name: 'Lei Estadual RJ nº 6.551/2013',
+    authority: 'RIO DE JANEIRO (Estado). Assembleia Legislativa do Estado do Rio de Janeiro',
+    summary: 'Obriga bares, restaurantes, hotéis, padarias e congêneres a franquear aos clientes a cozinha e áreas de preparo e armazenamento, com acompanhamento, placa e informação no cardápio.',
+    url: 'https://alerjln1.alerj.rj.gov.br/CONTLEI.NSF/c8aa0900025feef6032564ec0060dfff/39c5fbf1e6feb2ad83257c000062c3fa',
+    uf: 'RJ',
+    segments: ['alimentos'],
+    status: 'vigente',
+    verifiedAt: V4,
+  },
   {
     name: 'Lei Ordinária RJ nº 8.049/2018',
     authority: 'RIO DE JANEIRO (Estado)',
@@ -1197,13 +1252,13 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     name: 'Lei Complementar RJ nº 197/2018',
     authority: 'RIO DE JANEIRO (Município)',
     summary: 'Institui o Código Sanitário do Município do Rio de Janeiro.',
-    url: 'https://leismunicipais.com.br/a/rj/r/rio-de-janeiro/lei-complementar/2018/20/197',
-    abnt: `RIO DE JANEIRO (Município). Lei Complementar nº 197, de 26 de setembro de 2018. Institui o Código Sanitário do Município do Rio de Janeiro e dá outras providências. Diário Oficial do Município, Rio de Janeiro, RJ, 27 set. 2018. Disponível em: https://leismunicipais.com.br/a/rj/r/rio-de-janeiro/lei-complementar/2018/20/197`,
+    url: 'https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/C1972018.html',
+    abnt: `RIO DE JANEIRO (Município). Lei Complementar nº 197, de 27 de dezembro de 2018. Institui o Código Sanitário do Município do Rio de Janeiro e dá outras providências. Diário Oficial do Município, Rio de Janeiro, RJ, 28 dez. 2018. Disponível em: https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/C1972018.html`,
     uf: 'RJ',
     municipio: 'Rio de Janeiro',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
     status: 'vigente',
-    verifiedAt: V2,
+    verifiedAt: V4,
   },
   {
     name: 'Decreto Rio nº 23.915/2004',
