@@ -38,6 +38,9 @@ const V3 = '2026-08-22';
 /** Curadoria da base de alimentos e do suplemento do Município do Rio. */
 const V4 = '2026-08-26';
 
+/** Curadoria do Pará e de Parauapebas para o suplemento de serviço de saúde. */
+const V5 = '2026-08-31';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -1382,5 +1385,44 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
     status: 'vigente',
     verifiedAt: V2,
+  },
+  {
+    name: 'Decreto Estadual PA nº 3.614/2023',
+    authority: 'PARÁ (Estado)',
+    summary: 'Altera o Decreto Estadual nº 3.948/1985, que regulamenta a Lei Estadual nº 5.199/1984, para fixar em 1 (um) ano a validade das licenças sanitárias estaduais, renovável por prazos iguais e sucessivos mediante solicitação.',
+    url: 'https://www.pge.pa.gov.br/sites/default/files/alerta-legislativo/DE3614.pdf',
+    abnt: `PARÁ. Decreto nº 3.614, de 22 de dezembro de 2023. Altera o Decreto Estadual nº 3.948, de 09 de setembro de 1985, que regulamenta a Lei Estadual nº 5.199, de 10 de dezembro de 1984, que dispõe sobre o Sistema de Saúde do Estado do Pará. Diário Oficial do Estado do Pará, Belém, PA, n. 35.658, 26 dez. 2023. Disponível em: https://www.pge.pa.gov.br/sites/default/files/alerta-legislativo/DE3614.pdf`,
+    uf: 'PA',
+    segments: ['saude', 'estetica', 'ilpi'],
+    status: 'vigente',
+    verifiedAt: V5,
+    researchNotes: `Texto integral lido em 31/08/2026. Artigo único de conteúdo (art. 1º) dá nova redação aos arts. 187, 220, 225, 230, 239, 244, 249, 252, 254, 268, 271, 277 e 282, § 1º, do Decreto 3.948/1985, todos com a mesma fórmula: licença válida por 1 ano a partir da emissão, sujeita a renovação por prazos iguais e sucessivos mediante solicitação. O art. 244 é o dos estabelecimentos e clínicas de beleza sob responsabilidade médica. Não trata de responsabilidade técnica nem de infrações. Em vigor na data da publicação.`,
+  },
+  {
+    name: 'Lei Complementar nº 8/2016 - Parauapebas',
+    authority: 'PARAUAPEBAS (PA)',
+    summary: 'Código Sanitário do Município de Parauapebas: define os estabelecimentos sujeitos ao controle sanitário, o Alvará Sanitário municipal, os deveres dos serviços de saúde e o processo administrativo sanitário.',
+    url: 'https://sapl.parauapebas.pa.leg.br/norma/149',
+    abnt: `PARAUAPEBAS (PA). Câmara Municipal. Lei Complementar nº 8, de 11 de março de 2016. Dispõe sobre o Código Sanitário do Município de Parauapebas, altera o Anexo IX da Lei Municipal nº 4.296/2005, revoga a Lei Municipal nº 3.226/1997 e dá outras providências. Parauapebas, PA, 11 mar. 2016. Disponível em: https://sapl.parauapebas.pa.leg.br/norma/149`,
+    uf: 'PA',
+    municipio: 'Parauapebas',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V5,
+    researchNotes: `Texto integral lido em 31/08/2026 (38 p.). Artigos usados no suplemento de Parauapebas:
+- art. 9º: obrigação de prestar esclarecimentos e exibir documentos à autoridade sanitária.
+- art. 13, I: conceder Alvará Sanitário é competência privativa do Secretário Municipal de Saúde; art. 14 define o Alvará como ato administrativo privativo do órgão sanitário.
+- art. 19, I: consultórios e clínicas privados são estabelecimentos de serviço de saúde.
+- art. 21: deveres gerais — IX PGRSS para médio e alto risco epidemiológico ou quando solicitado; X controle integrado de pragas com relatório sob solicitação; XI limpeza e desinfecção dos reservatórios de água no mínimo a cada 6 meses; XII controle e registro de medicamentos sob regime especial; XIII estabelecimento livre de material alheio à atividade e de entulho.
+- art. 22: a autoridade pode exigir exame clínico ou laboratorial, ou atestado de saúde ocupacional, de quem exerce atividade no estabelecimento.
+- art. 23: presença do responsável técnico obrigatória durante todo o horário de funcionamento (§ 1º); nome e inscrição profissional nas placas, anúncios e propagandas (§ 2º); RT e administrativo respondem solidariamente pelas infrações (§ 3º); responsabilidade técnica ÚNICA perante a autoridade sanitária ainda que haja profissionais autônomos ou empresas prestadoras nas dependências (§ 4º) — é o artigo que rege consultório sublocado dentro de clínica.
+- art. 24: deveres dos estabelecimentos de saúde — I descarte de artigo de uso único; II processamento dos reprocessáveis; III utensílios em número condizente; IV limpeza das instalações; V renovação de ar filtrado em ambiente fechado não climatizado.
+- art. 27: construção ou reforma condicionada a autorização prévia da autoridade sanitária, com aprovação do projeto arquitetônico; reforma inclui mudança de fluxo e de função.
+- art. 28: equipamentos de radiação ionizante E NÃO IONIZANTE dependem de autorização do órgão sanitário e devem ser cadastrados; responsabilidade técnica solidária pelo uso e pela guarda (parágrafo único). Alcança laser e fotobiomodulação.
+- art. 36: Alvará Sanitário com validade de 1 ano da emissão, renovação por períodos iguais, requerida nos 120 dias anteriores ao vencimento; § 1º taxa de VISA, inspeção e requisitos técnicos; § 4º afixado em local de fácil visualização.
+- art. 37: VISA tem 120 dias para concluir emissão ou renovação; parágrafo único prorroga o alvará anterior até a conclusão.
+- art. 38: alvará pode ser suspenso, cassado ou cancelado a qualquer tempo, assegurada a defesa.
+- art. 39: penalidades, de advertência a cassação e multa. Art. 66: defesa em 15 dias.
+- art. 25 (CCIH) só alcança regime hospitalar — não se aplica a consultório.`,
   },
 ];
