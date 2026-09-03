@@ -33,6 +33,8 @@ const V3 = '2026-08-22';
 const V4 = '2026-08-26';
 /** Curadoria do Pará e de Parauapebas para o suplemento de serviço de saúde. */
 const V5 = '2026-08-31';
+/** Curadoria de Petrópolis/RJ e das resoluções estaduais de licenciamento do Rio. */
+const V6 = '2026-09-03';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -664,6 +666,106 @@ export const LEGISLATION_LIBRARY = [
         segments: ['saude', 'ilpi'],
         status: 'vigente',
         verifiedAt: V,
+    },
+    {
+        name: 'Resolução SES/RJ nº 1.058/2014',
+        authority: 'RIO DE JANEIRO (Estado). Secretaria de Estado de Saúde (SES/RJ)',
+        summary: 'Define a competência para as ações de vigilância sanitária no Estado do Rio de Janeiro: o licenciamento e a inspeção dos estabelecimentos sujeitos à vigilância sanitária cabem ao órgão municipal, salvo a lista de estabelecimentos reservados à esfera estadual.',
+        url: 'https://www.legisweb.com.br/legislacao/?id=276633',
+        abnt: `RIO DE JANEIRO (Estado). Secretaria de Estado de Saúde. Resolução SES nº 1.058, de 6 de novembro de 2014. Define as competências das ações de vigilância sanitária no âmbito do Estado do Rio de Janeiro. Diário Oficial do Estado do Rio de Janeiro, Rio de Janeiro, RJ, 2014. Disponível em: https://www.legisweb.com.br/legislacao/?id=276633`,
+        uf: 'RJ',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente',
+        verifiedAt: V6,
+        researchNotes: `Curadoria de 03/09/2026. É a norma que responde "quem licencia": a regra é o município; o Estado (SUVISA) fica com uma lista fechada — serviços de terapia renal substitutiva e suas unidades móveis, hospitais e clínicas com internação e os serviços intra-hospitalares (laboratório de análises clínicas, radiodiagnóstico médico, imagem). Consultório e clínica SEM internação são licenciados pela VISA municipal. A competência sobre os estabelecimentos da lista estadual pode ser delegada ao município mediante parecer favorável do órgão estadual e deliberação na CIB.
+Uso prático: sustenta encaminhar o cliente à VISA do município, e não à SUVISA. A própria página de serviço da Prefeitura de Petrópolis se apoia nela ao dizer que licencia os estabelecimentos da Resolução SES nº 2.191/2020 que não constem da Resolução SES nº 1.058/2014.`,
+    },
+    {
+        name: 'Resolução SES/RJ nº 2.191/2020',
+        authority: 'RIO DE JANEIRO (Estado). Secretaria de Estado de Saúde (SES/RJ)',
+        summary: 'Estabelece as listas e os critérios de classificação das atividades econômicas (CNAE) sujeitas à vigilância sanitária no Estado do Rio de Janeiro por grau de risco, para fins de licenciamento sanitário e de ações de pós-mercado.',
+        url: 'https://www.legisweb.com.br/legislacao/?id=405476',
+        abnt: `RIO DE JANEIRO (Estado). Secretaria de Estado de Saúde. Resolução SES nº 2.191, de 2 de dezembro de 2020. Dispõe sobre as listas e os critérios para Classificação Nacional de Atividades Econômicas (CNAE), sujeitas à vigilância sanitária no estado do Rio de Janeiro por grau de risco e dependente de informação para fins de licenciamento sanitário e pós-mercado. Diário Oficial do Estado do Rio de Janeiro, Rio de Janeiro, RJ, 7 dez. 2020. Disponível em: https://www.legisweb.com.br/legislacao/?id=405476`,
+        uf: 'RJ',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V6,
+        researchNotes: `Curadoria de 03/09/2026. Anexos alterados pela Resolução SES nº 4.001, de 05/05/2026, que NÃO revoga a 2.191/2020 — só troca os anexos. Fundamento declarado: Lei Estadual nº 8.953/2020, IN 66/2020 e resoluções do CGSIM.
+Art. 3º cria três níveis: nível I (baixo risco) dispensa licença sanitária e qualquer ato público de liberação, ficando só o pós-mercado; nível II (médio risco) tem licença emitida automaticamente após o cadastro, sem vistoria prévia; nível III (alto risco) exige vistoria prévia para iniciar a operação. Art. 3º, §§ 4º e 5º: o MEI é dispensado de alvará e de licença sanitária e responde só às ações de pós-mercado. Art. 7º: o órgão de VISA mantém cadastro de todos os estabelecimentos sujeitos.
+Enquadramento do consultório médico: o CNAE 8630-5/02 (atividade médica ambulatorial com recursos para realização de exames complementares) está no Anexo I — ALTO RISCO, com vistoria prévia. O 8630-5/03 (restrito a consultas) não está no alto risco; cai no anexo de risco dependente de informação, que pergunta se há procedimento invasivo. Consultório que insere DIU e implante subdérmico realiza procedimento invasivo — o enquadramento como consulta simples não se sustenta, e a leitura conservadora é alto risco com vistoria prévia. Confirmar o anexo vigente após a Resolução 4.001/2026 antes de afirmar o nível em relatório.
+Cuidado: a classificação por CNAE define o rito do licenciamento, não o conteúdo sanitário exigível, que continua vindo da RDC Anvisa nº 63/2011 e da RDC Anvisa nº 50/2002.`,
+    },
+    // ── Petrópolis (RJ) ──────────────────────────────────────────────
+    {
+        name: 'Lei Municipal nº 5.834/2001 - Petrópolis',
+        authority: 'PETRÓPOLIS (RJ)',
+        summary: 'Código sanitário do Município de Petrópolis: dispõe sobre a defesa e a proteção à saúde individual e coletiva, define os estabelecimentos sujeitos à fiscalização sanitária municipal, o regime de infrações e penalidades e institui a taxa de inspeção sanitária.',
+        url: 'https://sapl.petropolis.rj.leg.br/norma/3072',
+        abnt: `PETRÓPOLIS (RJ). Lei nº 5.834, de 14 de dezembro de 2001. Dispõe sobre a defesa e a proteção à saúde individual e coletiva da população; institui a taxa de vigilância sanitária e dá outras providências. Petrópolis, RJ, 2001. Disponível em: https://sapl.petropolis.rj.leg.br/norma/3072`,
+        uf: 'RJ',
+        municipio: 'Petrópolis',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V6,
+        researchNotes: `Texto articulado consolidado lido no SAPL da Câmara de Petrópolis em 03/09/2026 (norma 3072, versão vigente a partir de 16/06/2007). Alterada pelas Leis Municipais nº 5.987/2003, nº 6.193/2004 e nº 6.460/2007. Não foi localizado decreto regulamentador; o art. 18 apenas autoriza a regulamentação.
+Artigos que importam para roteiro de inspeção:
+- art. 1º, parágrafo único: define vigilância sanitária municipal e alcança o controle da prestação de serviços que se relacionem com a saúde.
+- art. 2º, XXVII: hospitais, ambulatórios, CLÍNICAS MÉDICAS, CONSULTÓRIOS MÉDICOS, laboratórios e estabelecimentos de fisioterapia e afins estão expressamente sujeitos à fiscalização sanitária municipal. É o dispositivo que sustenta o licenciamento do consultório em Petrópolis.
+- art. 2º, XXX: institutos de beleza, salões de beleza, cabeleireiros e barbearias — a base municipal do roteiro de estética.
+- art. 2º, XXVIII: fiscalização também do exercício das profissões de saúde.
+- art. 2º, XIX: construções em geral.
+- art. 3º: infração é a desobediência a norma federal, estadual OU municipal destinada à preservação da saúde. É o que dá eficácia municipal às RDC da Anvisa em Petrópolis.
+- art. 4º: sanções — notificação com prazo de 45 dias para nova fiscalização (redação da Lei 5.987/2003; o texto original dizia advertência em 30 dias), multa, proibição de transacionar com o Município, apreensão/interdição/inutilização, suspensão e fechamento. Parágrafo único: prorrogação do prazo por igual período mediante requerimento justificado.
+- art. 7º, III: multa por CONSTRUIR, INSTALAR OU FAZER FUNCIONAR estabelecimento de interesse à saúde sem registro, licença ou autorização do órgão sanitário — alcança a obra em curso, antes da inauguração.
+- art. 8º: auto de infração imediato quando houver risco iminente; nos demais casos, notificação com 45 dias.
+- art. 9º: reincidência dobra a multa.
+- art. 12: institui a taxa de inspeção sanitária, com fato gerador no poder de polícia; estabelecimentos no mesmo endereço com titulares diferentes contam como distintos.
+- art. 13, § 3º: no início de atividade a taxa é proporcional aos meses restantes e com redução de 50%.
+- art. 13, § 5º (Lei 6.193/2004): comprovado o atendimento das condições legais, o órgão emite o certificado de licença ou de revalidação SEM ônus adicional — a taxa é da inspeção, não do papel.
+- art. 13, § 6º (Lei 6.193/2004): o titular da pasta emite Resolução com os procedimentos de concessão de licença, revalidação, mudança de endereço e MUDANÇA DE RESPONSÁVEL TÉCNICO. Pedir essa resolução na VISA local antes de instruir processo.
+- art. 14, II e III (redação da Lei 6.460/2007): pagamento até o último dia útil de julho de cada exercício, com redução de 30% para quem paga integralmente até essa data.
+- art. 17: aplica-se subsidiariamente o Código de Posturas e o Código Tributário Municipal (Lei nº 3.970/1978). Atenção: o art. 17 ainda remete à Deliberação nº 2.728/1968, revogada integralmente pela Lei Municipal nº 6.240/2005, que é o Código de Posturas vigente.
+- art. 19: nas omissões, aplica-se a legislação estadual ou federal correlata.
+- Tabela anexa, CLASSE A: consultórios e prestadores de serviços de saúde (médico, odontólogo, etc.), farmácias e drogarias e INSTITUTO DE BELEZA COM RESPONSABILIDADE MÉDICA. CLASSE C: institutos de beleza SEM responsabilidade médica, barbeiros, cabeleireiros e academias. A faixa da taxa é por área construída (até 50 m², 51 a 100 m², etc.). Os valores da tabela são os de 2001/2007 e devem ser conferidos na guia emitida pela Secretaria de Fazenda — não citar valor de cabeça.
+Operacional (página de serviço da Prefeitura, consultada em 03/09/2026): a VISA de Petrópolis licencia os estabelecimentos da Resolução SES nº 2.191/2020 que não constem da Resolução SES nº 1.058/2014; o requerimento de licença é protocolado em processo eletrônico (SEI) e a taxa é lançada pela Secretaria de Fazenda. Atividade de MEI é dispensada de alvará e de licença sanitária.`,
+    },
+    {
+        name: 'Lei Municipal nº 8.713/2024 - Petrópolis',
+        authority: 'PETRÓPOLIS (RJ)',
+        summary: 'Institui o Código de Obras e Edificações do Município de Petrópolis: licença de obras, Habite-se, dimensionamento e pé-direito dos compartimentos, iluminação e ventilação, mezanino e exigências de acessibilidade nas edificações.',
+        url: 'https://sapl.petropolis.rj.leg.br/media/sapl/public/normajuridica/2024/11450/lei_8713-2024.pdf',
+        abnt: `PETRÓPOLIS (RJ). Lei nº 8.713, de 16 de janeiro de 2024. Institui o Código de Obras e Edificações do Município de Petrópolis. Petrópolis, RJ, 2024. Disponível em: https://sapl.petropolis.rj.leg.br/media/sapl/public/normajuridica/2024/11450/lei_8713-2024.pdf`,
+        uf: 'RJ',
+        municipio: 'Petrópolis',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente',
+        verifiedAt: V6,
+        researchNotes: `Texto integral baixado do SAPL e lido em 03/09/2026. Não é norma sanitária, mas é a norma municipal que a obra tem de cumprir em paralelo — é o que fecha o pedido de compatibilizar obra e exigência sanitária.
+- art. 55 a 58: nenhuma edificação obtém o Habite-se sem vistoria do órgão municipal; a solicitação é anexada ao próprio processo de licenciamento da obra; entre os documentos, os certificados de aprovação que liberam as instalações hidráulicas, elétricas e sanitárias e o sistema contra incêndio. O art. 58 exige ainda solução de abastecimento de água, esgotamento sanitário e drenagem, e promover a acessibilidade conforme a NBR 9050.
+- art. 59: admite Habite-se parcial, que não substitui o definitivo.
+- art. 87 e 88: as edificações cumprem as exigências de acessibilidade da Lei nº 10.098/2000 e do Decreto Federal nº 5.296/2004, complementadas pela ABNT NBR 9050.
+- art. 111: instalações sanitárias, cozinhas e demais áreas molhadas têm condições construtivas próprias.
+- art. 126 e 127: os compartimentos são classificados por função em permanência prolongada (consultório, sala de espera, sala de trabalho) e permanência transitória (corredor, banheiro, depósito, vestiário); a classificação determina dimensionamento mínimo, ventilação e iluminação.
+- art. 130: unidade autônoma comercial ou de serviços tem no mínimo 1 compartimento de permanência prolongada e atende à NBR 9050.
+- art. 131: banheiros de uso público ou coletivo atendem à legislação pertinente, principalmente a NBR 9050.
+- art. 132: PÉ-DIREITO MÍNIMO DE 2,60 m nos compartimentos de permanência prolongada (2,40 m em copa, área de serviço e similares). Parágrafo único: com teto inclinado, o ponto mais baixo tem no mínimo 2,20 m, mantido o pé-direito médio.
+- art. 133: permanência transitória admite pé-direito de 2,40 m, com altura livre de 2,20 m sob elementos estruturais.
+- art. 134: MEZANINO OU JIRAU exige 2,20 m livres em qualquer ponto acima dele e pode ocupar NO MÁXIMO 50% da área do piso do compartimento sobre o qual se projeta. É o artigo a conferir em loja com pavimento superior aproveitado.
+- art. 135: as edificações devem possuir aberturas para iluminação e ventilação dos compartimentos, conforme a utilização e a permanência.`,
+    },
+    {
+        name: 'Lei Municipal nº 6.240/2005 - Petrópolis',
+        authority: 'PETRÓPOLIS (RJ)',
+        summary: 'Institui o Código de Posturas do Município de Petrópolis, aplicável subsidiariamente à fiscalização sanitária municipal por remissão do art. 17 da Lei Municipal nº 5.834/2001.',
+        url: 'https://sapl.petropolis.rj.leg.br/norma/pesquisar?tipo=1&numero=6240&pesquisar=Pesquisar',
+        abnt: `PETRÓPOLIS (RJ). Lei nº 6.240, de 22 de janeiro de 2005. Institui o Código de Posturas do Município de Petrópolis. Petrópolis, RJ, 2005. Disponível em: https://sapl.petropolis.rj.leg.br/norma/pesquisar?tipo=1&numero=6240&pesquisar=Pesquisar`,
+        uf: 'RJ',
+        municipio: 'Petrópolis',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V6,
+        researchNotes: `Ficha da norma conferida no SAPL em 03/09/2026. Revogou integralmente a Deliberação nº 2.728/1968, que é a que o art. 17 da Lei nº 5.834/2001 ainda cita — a remissão do código sanitário municipal aponta hoje para esta lei. Alterada pelas Leis Municipais nº 6.978/2012, nº 7.176/2014, nº 7.268/2014, nº 7.528/2017, nº 7.537/2017, nº 7.943/2020 e nº 8.239/2021, e revogada parcialmente pelas Leis nº 6.978/2012, nº 8.239/2021 e nº 8.331/2022.
+Entra na base como norma de moldura: sustenta as exigências municipais de ocupação, letreiro e publicidade, limpeza do passeio e sossego, que a fiscalização usa junto com a sanitária. O texto compilado ainda não foi lido artigo a artigo — antes de citar artigo específico, abrir o texto compilado no SAPL. Não usar esta entrada para ancorar exigência sanitária de mérito, que vem da Lei nº 5.834/2001 e das RDC federais.`,
     },
     // ── Goiás ────────────────────────────────────────────────────────────────
     {
