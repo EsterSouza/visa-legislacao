@@ -47,6 +47,9 @@ const V6 = '2026-09-03';
 /** Curadoria dos atos citados nos "Documentos em Elaboração" que não subiram por falha de extração. */
 const V7 = '2026-09-14';
 
+/** Curadoria da base federal de odontologia (RDC 1.002/2025 e normas que ela chama). */
+const V8 = '2026-09-28';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -1907,5 +1910,253 @@ Entra na base como norma de moldura: sustenta as exigências municipais de ocupa
 - art. 38: alvará pode ser suspenso, cassado ou cancelado a qualquer tempo, assegurada a defesa.
 - art. 39: penalidades, de advertência a cassação e multa. Art. 66: defesa em 15 dias.
 - art. 25 (CCIH) só alcança regime hospitalar — não se aplica a consultório.`,
+  },
+  // ── Odontologia (base federal) ───────────────────────────────────────────
+  {
+    name: 'RDC Anvisa nº 1.002/2025',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Dispõe sobre os requisitos de Boas Práticas de Funcionamento para os serviços que prestam assistência odontológica e para os laboratórios de prótese dentária.',
+    abnt: `BRASIL. Ministério da Saúde. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 1.002, de 15 de dezembro de 2025. Dispõe sobre os requisitos de Boas Práticas de Funcionamento para os serviços que prestam assistência odontológica. Diário Oficial da União, Brasília, DF, seção 1, 16 dez. 2025. Disponível em: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00001002&seqAto=000&valorAno=2025&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542`,
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00001002&seqAto=000&valorAno=2025&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: `Texto integral lido em 28/09/2026 (186 artigos). Vigor na publicação (art. 186); 360 dias para adequação de quem já funcionava (art. 182), ou seja, até 11/12/2026. O Perguntas e Respostas da Anvisa (2ª ed., 20/07/2026, itens 3.2.1 e 3.3.13) diz que o prazo vale também para estrutura física de quem já tinha PBA ou licença. Serviço não regularizado na publicação é estabelecimento novo (art. 13, parágrafo único).
+- art. 11: complexidade A (sem anestesia; consultório individual classe I com ou sem sedação inalatória; classe II com sedação endovenosa; coletivo; sala de imagem) e B (centro cirúrgico odontológico).
+- art. 14: áreas mínimas. Sem anestesia 7,5 m²; classe I 9 m² e 2,20 m; classe II 12 m² e 3,00 m; coletivo, box de 9 m² e 2,50 m com divisória de 2,0 m. Lavatório com torneira sem contato em todos. §§ 1º a 3º: cilindros de até 10 L fixados em carrinho.
+- art. 15: raio X intraoral no consultório com operador a 2 m ou disparador fora da sala; um emissor por sala; nunca em sala com mais de um equipo.
+- arts. 17 a 21: recepção, sanitário e DML; exceção do DML no sanitário para consultório individual classe I fora de clínica; sanitários por porte.
+- art. 24: CCO, sala de 20 m², 3,45 m, pé-direito de 2,7 m.
+- art. 25: três estruturas de processamento (bancada com barreira de 50 cm; sala única de 4,80 m²; duas salas). Errata do P&R 3.3.13: no § 3º, "inciso I" leia-se "inciso II".
+- arts. 48 a 56: proibições (processar DM não regularizado ou de uso único proibido; esterilizar por imersão; aldeídos; imersão de tubete).
+- arts. 73 a 92: embalagem, etiqueta, validade de 6 meses sem validação, proibição de estufa e UV, Bowie & Dick, biológico semanal com integrador tipo 5 ou 6, integrador em todas as cargas, registros por 5 anos.
+- art. 113: conteúdo mínimo da SDBPF (16 incisos).
+- art. 117: NSP obrigatório a partir de 2 consultórios; PSP em todos.
+- art. 120: notificação mensal até o 15º dia útil; óbito e surto em 24 h (Notivisa, módulo Assistência à Saúde, NT GVIMS/GGTES/Anvisa nº 10/2025).
+- arts. 138 a 156: radiação ionizante, remete à RDC 611/2022 e às IN 94 e 95/2021.
+- arts. 157 a 181: laboratório de prótese.
+Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2 (30/08/2026), 51 indicadores.`,
+  },
+  {
+    name: 'RDC Anvisa nº 611/2022',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Requisitos sanitários para a organização e o funcionamento de serviços de radiologia diagnóstica ou intervencionista e controle das exposições médicas, ocupacionais e do público.',
+    abnt: `BRASIL. Ministério da Saúde. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 611, de 9 de março de 2022. Estabelece os requisitos sanitários para a organização e o funcionamento de serviços de radiologia diagnóstica ou intervencionista e regulamenta o controle das exposições médicas, ocupacionais e do público decorrentes do uso de tecnologias radiológicas diagnósticas ou intervencionistas. Diário Oficial da União, Brasília, DF, seção 1, 16 mar. 2022. Disponível em: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000611&seqAto=000&valorAno=2022&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542`,
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000611&seqAto=000&valorAno=2022&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: `Revogou as RDC 330/2019 e 440/2020. Vigor em 01/04/2022. Pontos usados no roteiro de odontologia:
+- art. 8º, parágrafo único: consultório isolado só com intraoral dispensado de aprovar projeto de blindagem.
+- art. 15: capacitação no mínimo anual, com data, horário, carga horária, conteúdo e instrutor.
+- art. 17, III: inventário dos produtos com comprovação de regularização na Anvisa.
+- arts. 28 a 31 e 33: testes de aceitação e constância, instrumentos calibrados, suspensão em nível de restrição.
+- art. 52, parágrafo único: luz vermelha e símbolo na porta dispensados no consultório odontológico isolado só com intraoral. Art. 53: quadro de orientações, inclusive aviso a gestantes.
+- art. 54, parágrafo único: cabine dispensada no intraoral com equipe a 2 m ou levantamento que comprove.
+- art. 61, parágrafo único: 0,25 mm Pb admitido para serviço só intraoral.
+- arts. 63 e 64: levantamento radiométrico a cada 4 anos ou após modificação.
+- art. 65, parágrafo único: dispensa de dosímetro para consultório odontológico isolado com 1 intraoral e até 4 mA.min/semana. Arts. 66 a 69: troca mensal, uso individual.
+- art. 81, III e V; art. 82: exceções do intraoral (segurar o receptor, gerador autorretificado, revelação manual com câmara portátil).`,
+  },
+  {
+    name: 'IN Anvisa nº 94/2021',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Requisitos sanitários para a garantia da qualidade e da segurança em sistemas de radiologia odontológica extraoral (panorâmico, cefalométrico e tomografia de feixe cônico).',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000094&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Revogou a IN 56/2019. Republicada em 06/07/2022. Art. 5º inabilita equipamento sem colimação ou filtração, sem indicação de kV/mA/tempo, mais de um equipamento na mesma sala ou processamento manual. Anexo I: testes anuais (camada semirredutora, kV, tempo, kerma, campo, artefatos, EPI, negatoscópio, monitor, dose e, no tomógrafo, número CT, uniformidade e ruído); levantamento radiométrico quadrienal.',
+  },
+  {
+    name: 'IN Anvisa nº 95/2021',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Requisitos sanitários para a garantia da qualidade e da segurança em sistemas de radiologia odontológica intraoral.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000095&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Revogou a IN 57/2019. Republicada em 06/07/2022. Art. 2º: mínimo 60 kV, filtração, campo até 6 cm, distância foco-pele de 20 cm, cabo disparador de 2 m, fuga até 0,25 mGy/h a 1 m. Art. 4º inabilita: sem colimador ou localizador, localizador cônico, sem filtração, disparo retardado, disparo sem pressão contínua. Art. 5º: imagem de referência a cada 2 anos. Anexo I: testes bienais (dose de referência abaixo de 3,5 mGy no molar superior adulto, entre outros); levantamento radiométrico e fuga do cabeçote quadrienais. O P&R da RDC 1.002 (3.4.7) diz que o cabo de 2 m não conflita com o art. 143 da RDC 1.002.',
+  },
+  {
+    name: 'RDC Anvisa nº 579/2021',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Dispõe sobre a importação, comercialização e doação de dispositivos médicos usados e recondicionados.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000579&seqAto=000&valorAno=2021&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Citada pela RDC 1.002, art. 139, parágrafo único, para a transferência de emissor de radiação. Não é norma de radioproteção. Art. 9º: quem recebe equipamento usado comunica o detentor do registro em até 30 dias, com modelo e número de série.',
+  },
+  {
+    name: 'RDC Anvisa nº 657/2022',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Dispõe sobre a regularização de software como dispositivo médico (Software as a Medical Device, SaMD).',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000657&seqAto=000&valorAno=2022&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+  },
+  {
+    name: 'RDC Anvisa nº 879/2024',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Proíbe a fabricação, importação, comercialização e o uso em serviços de saúde de mercúrio e de pó para liga de amálgama não encapsulados indicados para uso em odontologia.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000879&seqAto=000&valorAno=2024&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'DOU 03/06/2024. Revogou a RDC 173/2017 (art. 4º) mantendo o conteúdo. Art. 2º: advertência de não recomendação para gestantes, lactantes e dentição decídua; o parágrafo único deixa o uso à decisão do cirurgião-dentista. Amálgama encapsulado continua permitido.',
+  },
+  {
+    name: 'RDC Anvisa nº 173/2017',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Proibia o mercúrio e o pó para liga de amálgama não encapsulados em odontologia.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000173&seqAto=000&valorAno=2017&orgao=RDC/DC/ANVISA/MS&cod_modulo=310&cod_menu=8542',
+    status: 'revogada',
+    replacedBy: 'RDC Anvisa nº 879/2024',
+    verifiedAt: V8,
+  },
+  {
+    name: 'ABNT NBR 7256',
+    authority: 'ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS (ABNT)',
+    summary: 'Tratamento de ar em estabelecimentos assistenciais de saúde (EAS): requisitos para projeto e execução das instalações. Versão vigente: NBR 7256:2021 com Emenda 1:2022.',
+    url: 'https://www.abntcatalogo.com.br/pnm.aspx?Q=czJRSjcyNTY=',
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Exigida pela RDC 1.002/2025 para climatização de consultório (art. 14), sala de imagem, classe II, consultório coletivo e CCO (art. 24, VI). O catálogo ABNT lista a NBR 7256:2021 e a Emenda 1:2022. Status lido na listagem do catálogo, não na página de detalhe.',
+  },
+  // Odontologia: leis do exercício profissional e resoluções do CFO (conferidas no Planalto e em sistemas.cfo.org.br)
+  {
+    name: 'Lei Federal nº 5.081/1966',
+    authority: 'BRASIL',
+    summary: 'Regula o exercício da Odontologia.',
+    url: 'https://www.planalto.gov.br/ccivil_03/leis/l5081.htm',
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V8,
+    researchNotes: 'Art. 2º: diploma registrado e inscrição no CRO. Art. 6º: competências do cirurgião-dentista (VI: analgesia e hipnose se comprovadamente habilitado; VII: laboratório de prótese anexo e raios X). Art. 7º: vedações, entre elas propaganda e anúncio de preço. Art. 6º, III com redação da Lei 6.215/1975.',
+  },
+  {
+    name: 'Lei Federal nº 4.324/1964',
+    authority: 'BRASIL',
+    summary: 'Institui o Conselho Federal e os Conselhos Regionais de Odontologia.',
+    url: 'https://www.planalto.gov.br/ccivil_03/leis/1950-1969/l4324.htm',
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V8,
+    researchNotes: 'Art. 13, § 1º (Lei 5.965/1973): clínicas e quaisquer entidades de serviço odontológico se inscrevem no CRO; § 2º: só iniciam atividade depois da inscrição. Art. 14, § 2º: mais de 90 dias em outra jurisdição exige inscrição secundária. Regulamentada pelo Decreto 68.704/1971.',
+  },
+  {
+    name: 'Lei Federal nº 11.889/2008',
+    authority: 'BRASIL',
+    summary: 'Regulamenta o exercício das profissões de Técnico em Saúde Bucal (TSB) e de Auxiliar em Saúde Bucal (ASB).',
+    url: 'https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11889.htm',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Art. 3º: registro no CFO e inscrição no CRO. Supervisão direta do CD em toda atividade clínica (arts. 4º e 8º). Art. 5º: competências do TSB; art. 6º: vedações (atuar autônomo, atender sem supervisão). Art. 9º: competências do ASB, incluindo limpeza, desinfecção e esterilização (IX); art. 10: vedações. Art. 11: o CD que permitir extrapolação responde ao CRO.',
+  },
+  {
+    name: 'Lei Federal nº 6.710/1979',
+    authority: 'BRASIL',
+    summary: 'Dispõe sobre a profissão de Técnico em Prótese Dentária.',
+    url: 'https://www.planalto.gov.br/ccivil_03/leis/l6710.htm',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Art. 2º: habilitação e inscrição no CRO. Art. 4º: vedado ao TPD atender cliente diretamente, manter equipamento de consultório na oficina e fazer propaganda ao público. Regulamentada pelo Decreto 87.689/1982.',
+  },
+  {
+    name: 'Decreto Federal nº 87.689/1982',
+    authority: 'BRASIL',
+    summary: 'Regulamenta a Lei nº 6.710/1979, que dispõe sobre a profissão de Técnico em Prótese Dentária.',
+    url: 'https://www.planalto.gov.br/ccivil_03/decreto/1980-1989/d87689.htm',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Art. 4º: o laboratório de prótese se inscreve no CRO. Art. 5º, parágrafo único: certificado de inscrição em local visível. Art. 11: repete as vedações da lei.',
+  },
+  {
+    name: 'Resolução CFO nº 63/2005',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Aprova a Consolidação das Normas para Procedimentos nos Conselhos de Odontologia.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2005/63/',
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V8,
+    researchNotes: 'Alterada pelas CFO 193/2018, 257/2023, 258/2023 e 283/2026 (revogou os arts. 43 a 45, 47 e 48). Texto consolidado de set/2023 no portal de transparência do CFO. Art. 87: toda entidade prestadora de assistência odontológica se registra no CFO e se inscreve no CRO, filiais inclusive. Art. 89, parágrafo único: consultório que só anuncia especialidade não se inscreve como clínica. Art. 90: RT cirurgião-dentista obrigatório; § 2º: RT de uma única entidade, vedado acumular filial; § 4º: substituição comunicada ao CRO em 30 dias. Arts. 93 a 97: laboratório de prótese; art. 97 dispensa a inscrição do laboratório anexo de uso exclusivo.',
+  },
+  {
+    name: 'Resolução CFO nº 118/2012',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Revoga o Código de Ética Odontológica aprovado pela Resolução CFO nº 42/2003 e aprova outro em substituição.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2012/118/',
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V8,
+    researchNotes: 'Código de Ética Odontológica. A CFO 271/2025 alterou o art. 20, VIII e X, e o art. 44, XIV, e revogou o art. 32, XIII. Art. 17: prontuário legível, atualizado, com registro cronológico, data, hora, nome, assinatura e nº CRO; art. 18, I: negar cópia ao paciente é infração. Não fixa prazo de guarda. Art. 31: a entidade que não indica RT comete infração. Art. 33: deveres do RT. Art. 41, § 3º: laboratório afixa aviso do CRO de que não atende paciente. Art. 43: toda divulgação traz nome e nº CRO, e na PJ também o RT. Art. 44: infrações de publicidade. Art. 45: RT e proprietários respondem solidariamente.',
+  },
+  {
+    name: 'Resolução CFO nº 196/2019',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Autoriza a divulgação de autorretratos (selfies) e de imagens relativas ao diagnóstico e ao resultado final de tratamentos odontológicos.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2019/196/',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'Art. 1º: selfie com TCLE, sem mostrar equipamento, instrumental, material ou tecido. Art. 2º: imagem de diagnóstico e resultado final só pelo CD executor, com TCLE. Art. 3º: proibido vídeo ou imagem do transcurso do procedimento. Art. 4º: nome e nº CRO em toda publicação.',
+  },
+  {
+    name: 'Resolução CFO nº 291/2026',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Revoga as Resoluções CFO nº 277/2025 e nº 281/2025, sobre classificação dos ambientes odontológicos.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2026/291/',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'De 25/06/2026. Revoga a 277 e a 281 "com vistas à elaboração de normatização mais robusta", sem texto substituto. Efeito: a remissão da RDC Anvisa 1.002/2025 (art. 35, § 2º) ao ambiente tipo IIA ficou sem norma de destino.',
+  },
+  {
+    name: 'Resolução CFO nº 277/2025',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Dispunha sobre a classificação dos ambientes de assistência odontológica e os requisitos para sua organização e funcionamento.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2025/277/',
+    segments: ['saude'],
+    status: 'revogada',
+    replacedBy: 'Resolução CFO nº 291/2026',
+    verifiedAt: V8,
+    researchNotes: 'Revogada pela CFO 291/2026 sem substituta; replacedBy aponta o ato revogador. Classificava ambientes em tipos I a VI; a CFO 281/2025, também revogada, dividia o tipo II em II-A (sem equipo obrigatório, vedados aerossol, cirurgia intraoral e lipoaspiração) e II-B (com equipo, foco e sucção). Citada pela RDC Anvisa 1.002/2025, art. 35, § 2º.',
+  },
+  {
+    name: 'Resolução CFO nº 295/2026',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Normatiza a sedação em Odontologia e as habilitações do cirurgião-dentista para realizá-la.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2026/295/',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'De 10/07/2026; revogou a CFO 51/2004 (art. 66). Art. 10: anestesia geral vedada ao CD. Art. 11, § 3º: quem seda em nível moderado ou profundo não opera ao mesmo tempo, salvo N2O/O2 isolado. Art. 14: monitor multiparâmetro, O2, via aérea, aspiração, reversores, suporte de soro e DEA; art. 15: capnografia e via aérea avançada na sedação profunda. Arts. 17, 18 e 20: ASA, TCLE e registro de fármacos e sinais vitais a cada 10 min no prontuário. Art. 25: glicosímetro; art. 27: checagem antes de cada sedação. Habilitação Básica (200 h) veda via endovenosa e ASA IV (art. 35); habilitados pela 51/2004 ficam no óxido nitroso (arts. 36 e 37). Habilitação Avançada: 500 h. O Perguntas e Respostas da Anvisa sobre a RDC 1.002 (2ª ed., 3.2.4) diz que hoje só o anestesiologista tem habilitação legal para sedação endovenosa.',
+  },
+  {
+    name: 'Resolução CFO nº 51/2004',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Baixava normas para habilitação do cirurgião-dentista na aplicação da analgesia relativa ou sedação consciente com óxido nitroso.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2004/51/',
+    segments: ['saude'],
+    status: 'revogada',
+    replacedBy: 'Resolução CFO nº 295/2026',
+    verifiedAt: V8,
+    researchNotes: 'Revogada pela CFO 295/2026, art. 66. O PDF no site do CFO não traz nota de revogação. Habilitações concedidas por ela ficam resguardadas, limitadas ao óxido nitroso.',
+  },
+  {
+    name: 'Resolução CFO nº 286/2026',
+    authority: 'BRASIL. Conselho Federal de Odontologia (CFO)',
+    summary: 'Reconhece e regulamenta a Cirurgia Estética Orofacial (CEOF) como especialidade odontológica.',
+    url: 'https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2026/286/',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V8,
+    researchNotes: 'De 20/03/2026; prazo alterado pela CFO 289/2026. Há o PDL 177/2026 no Senado; suspensão judicial não verificada em 28/09/2026. Art. 4º: procedimentos do especialista. Arts. 6º a 8º: ambiente por porte (tipo I 9 m²; tipo II 12 m² com O2, vácuo, nobreak, RPA e DEA; tipo III sala cirúrgica de 20 m²). Art. 9º: dispensa o equipo sem aerossol, com maca e foco regularizados.',
   },
 ];
