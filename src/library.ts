@@ -50,6 +50,9 @@ const V7 = '2026-09-14';
 /** Curadoria da base federal de odontologia (RDC 1.002/2025 e normas que ela chama). */
 const V8 = '2026-09-28';
 
+/** Curadoria do Código Sanitário de Niterói/RJ para o suplemento de ILPI. */
+const V9 = '2026-10-01';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -795,6 +798,33 @@ Operacional (página de serviço da Prefeitura, consultada em 03/09/2026): a VIS
     verifiedAt: V6,
     researchNotes: `Ficha da norma conferida no SAPL em 03/09/2026. Revogou integralmente a Deliberação nº 2.728/1968, que é a que o art. 17 da Lei nº 5.834/2001 ainda cita — a remissão do código sanitário municipal aponta hoje para esta lei. Alterada pelas Leis Municipais nº 6.978/2012, nº 7.176/2014, nº 7.268/2014, nº 7.528/2017, nº 7.537/2017, nº 7.943/2020 e nº 8.239/2021, e revogada parcialmente pelas Leis nº 6.978/2012, nº 8.239/2021 e nº 8.331/2022.
 Entra na base como norma de moldura: sustenta as exigências municipais de ocupação, letreiro e publicidade, limpeza do passeio e sossego, que a fiscalização usa junto com a sanitária. O texto compilado ainda não foi lido artigo a artigo — antes de citar artigo específico, abrir o texto compilado no SAPL. Não usar esta entrada para ancorar exigência sanitária de mérito, que vem da Lei nº 5.834/2001 e das RDC federais.`,
+  },
+
+  // ── Niterói (RJ) ─────────────────────────────────────────────────────────
+  {
+    name: 'Lei Municipal nº 2.564/2008 - Niterói',
+    authority: 'NITERÓI (RJ)',
+    summary: 'Código sanitário do Município de Niterói: define os estabelecimentos de interesse e de assistência à saúde, a licença sanitária municipal com revalidação anual, o termo de assentimento do profissional autônomo e o regime de infrações, intimações e penalidades.',
+    url: 'https://leis.org/municipais/rj/niteroi/lei/lei-ordinaria/2008/2564/lei-ordinaria-n-2564-2008-dispoe-sobre-o-codigo-sanitario-do-municipio-de-niteroi',
+    abnt: `NITERÓI (RJ). Lei nº 2.564, de 25 de junho de 2008. Dispõe sobre o Código Sanitário do Município de Niterói. A Tribuna, Niterói, 26 jun. 2008. Disponível em: https://leis.org/municipais/rj/niteroi/lei/lei-ordinaria/2008/2564/lei-ordinaria-n-2564-2008-dispoe-sobre-o-codigo-sanitario-do-municipio-de-niteroi`,
+    uf: 'RJ',
+    municipio: 'Niterói',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V9,
+    researchNotes: `Texto integral lido em 01/10/2026 (leis.org; o site pede verificação anti-robô, o texto foi colado pela Ester). Revogou a Lei Municipal nº 1.957/2002. Única alteração localizada: Lei nº 3.490/2020, que só prorrogou o prazo do art. 115 no exercício de 2020, durante a emergência em saúde pública.
+Artigos que importam para roteiro de inspeção:
+- art. 28: assistência à saúde inclui "asilos, casas de repouso ou congêneres". A ILPI entra nos arts. 29 a 37 e 41.
+- art. 29: programação permanente de controle de infecção para internação, cirurgia ambulatorial e procedimento invasivo (incisos I a IV); o § 2º fala em comissão de controle de infecção. Lido preso aos incisos, não alcança ILPI (decisão da Ester, 01/10/2026).
+- arts. 25 e 26: notificar à vigilância em saúde os eventos adversos com medicamentos, correlatos, cosméticos e saneantes (o art. 26 remete por erro ao "artigo 30"; o sentido é o art. 25).
+- art. 35, § 2º: equipamento sem condição de uso fora da área de atendimento ou com aviso inequívoco de proibição de uso.
+- art. 39: licença sanitária ANTES de iniciar; § 1º comunicar alterações de instalações, equipamentos e atividades; § 2º sem licença, interdição cautelar imediata.
+- art. 40: veículo de transporte de pacientes declarado e licenciado individualmente, com revalidação anual.
+- art. 41: responsável técnico presente durante todo o funcionamento (a RDC 502/2021 pede 20h semanais para ILPI). Não virou item; vai como nota na orientação.
+- arts. 88, 89 e 115: licença revalidada anualmente até 30 de abril, precedida de vistoria e taxa; profissional autônomo em espaço de terceiro precisa de Termo de Assentimento Sanitário.
+- art. 58: tabela de infrações; XIII (funcionar sem a presença regular dos profissionais de saúde) é grave; XX (perder o prazo do art. 115) é leve; XXI (descumprir Termo de Intimação no prazo) é grave.
+- arts. 52 e 57: reincidência específica agrava a classificação e dobra a multa.
+- art. 90, § 3º: prazo da notificação até 30 dias. Art. 92: prazo da intimação até 60 dias; art. 93 prorrogação até 90 no total; art. 94 excepcional até 180. Art. 96: 2º termo de intimação de até 30 dias, improrrogável, sob pena de interdição ou cassação.`,
   },
 
   // ── Goiás ────────────────────────────────────────────────────────────────
