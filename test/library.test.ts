@@ -209,6 +209,14 @@ describe('citação ABNT', () => {
     expect(formatAbnt(revogada.name)).toContain('[REVOGADA');
   });
 
+  it('marca a suspensão, não sugere o ato e não usa travessão na marca', () => {
+    const nt = findLegislation('Nota Técnica Anvisa nº 2/2024')!;
+    expect(nt.status).toBe('suspensa');
+    expect(formatAbnt(nt.name)).toContain('[EFEITOS SUSPENSOS.]');
+    expect(isApplicable(nt, { segment: 'estetica' })).toBe(false);
+    for (const e of LEGISLATION_LIBRARY) expect(formatAbnt(e.name), e.name).not.toContain("[REVOGADA —");
+  });
+
   it('devolve a menção crua quando o ato não está na base', () => {
     expect(formatAbnt('Critério técnico de higiene das mãos')).toBe(
       'Critério técnico de higiene das mãos',

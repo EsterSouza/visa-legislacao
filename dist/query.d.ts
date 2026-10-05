@@ -29,7 +29,7 @@ export declare function matchesScope(entry: LegislationEntry, scope?: Legislatio
 /**
  * Decide se uma norma deve ser **sugerida automaticamente** para um
  * estabelecimento, pela UF, pelo município e pelo segmento.
- * - Ato revogado nunca é sugerido; se algum item ainda o citar, o relatório
+ * - Ato revogado ou com efeitos suspensos nunca é sugerido; se algum item ainda o citar, o relatório
  *   imprime a substituta em vez de tratá-lo como vigente.
  * - Federal sem segmento curado não infla a lista: entra pelo item que a cita.
  * - Estadual/municipal precisa casar o território; o segmento, quando curado,

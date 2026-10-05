@@ -13,11 +13,15 @@ export type LegislationSegment = 'estetica' | 'ilpi' | 'alimentos' | 'saude';
  * - `nao_verificado`: o ato entrou na base sem checagem de vigência. Continua
  *   sendo sugerido (é norma real), mas a UI o marca e ele aparece no relatório
  *   de pendências até alguém verificar. Nunca afirme vigência sem `verifiedAt`.
+ * - `suspensa`: o órgão suspendeu os efeitos do ato sem revogá-lo (ex.: a NT
+ *   Anvisa 2/2024, suspensa em 23/09/2026). Sai das sugestões como a revogada,
+ *   mas continua na busca, porque pode voltar a valer.
  */
 export type LegislationStatus =
   | 'vigente'
   | 'vigente_com_alteracoes'
   | 'revogada'
+  | 'suspensa'
   | 'nao_verificado';
 
 export interface LegislationEntry {

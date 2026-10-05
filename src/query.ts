@@ -162,14 +162,14 @@ export function matchesScope(entry: LegislationEntry, scope: LegislationScope = 
 /**
  * Decide se uma norma deve ser **sugerida automaticamente** para um
  * estabelecimento, pela UF, pelo município e pelo segmento.
- * - Ato revogado nunca é sugerido; se algum item ainda o citar, o relatório
+ * - Ato revogado ou com efeitos suspensos nunca é sugerido; se algum item ainda o citar, o relatório
  *   imprime a substituta em vez de tratá-lo como vigente.
  * - Federal sem segmento curado não infla a lista: entra pelo item que a cita.
  * - Estadual/municipal precisa casar o território; o segmento, quando curado,
  *   ainda é respeitado.
  */
 export function isApplicable(entry: LegislationEntry, scope: LegislationScope = {}): boolean {
-  if (entry.status === 'revogada') return false;
+  if (entry.status === 'revogada' || entry.status === 'suspensa') return false;
   if (!matchesScope(entry, scope)) return false;
 
   const segments = entry.segments || [];
@@ -268,8 +268,10 @@ export function formatAbnt(mention: string, entry?: LegislationEntry): string {
 
   const revogada = verbete.status === 'revogada';
   const marcaRevogacao = revogada
-    ? `[REVOGADA${verbete.replacedBy ? ` — substituída por ${verbete.replacedBy}` : ''}.]`
-    : '';
+    ? `[REVOGADA${verbete.replacedBy ? `: substituída por ${verbete.replacedBy}` : ''}.]`
+    : verbete.status === 'suspensa'
+      ? '[EFEITOS SUSPENSOS.]'
+      : '';
 
   if (verbete.abnt) return [verbete.abnt, marcaRevogacao].filter(Boolean).join(' ');
 

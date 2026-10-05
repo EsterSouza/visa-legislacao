@@ -16,6 +16,7 @@ const ROTULO_STATUS: Record<LegislationStatus, string> = {
   vigente: 'vigente',
   vigente_com_alteracoes: 'vigente c/ alterações',
   revogada: 'REVOGADA',
+  suspensa: 'EFEITOS SUSPENSOS',
   nao_verificado: 'vigência não verificada',
 };
 
