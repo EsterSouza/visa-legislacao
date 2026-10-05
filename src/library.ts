@@ -53,6 +53,9 @@ const V8 = '2026-09-28';
 /** Curadoria do Código Sanitário de Niterói/RJ para o suplemento de ILPI. */
 const V9 = '2026-10-01';
 
+/** Curadoria de consultório médico com procedimento sob anestesia local (pré-inspeção em Parauapebas/PA). */
+const V10 = '2026-10-05';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -1645,6 +1648,39 @@ Artigos que importam para roteiro de inspeção:
     verifiedAt: V7,
   },
   {
+    name: 'Resolução CFM nº 1.886/2008',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Normas mínimas para o funcionamento de consultórios médicos e dos complexos cirúrgicos para procedimentos com internação de curta permanência; classifica as unidades em tipos I a IV.',
+    url: 'https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2008/1886_2008.pdf',
+    abnt: `CONSELHO FEDERAL DE MEDICINA. Resolução CFM nº 1.886, de 13 de novembro de 2008. Dispõe sobre as normas mínimas para o funcionamento de consultórios médicos e dos complexos cirúrgicos para procedimentos com internação de curta permanência. Revoga a Resolução CFM nº 1.409/1994. Diário Oficial da União, Brasília, DF, seção 1, p. 271, 21 nov. 2008. Disponível em: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2008/1886_2008.pdf`,
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V10,
+    researchNotes: 'Item 2.1.1: unidade tipo I é o consultório destinado a procedimento "clínico, ou para diagnóstico", sob anestesia local sem sedação, abaixo de 3,5 mg/kg de lidocaína, sem internação. Item 2.1.2: tipo II realiza procedimento clínico-cirúrgico de pequeno e médio porte "em salas cirúrgicas adequadas", com sala de recuperação ou observação e hospital de apoio. Itens 5.1 e 5.2: materiais de cada tipo (o tipo II pede aspirador, conjunto de emergência, fonte de oxigênio, chave para medicamento controlado). O Parecer CRM-SC nº 2/2025 enquadra pequena cirurgia sob anestesia local, como a ninfoplastia, no tipo II, "não necessariamente centro cirúrgico", e devolve à vigilância sanitária o critério físico da sala.',
+  },
+  {
+    name: 'Resolução CFM nº 2.153/2016',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Nova redação do Manual de Vistoria e Fiscalização da Medicina no Brasil (anexo da Resolução CFM nº 2.056/2013), com os roteiros de vistoria por grupo de consultório e serviço.',
+    url: 'https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2016/2153_2016.pdf',
+    abnt: `CONSELHO FEDERAL DE MEDICINA. Resolução CFM nº 2.153, de 30 de setembro de 2016. Altera o anexo I da Resolução CFM nº 2.056/2013 e dispõe sobre a nova redação do manual de vistoria e fiscalização da medicina no Brasil. Diário Oficial da União, Brasília, DF, seção 1, p. 87, 18 set. 2017. Disponível em: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2016/2153_2016.pdf`,
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V10,
+    researchNotes: 'Roteiros de vistoria do anexo atualizados em 12/01/2026 (PDF oficial). Grupo 3 (p. 179): consultórios com procedimentos invasivos de risco de anafilaxia e insuficiência respiratória e cardiovascular, "inclusive aqueles com anestesia local sem sedação"; inclui "os consultórios com procedimentos cirúrgicos". Itens mínimos do grupo 3, além dos grupos 1 e 2: cânula de Guedel, desfibrilador ou DEA, máscara laríngea, medicamentos para parada e anafilaxia (adrenalina, água destilada, dexametasona, diazepam, dipirona, glicose 50%, hidrocortisona, prometazina, soro fisiológico 0,9%) e oxigênio medicinal. Falta de qualquer item é elegível para termo de notificação imediata. Há roteiro próprio de consultório de ginecologia e obstetrícia no grupo 3. Grupo 4 é a referência de estrutura que a Resolução CFM nº 2.471/2026 exige para sedação.',
+  },
+  {
+    name: 'Resolução CFM nº 2.471/2026',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Requisitos mínimos de segurança para a prática da sedação em regime ambulatorial, em todos os seus níveis, para procedimentos diagnósticos e terapêuticos.',
+    url: 'https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2026/2471_2026.pdf',
+    abnt: `CONSELHO FEDERAL DE MEDICINA. Resolução CFM nº 2.471, de 21 de agosto de 2026. Dispõe sobre os requisitos mínimos de segurança para a prática da sedação em regime ambulatorial para procedimentos diagnósticos e terapêuticos e dá outras providências. Diário Oficial da União, Brasília, DF, ed. 176, seção 1, p. 177, 17 set. 2026. Disponível em: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2026/2471_2026.pdf`,
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V10,
+    researchNotes: 'Art. 9º: entra em vigor 180 dias após a publicação (17/09/2026), por volta de 16/03/2027; até lá vale a Resolução CFM nº 1.670/2003, que o art. 8º revoga. Art. 1º: sedação ambulatorial "em todos os seus níveis". Art. 2º: estrutura do grupo 4 da Resolução CFM nº 2.153/2016 mais capnógrafo, videolaringoscópio, aspirador principal e reserva, monitor de ECG contínuo, PNI, bougie, dispositivo de cricotireotomia. Art. 3º: hospital de retaguarda formalmente referenciado. Art. 4º: um médico exclusivo para a sedação e o monitoramento, anestesiologista com RQE; quem faz o procedimento não pode sedar ao mesmo tempo. Consequência prática: consultório sem essa estrutura trabalha só com anestesia local, sem sedativo de nenhuma via.',
+  },
+  {
     name: 'Resolução CFP nº 1/2009',
     authority: 'BRASIL. Conselho Federal de Psicologia (CFP)',
     summary: 'Obrigatoriedade do registro documental decorrente da prestação de serviços psicológicos.',
@@ -2068,6 +2104,17 @@ Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2
 - arts. 63 e 64: levantamento radiométrico a cada 4 anos ou após modificação.
 - art. 65, parágrafo único: dispensa de dosímetro para consultório odontológico isolado com 1 intraoral e até 4 mA.min/semana. Arts. 66 a 69: troca mensal, uso individual.
 - art. 81, III e V; art. 82: exceções do intraoral (segurar o receptor, gerador autorretificado, revelação manual com câmara portátil).`,
+  },
+  {
+    name: 'IN Anvisa nº 66/2020',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Lista as atividades econômicas (CNAE) sujeitas à vigilância sanitária por grau de risco e as que dependem de informação para fins de licenciamento sanitário.',
+    url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/in066_1%C2%B0_09_2020.pdf',
+    abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Instrução Normativa IN nº 66, de 1º de setembro de 2020. Estabelece a lista de Classificação Nacional de Atividades Econômicas (CNAE) de atividades econômicas sujeitas à vigilância sanitária por grau de risco e dependente de informação para fins de licenciamento sanitário. Diário Oficial da União, Brasília, DF, seção 1, edição extra B, 1 set. 2020. Disponível em: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/in066_1%C2%B0_09_2020.pdf`,
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V10,
+    researchNotes: 'Anvisalegis marca como vigente; revogou a IN 16/2017 (art. 8º). Anexo I (risco III): 8630-5/01, atividade médica ambulatorial com recursos para procedimentos cirúrgicos. Anexo III (depende de informação): 8630-5/03, risco III quando a resposta à pergunta 46 ("procedimentos invasivos?") é sim. Art. 7º: a lista só se aplica onde não houver classificação estadual ou municipal própria; conferir a do município antes de citar o grau de risco. Ainda referida pela RDC nº 1.039/2026.',
   },
   {
     name: 'IN Anvisa nº 94/2021',
