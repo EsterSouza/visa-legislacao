@@ -2304,5 +2304,16 @@ Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2
         verifiedAt: V8,
         researchNotes: 'De 20/03/2026; prazo alterado pela CFO 289/2026. Há o PDL 177/2026 no Senado; suspensão judicial não verificada em 28/09/2026. Art. 4º: procedimentos do especialista. Arts. 6º a 8º: ambiente por porte (tipo I 9 m²; tipo II 12 m² com O2, vácuo, nobreak, RPA e DEA; tipo III sala cirúrgica de 20 m²). Art. 9º: dispensa o equipo sem aerossol, com maca e foco regularizados.',
     },
+    // ── Classificações oficiais ─────────────────────────────────────────────
+    {
+        name: 'CNAE-Subclasses 2.3',
+        authority: 'BRASIL. Comissão Nacional de Classificação (CONCLA)',
+        summary: 'Classificação Nacional de Atividades Econômicas, subclasses para uso da Administração Federal, Estadual e Municipal; versão 2.3, divulgada pela Resolução Concla nº 2/2018.',
+        abnt: `BRASIL. Comissão Nacional de Classificação. Resolução Concla nº 2, de 2018. Divulga as inclusões, exclusões e alterações nos códigos de subclasses da Classificação Nacional de Atividades Econômicas - CNAE para uso da Administração Federal, Estadual e Municipal, que passa a denominar-se CNAE-Subclasses versão 2.3. Diário Oficial da União: seção 1, Brasília, DF, n. 222, 20 nov. 2018. Disponível em: https://cnae.ibge.gov.br/concla/resolucoes-atas.html`,
+        url: 'https://cnae.ibge.gov.br/concla/resolucoes-atas.html',
+        status: 'vigente',
+        verifiedAt: V10,
+        researchNotes: 'Versão vigente em 05/10/2026, conferida na página de resoluções da CONCLA: nenhuma resolução de CNAE depois da 2/2018 (as de 2022 e 2025 tratam da composição da comissão). Em uso desde 01/01/2019. A escolha do código é do contador; a vistoria confere a coerência entre o CNAE declarado no CNPJ e a atividade exercida. Consulta de código em cnae.ibge.gov.br.',
+    },
 ];
 //# sourceMappingURL=library.js.map
