@@ -56,6 +56,9 @@ const V9 = '2026-10-01';
 /** Curadoria de consultório médico com procedimento sob anestesia local (pré-inspeção em Parauapebas/PA). */
 const V10 = '2026-10-05';
 
+/** Curadoria do ambulatório de empresa em terminal portuário (pré-inspeção no Rio). */
+const V11 = '2026-10-08';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -537,6 +540,16 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
 
   // ── Normas Regulamentadoras (MTE) ────────────────────────────────────────
   {
+    name: 'Decreto nº 6.481/2008',
+    authority: 'BRASIL. Presidência da República',
+    summary: 'Lista das Piores Formas de Trabalho Infantil (Lista TIP); proíbe o trabalho do menor de 18 anos nas atividades listadas, entre elas o contato com paciente em serviço de saúde.',
+    url: 'https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6481.htm',
+    segments: ['saude', 'estetica', 'ilpi'],
+    status: 'vigente',
+    verifiedAt: V11,
+    researchNotes: 'Decreto de 12/06/2008, em vigor 90 dias após a publicação (art. 6º). Art. 2º: fica proibido o trabalho do menor de 18 anos nas atividades da Lista TIP; § 1º: a proibição pode ser afastada por autorização do Ministério do Trabalho, a partir dos 16 anos (I), ou por parecer técnico circunstanciado de profissional de segurança e saúde no trabalho que ateste a não exposição, depositado no Ministério do Trabalho (II). Art. 3º: trabalho técnico ou administrativo fora das áreas de risco é permitido ao maior de 16 e ao aprendiz maior de 14. Lista TIP, item 65: trabalho em hospitais, serviços de emergência, enfermarias, ambulatórios, postos de vacinação e outros estabelecimentos de saúde, "em que se tenha contato direto com os pacientes ou se manuseie objetos de uso dos pacientes não previamente esterilizados". Alcança jovem aprendiz e estagiário menores de 18 anos.',
+  },
+  {
     name: 'NR-1',
     authority: 'BRASIL. Ministério do Trabalho e Emprego',
     summary: 'Disposições gerais de Segurança e Saúde no Trabalho e gerenciamento de riscos ocupacionais (PGR).',
@@ -591,6 +604,17 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     verifiedAt: V,
     researchNotes:
       'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- 24.5.2: "ser arejados e apresentar boas condições de conservação, limpeza e higiene; e c) possuir assentos e mesas, balcões ou similares suficientes para todos os usuários" (est-048)\n- 24.5.2.1: "a) meios para conservação e aquecimento das refeições; b) local e material para lavagem de utensílios usados na refeição; e c) água potável" (est-048)\n- item 24.4.2: "área mínima do vestiário por trabalhador = 1,5 - (nº de trabalhadores / 1000)" (est-022)\n- item 24.4.5: "devem ser fornecidos armários de compartimentos duplos ou dois armários simples" (est-022)\n- item 24.4.5.1: "que promovam a higienização diária de vestimentas ou que forneçam vestimentas descartáveis" (est-022)\n- item 24.4.6: "não sendo admitidas dimensões inferiores a: 0,40m (quarenta centímetros) de altura, 0,30m (trinta centímetros) de largura e 0,40m (quarenta centímetros) de profundidade" (est-022)\n- item 24.9.1.1: "por meio de bebedouros na proporção de, no mínimo, 1 (um) para cada grupo de 50 (cinquenta) trabalhadores ou fração" (est-098)\n- item 24.9.1.2: "deverá ser fornecida em recipientes portáteis próprios e hermeticamente fechados" (est-098)\n- item 24.9.3: "Deve ser realizada periodicamente análise de potabilidade da água dos reservatórios para verificar sua qualidade" (est-098)\n- item 24.9.4: "A água não-potável para uso no local de trabalho ficará separada, devendo ser afixado aviso de advertência da sua não potabilidade." (est-098)\n- item 24.9.1: "Em todos os locais de trabalho deverá ser fornecida aos trabalhadores água potável, sendo proibido o uso de copos coletivos." (est-098)',
+  },
+  {
+    name: 'NR-29',
+    authority: 'BRASIL. Ministério do Trabalho e Previdência',
+    summary: 'Segurança e Saúde no Trabalho Portuário; serviço de atendimento de urgência na instalação portuária e Plano de Controle de Emergência (PCE).',
+    url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-no-671-de-30-de-marco-de-2022-nova-nr-29.pdf',
+    abnt: `BRASIL. Ministério do Trabalho e Previdência. Portaria nº 671, de 30 de março de 2022. Aprova a nova redação da Norma Regulamentadora nº 29 (NR-29): Segurança e Saúde no Trabalho Portuário. Diário Oficial da União, Brasília, DF, seção 1, 1 abr. 2022. Disponível em: https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-no-671-de-30-de-marco-de-2022-nova-nr-29.pdf`,
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V11,
+    researchNotes: 'Redação da Portaria MTP nº 671/2022, em vigor desde 01/09/2022 (art. 4º); revogou a Portaria SSST nº 53/1997 e as alterações de 2006, 2013 e 2014 (art. 3º). Item 29.2.1.1: alcança também os terminais retroportuários. Item 29.26.1: toda instalação portuária dispõe de serviço de atendimento de urgência próprio ou terceirizado, mantido pelo OGMO, operadores portuários e tomadores de serviço, com equipamento e pessoal habilitado para os primeiros socorros e a rápida e adequada remoção do acidentado. Item 29.26.2: nas operações em berço de atracação, presença obrigatória no local da operação de um integrante do serviço de urgência, identificado. Item 29.26.3: cestos suspensos e macas, ou recurso equivalente previsto no PCE, perto dos locais de trabalho a bordo, só para resgate. Item 29.28.1: o PCE cobre, entre outras, queda de pessoa na água (e) e socorro e resgate de acidentados (f); 29.28.3, a: procedimentos de emergência, primeiros socorros e atendimento médico; 29.28.6: no mínimo 3 simulados por ano de cada tipo de situação, em todos os turnos.',
   },
   {
     name: 'NR-32',
@@ -1721,6 +1745,16 @@ Artigos que importam para roteiro de inspeção:
     researchNotes: 'Art. 6º com redação dada pela Lei nº 13.270/2016; vários dispositivos vetados.',
   },
   {
+    name: 'RDC Anvisa nº 939/2024',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Autorização de Funcionamento (AFE) e Autorização Especial de empresas em portos, aeroportos, fronteiras e recintos alfandegados; lista as atividades dispensadas de AFE.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000939&seqAto=000&valorAno=2024&orgao=RDC/DC/ANVISA/MS&cod_menu=1696&cod_modulo=134&pesquisa=true',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V11,
+    researchNotes: 'RDC de 14/11/2024, em vigor 20 dias após a publicação (art. 31); vigente no Anvisa Legis em 08/10/2026. Art. 26, XI: dispensa de AFE o "atendimento médico em terminais aquaviários, portos organizados, aeroportos e postos de fronteiras". § 2º: a dispensa não afasta a legislação sanitária nem a fiscalização. § 3º: o serviço presta informação e entrega documento no prazo fixado pela autoridade. Na prática: ambulatório em terminal portuário é licenciado pela vigilância municipal e pode ser fiscalizado também pela Anvisa de portos. A RDC 72/2009 não trata de ambulatório.',
+  },
+  {
     name: 'RDC Anvisa nº 197/2017',
     authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
     summary: 'Requisitos mínimos para o funcionamento dos serviços de vacinação humana.',
@@ -1809,6 +1843,26 @@ Artigos que importam para roteiro de inspeção:
     researchNotes: 'Roteiros de vistoria do anexo atualizados em 12/01/2026 (PDF oficial). Grupo 3 (p. 179): consultórios com procedimentos invasivos de risco de anafilaxia e insuficiência respiratória e cardiovascular, "inclusive aqueles com anestesia local sem sedação"; inclui "os consultórios com procedimentos cirúrgicos". Itens mínimos do grupo 3, além dos grupos 1 e 2: cânula de Guedel, desfibrilador ou DEA, máscara laríngea, medicamentos para parada e anafilaxia (adrenalina, água destilada, dexametasona, diazepam, dipirona, glicose 50%, hidrocortisona, prometazina, soro fisiológico 0,9%) e oxigênio medicinal. Falta de qualquer item é elegível para termo de notificação imediata. Há roteiro próprio de consultório de ginecologia e obstetrícia no grupo 3. Grupo 4 é a referência de estrutura que a Resolução CFM nº 2.471/2026 exige para sedação.' +
       '\n\n' +
       'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- Grupo 3: "Consultórios ou serviços com procedimentos invasivos de riscos de anafilaxias, insuficiência respiratória e cardiovascular" (est-056)\n- Grupo 3: "Os equipamentos/medicamentos estão acessíveis em até quatro minutos" (est-057, est-124)\n- Grupo 3: "Ventilador manual do tipo balão auto inflável com reservatório e máscara" (est-057)\n- Grupo 3: "inclusive aqueles com anestesia local sem sedação." (est-124)\n- Grupo 3: "Cânulas naso ou orofaríngeas (no mínimo, Guedel)" (est-124)\n- Grupo 3, oxigênio: "Fixo à parede ou em suporte apropriado para tal" (est-124)',
+  },
+  {
+    name: 'Resolução CFM nº 2.323/2022',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Normas específicas para médicos que atendem o trabalhador; veda resultado de exame no ASO e exame ocupacional só por telemedicina.',
+    url: 'https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2022/2323_2022.pdf',
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V11,
+    researchNotes: 'DOU de 17/10/2022, seção 1, p. 318. O PDF oficial anota dispositivos suspensos por decisão judicial: art. 10, art. 12 e § 2º do art. 15. Art. 6º: é vedado ao médico que atende o trabalhador I, fazer exame ocupacional por telemedicina sem o exame presencial; II, assinar ASO em branco; IV, deixar de registrar no prontuário os atos médicos; V, "Informar resultados dos exames no ASO". Citada pelo roteiro de vistoria de Serviço de Medicina do Trabalho do CFM (Resolução CFM nº 2.153/2016) junto com a NR-7, item 7.5.19.1, g.',
+  },
+  {
+    name: 'Resolução CFM nº 2.376/2024',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Serviços médicos ambulatoriais de atendimento ao trabalhador e médicos do trabalho responsáveis pelo PCMSO são obrigados a ter registro no CRM da jurisdição.',
+    url: 'https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2024/2376_2024.pdf',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: V11,
+    researchNotes: 'DOU de 29/01/2024, ed. 20, seção 1, p. 210; em vigor na publicação (art. 4º). Art. 1º: "Os serviços médicos ambulatoriais de atendimento ao trabalhador dentro das organizações empresariais são unidades de saúde peculiares, obrigando-se a ter registro no CRM da sua jurisdição indicando o respectivo diretor técnico-médico." Art. 2º: o PCMSO "terá um médico do trabalho como seu responsável". Art. 3º: o médico do trabalho registra-se no CRM do estado como responsável por cada PCMSO; parágrafo único: ao deixar de ser, comunica o CRM em até 30 dias.',
   },
   {
     name: 'Resolução CFM nº 2.336/2023',
