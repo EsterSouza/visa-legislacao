@@ -8,6 +8,18 @@ segmento de estabelecimento e situação de vigência. Nasceu da união das duas
 que existiam em paralelo: 87 atos do InspecVISA (com curadoria de vigência) e 47 do
 PastaVISA (com referência ABNT NBR 6023 completa), 16 deles em comum.
 
+## Onde está a letra da lei
+
+Este pacote é o **catálogo**: nome, autoria, situação de vigência, link oficial e
+citação ABNT. O **texto integral** das normas, baixado da fonte oficial e salvo em
+texto puro para consulta, fica no repositório do InspecVISA:
+
+    C:\Saas\App\docs\referencias\textos\
+
+Um `.txt` por ato, com o índice em `README.md` na mesma pasta. O `researchNotes` de
+cada verbete diz qual artigo sustenta qual item de roteiro; o artigo, na íntegra,
+está lá.
+
 ## Uso
 
 ```ts

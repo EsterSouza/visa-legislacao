@@ -45,6 +45,8 @@ const V9 = '2026-10-01';
 const V10 = '2026-10-05';
 /** Curadoria do ambulatório de empresa em terminal portuário (pré-inspeção no Rio). */
 const V11 = '2026-10-08';
+/** Revisão artigo por artigo do roteiro de saúde (detergente enzimático e protocolos de segurança do paciente). */
+const V12 = '2026-10-09';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -151,6 +153,47 @@ export const LEGISLATION_LIBRARY = [
         status: 'vigente_com_alteracoes',
         verifiedAt: V3,
         researchNotes: 'Texto oficial conferido no AnvisaLegis (datalegis) em 22/08/2026: não há nota de revogação. Consta nota de alteração — o prazo de implantação do art. 17 foi prorrogado por 180 dias pela RE nº 2.305, de 31/07/2007 (prazo já vencido, a norma segue exigível). Art. 19: entra em vigor na data da publicação (DOU de 14/08/2006). Forma com a RDC Anvisa nº 156/2006 e a RE Anvisa nº 2.605/2006 o trio do reprocessamento: a 156 obriga a rotulagem e o registro, a 2.605 lista o que é proibido reprocessar e esta fixa o protocolo do que pode.',
+    },
+    {
+        name: 'RDC Anvisa nº 703/2022',
+        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+        summary: 'Detergentes enzimáticos de uso restrito em estabelecimentos de assistência à saúde, com indicação para limpeza de dispositivos médicos: definições, requisitos técnicos e de rotulagem para o registro. Revogou a RDC Anvisa nº 55/2012.',
+        url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000703&seqAto=000&valorAno=2022&orgao=RDC%2FDC%2FANVISA%2FMS&codTipo=&desItem=&desItemFim=&cod_modulo=134&cod_menu=1696',
+        segments: ['saude', 'estetica'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V12,
+        researchNotes: 'Texto oficial conferido no AnvisaLegis (datalegis) em 09/10/2026, situação "Vigente com Alterações": o art. 5º (laboratórios de ensaio com reconhecimento BPL do Inmetro) tem redação dada pela RDC Anvisa nº 1.039, de 26/08/2026. Art. 26 revoga a RDC nº 55/2012; art. 27: vigência em 1º/06/2022.\n- art. 4º: "Os produtos abrangidos por esta Resolução são considerados de risco 2 e estão sujeitos a registro." (sau-049, est-037)\n- art. 6º: uso restrito à aplicação ou manipulação profissional.\n- art. 21, VII: rótulo com "PRODUTO EXCLUSIVAMENTE DE USO PROFISSIONAL - PROIBIDA A VENDA DIRETA AO PUBLICO".\n- art. 22, I, b: o rótulo traz a diluição de uso.',
+    },
+    {
+        name: 'RDC Anvisa nº 55/2012',
+        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+        summary: 'Detergentes enzimáticos de uso restrito em estabelecimentos de assistência à saúde com indicação para limpeza de dispositivos médicos. Revogada.',
+        url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2012/rdc0055_14_11_2012.html',
+        segments: ['saude', 'estetica'],
+        status: 'revogada',
+        replacedBy: 'RDC Anvisa nº 703/2022',
+        verifiedAt: V12,
+        researchNotes: 'Revogada pelo art. 26 da RDC Anvisa nº 703/2022 (vigência em 1º/06/2022), conferido no texto oficial do AnvisaLegis em 09/10/2026. A página da BVS não traz a nota de revogação; a página de rotulagem de saneantes da Anvisa ainda a lista. Os roteiros citavam o art. 5º (registro obrigatório): a exigência equivalente hoje é o art. 4º da RDC 703/2022.',
+    },
+    {
+        name: 'Portaria GM/MS nº 2.095/2013',
+        authority: 'BRASIL. Ministério da Saúde',
+        summary: 'Aprova os Protocolos Básicos de Segurança do Paciente: identificação do paciente, prevenção de quedas e segurança na prescrição, uso e administração de medicamentos.',
+        url: 'https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2095_24_09_2013.html',
+        segments: ['saude', 'estetica'],
+        status: 'vigente',
+        verifiedAt: V12,
+        researchNotes: 'Vigência apurada em 09/10/2026: a página da BVS não traz nota de revogação; a Portaria de Consolidação GM/MS nº 5/2017 consolida a Portaria 529/2013 (PNSP, arts. 157 a 166) e não menciona esta portaria; a Portaria GM/MS nº 11.527/2026 (PNQSP, DOU de 10/06/2026) não tem cláusula revogatória, mantém o PNSP (art. 34) e integra as normas existentes à política (art. 36). Texto do protocolo de identificação em docs/referencias/textos/protocolo-identificacao-paciente-2013.txt (InspecVISA).\n- art. 1º: aprova os protocolos básicos (sau-074 sai do recorte da RDC 36 nas condicionais por isto).\n- Protocolo de Identificação, itens 4.1, 5.1, 5.1.1, 5.2.8 e 5.2.11: dois identificadores, pulseira, conferência antes de cada procedimento (sau-074).',
+    },
+    {
+        name: 'Portaria GM/MS nº 1.377/2013',
+        authority: 'BRASIL. Ministério da Saúde',
+        summary: 'Aprova os Protocolos de Segurança do Paciente de cirurgia segura, prática de higiene das mãos e úlcera por pressão.',
+        url: 'https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt1377_09_07_2013.html',
+        segments: ['saude', 'estetica'],
+        status: 'vigente',
+        verifiedAt: V12,
+        researchNotes: 'Vigência apurada em 09/10/2026 pelo mesmo caminho da Portaria 2.095/2013: sem nota de revogação na BVS, não consolidada na Portaria de Consolidação GM/MS nº 5/2017, e a Portaria GM/MS nº 11.527/2026 (PNQSP) não revoga (art. 36). O anexo com os protocolos está em docs/referencias/textos/portaria-gm-2095-2013-protocolos.txt e portaria-gm-1377-2013.txt (InspecVISA; o primeiro arquivo, apesar do nome, traz o anexo desta portaria).\n- Protocolo para Cirurgia Segura, item 3: abrangência (procedimento com incisão no corpo humano ou inserção de instrumento ou material, endoscópio incluso) (sau-075).\n- item 6.1.1: lista de verificação assinada (sau-076).',
     },
     {
         name: 'RDC Anvisa nº 56/2009',
