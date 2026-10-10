@@ -774,13 +774,14 @@ export const LEGISLATION_LIBRARY = [
     {
         name: 'Lei Municipal RJ nº 8.618/2024',
         authority: 'RIO DE JANEIRO (Município)',
-        summary: 'Obriga sala ou local de descanso para a equipe de enfermagem em estabelecimentos de saúde do município do Rio de Janeiro.',
+        summary: 'Obriga as instituições de saúde, públicas e privadas, do Município do Rio a oferecer à enfermagem local de repouso durante todo o horário de trabalho: exclusivo, arejado, com mobiliário adequado, conforto térmico e acústico, sanitário, área compatível e inviolável; aplica à enfermagem a regra de descanso dos médicos.',
         url: 'https://www.cofen.gov.br/prefeitura-do-rio-de-janeiro-sanciona-lei-de-descanso-digno-para-a-categoria/',
         uf: 'RJ',
         municipio: 'Rio de Janeiro',
         segments: ['ilpi', 'saude'],
         status: 'vigente',
         verifiedAt: V,
+        researchNotes: 'Origem: PL 2.293/2023 (Paulo Pinheiro), aprovado em 25/09/2024; a tramitação da Câmara registra "Comunicar Sanção" e "Resultado Final: Lei 8.618" em 22/10/2024 (aplicnt.camara.rj.gov.br, PL 2293/2023). Texto lido em 10/10/2026 é o do projeto: art. 1º, I a VII (VII: inviolável, salvo vistoria ou fiscalização com autorização da direção); art. 2º (regra de descanso dos médicos); art. 3º (vigência 60 dias após a publicação). Publicação no DOM não localizada: conferir emenda ou veto parcial antes de citar inciso.',
     },
     // ── Rio de Janeiro — estado ──────────────────────────────────────────────
     {
@@ -836,6 +837,16 @@ export const LEGISLATION_LIBRARY = [
         status: 'vigente',
         verifiedAt: '2026-10-03',
         researchNotes: 'Lei de 19/12/2019, em vigor na publicação; prazo de 12 meses para adaptar (art. 2º). Casa de festas infantil entra por similaridade com "casa de espetáculos com programação infantil" (art. 1º).',
+    },
+    {
+        name: 'Lei Estadual RJ nº 6.296/2012',
+        authority: 'RIO DE JANEIRO (Estado). Assembleia Legislativa do Estado do Rio de Janeiro',
+        summary: 'Saúde ocupacional dos profissionais de enfermagem em todo serviço de saúde, público ou privado, do Estado do Rio: enfermeiro especialista em saúde ocupacional designado, exames por risco, plantão de no máximo 24 horas e, no Anexo (D.1.1), escalas com pausas em ambiente específico para repouso, alimentação e higiene.',
+        url: 'https://www.legisweb.com.br/legislacao/?id=243933',
+        uf: 'RJ',
+        segments: ['saude', 'ilpi'],
+        status: 'nao_verificado',
+        researchNotes: 'Lei de 19/07/2012, DOE-RJ de 03/08/2012, PL 839/2011 (Enfermeira Rejane). Texto integral lido em 10/10/2026 na transcrição do CEREST Rio (cerestrio.wordpress.com, 25/08/2012); a página da Alerj não abriu. Lei autorizativa (art. 1º: "Fica autorizado o Poder Executivo a obrigar"), aplicada pelo TRT-1 em 2015 para obrigar hospitais a criar sala de descanso. Revogação não encontrada, mas não conferida na Alerj.',
     },
     {
         name: 'Lei Ordinária RJ nº 8.049/2018',
