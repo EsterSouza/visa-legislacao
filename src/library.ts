@@ -1945,6 +1945,16 @@ Artigos que importam para roteiro de inspeção:
     researchNotes: 'DOU de 29/01/2024, ed. 20, seção 1, p. 210; em vigor na publicação (art. 4º). Art. 1º: "Os serviços médicos ambulatoriais de atendimento ao trabalhador dentro das organizações empresariais são unidades de saúde peculiares, obrigando-se a ter registro no CRM da sua jurisdição indicando o respectivo diretor técnico-médico." Art. 2º: o PCMSO "terá um médico do trabalho como seu responsável". Art. 3º: o médico do trabalho registra-se no CRM do estado como responsável por cada PCMSO; parágrafo único: ao deixar de ser, comunica o CRM em até 30 dias.',
   },
   {
+    name: 'Resolução CFM nº 1.638/2002',
+    authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+    summary: 'Define prontuário médico e torna obrigatória a Comissão de Revisão de Prontuários onde se presta assistência médica.',
+    url: 'https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2023/05/RESOLUCAOCFMN1.638DE10DEJULHODE2002.pdf',
+    segments: ['saude'],
+    status: 'vigente',
+    verifiedAt: '2026-10-11',
+    researchNotes: 'Texto lido na cópia hospedada pelo IVISA-RIO (a do portal do CFM abre com senha). Art. 3º: "Tornar obrigatória a criação das Comissões de Revisão de Prontuários nos estabelecimentos e/ou instituições de saúde onde se presta assistência médica." Art. 4º: criada "por designação da Direção do estabelecimento, por eleição do Corpo Clínico ou por qualquer outro método que a instituição julgar adequado, devendo ser coordenada por um médico". Art. 5º: itens obrigatórios do prontuário (identificação completa, anamnese, exame físico, exames, hipóteses, diagnóstico, tratamento, evolução com data e hora, legibilidade, assinatura e CRM) e a responsabilidade pelo preenchimento e guarda. Art. 6º: relação com a Comissão de Ética Médica. Não fixa número de membros nem periodicidade. O Manual de Vistoria do CFM (Resolução CFM nº 2.153/2016) a trata como obrigatória "em estabelecimentos e/ou instituições de saúde onde há assistência médica". A Resolução CFM nº 1.639/2002, publicada junto, foi revogada pela 1.821/2007; a 1.638 não.',
+  },
+  {
     name: 'Resolução CFM nº 2.336/2023',
     authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
     summary: 'Dispõe sobre publicidade e propaganda médicas; veda prometer resultado (art. 11, XII).',
