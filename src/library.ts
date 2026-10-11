@@ -62,6 +62,9 @@ const V11 = '2026-10-08';
 /** Revisão artigo por artigo do roteiro de saúde (detergente enzimático e protocolos de segurança do paciente). */
 const V12 = '2026-10-09';
 
+/** Ambulatório de empresa em porto, segunda rodada: SESMT (NR-4) e prazo de resíduo no abrigo (Rio). */
+const V13 = '2026-10-11';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -609,6 +612,17 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
       'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- item 1.5.4.4.6: "A avaliação de riscos deve constituir um processo contínuo e ser revista a cada dois anos" (est-018)\n- item 1.5.5.2.2: "Para as medidas de prevenção deve ser definido cronograma com responsáveis, formas de acompanhamento e aferição de resultados." (est-018)\n- item 1.5.7.1: "O PGR deve conter, no mínimo, os seguintes documentos: a) inventário de riscos; e b) plano de ação." (est-018)\n- item 1.5.7.3.3.1: "O histórico das atualizações deve ser mantido por um período mínimo de 20 (vinte) anos" (est-018)\n- item 1.8.4: "que no levantamento preliminar de perigos não identificarem exposições ocupacionais a agentes físicos, químicos e biológicos" (est-018)\n- item 1.8.6: "não identificarem exposições ocupacionais a agentes físicos, químicos, biológicos e riscos relacionados a fatores ergonômicos, ficam dispensados" (est-017)',
   },
   {
+    name: 'NR-4',
+    authority: 'BRASIL. Ministério do Trabalho e Previdência',
+    summary: 'Serviços Especializados em Segurança e em Medicina do Trabalho (SESMT): composição e dimensionamento por número de empregados do estabelecimento e grau de risco da atividade (Anexos I e II).',
+    url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-mtp-no-2-318-de-3-de-agosto-de-2022-nova-nr-04.pdf',
+    abnt: `BRASIL. Ministério do Trabalho e Previdência. Portaria MTP nº 2.318, de 3 de agosto de 2022. Aprova a nova redação da Norma Regulamentadora nº 4 (NR-04): Serviços Especializados em Segurança e em Medicina do Trabalho (SESMT). Diário Oficial da União, Brasília, DF, seção 1, 12 ago. 2022. Disponível em: https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-mtp-no-2-318-de-3-de-agosto-de-2022-nova-nr-04.pdf`,
+    segments: ['saude'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V13,
+    researchNotes: 'Redação da Portaria MTP nº 2.318/2022 (DOU 12/08/2022), alterada pela Portaria MTP nº 4.219/2022; a consolidada do gov.br (NR04atualizada2023.pdf) tem o Anexo II igual ao do DOU, conferido célula a célula em 11/10/2026. Item 4.3.2: SESMT com médico do trabalho, engenheiro e técnico de segurança, enfermeiro do trabalho e auxiliar/técnico de enfermagem do trabalho, pelo Anexo II. 4.3.5: técnico de segurança e auxiliar/técnico de enfermagem com 44 horas semanais. 4.3.7: engenheiro, médico e enfermeiro com no mínimo 15 horas (tempo parcial) ou 30 horas (integral). 4.4.3: SESMT regionalizado soma os estabelecimentos atendidos. 4.5.1: dimensionamento pelo número de empregados e pelo maior grau de risco entre a atividade principal do CNPJ e a preponderante no estabelecimento. Anexo II, grau 3 (ex.: CNAE 5231-1/02, operador portuário): auxiliar/técnico de enfermagem do trabalho a partir de 1.001 empregados (1*** de 1.001 a 2.000); enfermeiro do trabalho a partir de 2.001; médico do trabalho a partir de 501 (1* em tempo parcial até 1.000). Nota (***): o empregador pode trocar o auxiliar/técnico por um enfermeiro do trabalho em tempo parcial. Observação A: hospitais, ambulatórios, clínicas e similares com mais de 500 trabalhadores contratam enfermeiro do trabalho em tempo integral. Observação B: técnico de enfermagem do SESMT em ambulatório precisa de supervisão de enfermeiro. Em porto, os avulsos do OGMO só entram na conta de engenheiro e técnico de segurança (NR-29, 29.6.1.1).',
+  },
+  {
     name: 'NR-6',
     authority: 'BRASIL. Ministério do Trabalho e Emprego',
     summary: 'Equipamento de Proteção Individual (EPI); obriga o fornecimento gratuito e o registro de entrega, com CA válido.',
@@ -774,6 +788,19 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     verifiedAt: V4,
   },
   {
+    name: 'Norma Técnica Comlurb nº 42.60.01/2003',
+    authority: 'RIO DE JANEIRO (Município). Companhia Municipal de Limpeza Urbana (COMLURB)',
+    summary: 'Acondicionamento, coleta e destinação final de resíduos de serviços de saúde no Município do Rio: recipientes, ida diária ao abrigo externo, abrigo interno e externo e frequência semanal de coleta do lixo infectante por nível de risco.',
+    url: 'https://comlurb.prefeitura.rio/wp-content/uploads/sites/74/2023/04/NormaComlurb42-60-01.pdf',
+    abnt: `RIO DE JANEIRO (Município). Companhia Municipal de Limpeza Urbana. Norma Técnica Comlurb nº 42.60.01, de 2 de maio de 2003. Acondicionamento, coleta e destinação final de resíduos de serviços de saúde. Rio de Janeiro: COMLURB, 2003. Disponível em: https://comlurb.prefeitura.rio/wp-content/uploads/sites/74/2023/04/NormaComlurb42-60-01.pdf`,
+    uf: 'RJ',
+    municipio: 'Rio de Janeiro',
+    segments: ['saude', 'estetica', 'ilpi'],
+    status: 'vigente',
+    verifiedAt: V13,
+    researchNotes: 'Norma de 02/05/2003, ainda publicada no site da Comlurb em 11/10/2026; cita atos já revogados (CONAMA 283/2001, RDC 33/2003), e a Portaria Comlurb nº 2/2026, que trata do credenciamento de coletoras, não a revoga. Item 6.01, c: recipiente da sala com capacidade para pelo menos 4 horas de geração. 6.01, i: levar o resíduo ao abrigo externo diariamente ou ao fim de cada jornada, no mínimo. 6.01, l e m: abrigo interno quando volume e distância justificarem, sem saco direto no piso. 6.01, o: cada unidade tem ao menos um abrigo externo; isentas as de nível de risco 1. 6.01, p: abrigo externo perto da testada, com acesso ao coletor, exclusivo para os contêineres. 6.03: limpar e desinfetar recipientes e abrigos logo após cada coleta (hipoclorito a 2%). 7.01: coleta do infectante ao menos 1 vez por semana no nível 1 (consultórios, clínicas de estética), 2 vezes no nível 2 (unidade de atendimento geral, hospital até 20 leitos) e no 3, 3 vezes no 4 e 5 vezes no 5 (hospital acima de 20 leitos). A RDC 222/2018 e a CONAMA 358/2005 não fixam prazo de permanência em abrigo; no Rio, o prazo vem desta norma.',
+  },
+  {
     name: 'Decreto Rio nº 41.827/2016',
     authority: 'RIO DE JANEIRO (Município)',
     summary: 'Simplifica e consolida os procedimentos de licenciamento de estabelecimentos (alvará de licença) no Município do Rio de Janeiro; exige aprovação prévia do CBMERJ para casa de festas e afixação do alvará em local visível.',
@@ -910,6 +937,18 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     segments: ['saude', 'ilpi'],
     status: 'nao_verificado',
     researchNotes: 'Lei de 19/07/2012, DOE-RJ de 03/08/2012, PL 839/2011 (Enfermeira Rejane). Texto integral lido em 10/10/2026 na transcrição do CEREST Rio (cerestrio.wordpress.com, 25/08/2012); a página da Alerj não abriu. Lei autorizativa (art. 1º: "Fica autorizado o Poder Executivo a obrigar"), aplicada pelo TRT-1 em 2015 para obrigar hospitais a criar sala de descanso. Revogação não encontrada, mas não conferida na Alerj.',
+  },
+  {
+    name: 'Lei Estadual RJ nº 6.635/2013',
+    authority: 'RIO DE JANEIRO (Estado). Assembleia Legislativa do Estado do Rio de Janeiro',
+    summary: 'Gerenciamento e disposição final dos resíduos sólidos de serviços de saúde no Estado do Rio de Janeiro: responsabilidade do gerador, cadastro, acondicionamento pelas normas ABNT e tratamento dos grupos A e E antes da disposição final.',
+    url: 'http://alerjln1.alerj.rj.gov.br/contlei.nsf/c8aa0900025feef6032564ec0060dfff/722ccdd4891af73383257c460052ef38?OpenDocument',
+    abnt: `RIO DE JANEIRO (Estado). Lei nº 6.635, de 18 de dezembro de 2013. Dispõe sobre o gerenciamento dos resíduos sólidos hospitalares e dos serviços de saúde no Estado do Rio de Janeiro e dá outras providências. Rio de Janeiro: Assembleia Legislativa do Estado do Rio de Janeiro, 2013. Disponível em: http://alerjln1.alerj.rj.gov.br/contlei.nsf/c8aa0900025feef6032564ec0060dfff/722ccdd4891af73383257c460052ef38?OpenDocument`,
+    uf: 'RJ',
+    segments: ['saude', 'estetica', 'ilpi'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V13,
+    researchNotes: 'Texto em vigor na base da ALERJ, lido em 11/10/2026, com a redação da Lei nº 10.601/2024 (que mudou a ementa e o art. 8º). Art. 4º: armazenar pelas NBR 9190 e 12.809. Art. 8º (redação de 2024): grupos A e E não podem ser reciclados nem reaproveitados; desinfecção ou tratamento licenciado antes da disposição final. § 2º: refrigeração obrigatória no depósito da unidade de tratamento para A2 e A3 (não é regra do gerador). Revogou a Lei nº 3.316/1999 (art. 12). Não fixa prazo de armazenamento nem frequência de coleta. Data do DOE não conferida no diário; a ALERJ dá só a data da lei.',
   },
   {
     name: 'Lei Ordinária RJ nº 8.049/2018',
