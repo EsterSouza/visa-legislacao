@@ -1500,14 +1500,16 @@ Entra na base como norma de moldura: sustenta as exigências municipais de ocupa
     name: 'Lei Municipal nº 2.564/2008 - Niterói',
     authority: 'NITERÓI (RJ)',
     summary: 'Código sanitário do Município de Niterói: define os estabelecimentos de interesse e de assistência à saúde, a licença sanitária municipal com revalidação anual, o termo de assentimento do profissional autônomo e o regime de infrações, intimações e penalidades.',
-    url: 'https://leis.org/municipais/rj/niteroi/lei/lei-ordinaria/2008/2564/lei-ordinaria-n-2564-2008-dispoe-sobre-o-codigo-sanitario-do-municipio-de-niteroi',
-    abnt: `NITERÓI (RJ). Lei nº 2.564, de 25 de junho de 2008. Dispõe sobre o Código Sanitário do Município de Niterói. A Tribuna, Niterói, 26 jun. 2008. Disponível em: https://leis.org/municipais/rj/niteroi/lei/lei-ordinaria/2008/2564/lei-ordinaria-n-2564-2008-dispoe-sobre-o-codigo-sanitario-do-municipio-de-niteroi`,
+    url: 'https://leis.org/pjirl',
+    abnt: `NITERÓI (RJ). Lei nº 2.564, de 25 de junho de 2008. Dispõe sobre o Código Sanitário do Município de Niterói. Niterói: Câmara Municipal, 2008. Disponível em: https://leis.org/pjirl.`,
+    destaque: 'Lei nº 2.564, de 25 de junho de 2008',
     uf: 'RJ',
     municipio: 'Niterói',
     segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
     status: 'vigente_com_alteracoes',
-    verifiedAt: V9,
-    researchNotes: `Texto integral lido em 01/10/2026 (leis.org; o site pede verificação anti-robô, o texto foi colado pela Ester). Revogou a Lei Municipal nº 1.957/2002. Única alteração localizada: Lei nº 3.490/2020, que só prorrogou o prazo do art. 115 no exercício de 2020, durante a emergência em saúde pública.
+    verifiedAt: V15,
+    researchNotes: `Revisão das referências dos planejamentos, item N203 (13/10/2026): a Ester confirmou o Código Sanitário de 2008 pelo link https://leis.org/pjirl. Data: 25 de junho de 2008 é a do ato; 26/06/2008 é a da publicação em A Tribuna (por isso o Código de Posturas, Lei nº 2.624/2008, a cita como de 26/06).
+Texto integral lido em 01/10/2026 (leis.org; o site pede verificação anti-robô, o texto foi colado pela Ester). Revogou a Lei Municipal nº 1.957/2002. Única alteração localizada: Lei nº 3.490/2020, que só prorrogou o prazo do art. 115 no exercício de 2020, durante a emergência em saúde pública.
 Artigos que importam para roteiro de inspeção:
 - art. 28: assistência à saúde inclui "asilos, casas de repouso ou congêneres". A ILPI entra nos arts. 29 a 37 e 41.
 - art. 29: programação permanente de controle de infecção para internação, cirurgia ambulatorial e procedimento invasivo (incisos I a IV); o § 2º fala em comissão de controle de infecção. Lido preso aos incisos, não alcança ILPI (decisão da Ester, 01/10/2026).
@@ -4596,5 +4598,80 @@ Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2
     status: 'vigente_com_alteracoes',
     verifiedAt: V15,
     researchNotes: 'Conferência na fonte (revisão das referências dos planejamentos, item N223, veredito "corrigido"): Conferido no SAPL da Câmara Municipal de Marabá (ficha norma/7880 e consulta da base): Lei Ordinária nº 17.846, de 29/03/2018, ementa confere; sem fim de vigência; alterada pela Lei nº 18.036, de 11 de junho de 2021. Texto original em PDF: https://sapl.maraba.pa.leg.br/media/sapl/public/normajuridica/2018/7880/7880_texto_integral.pdf. Correção: o link citado (mapcam.ufpa.br, site de grupo universitário) não é fonte oficial e foi trocado pela ficha da Câmara. A data de publicação no DOM da citação antiga não foi conferida e saiu da referência.',
+  },
+  // ── Pendências da revisão respondidas pela Ester (13/10/2026) ───────────
+  {
+    name: 'Decreto Estadual RJ nº 1.754/1978',
+    authority: 'RIO DE JANEIRO (Estado)',
+    summary: 'Aprova as Normas Técnicas Especiais referidas no Decreto-Lei nº 214, de 17 de julho de 1975 (Código de Saúde do Estado do Rio de Janeiro).',
+    url: 'https://leisestaduais.com.br/rj/decreto-n-1754-1978-rio-de-janeiro-este-ato-ainda-nao-esta-disponivel-no-sistema',
+    abnt: `RIO DE JANEIRO (Estado). Decreto nº 1.754, de 14 de março de 1978. Aprova "Normas Técnicas Especiais" referidas no Decreto-Lei nº 214, de 17 de julho de 1975. Rio de Janeiro, 1978. Disponível em: https://leisestaduais.com.br/rj/decreto-n-1754-1978-rio-de-janeiro-este-ato-ainda-nao-esta-disponivel-no-sistema.`,
+    destaque: 'Decreto nº 1.754, de 14 de março de 1978',
+    uf: 'RJ',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes:
+      'Revisão das referências dos planejamentos, item N104. Número, data (14/03/1978, DORJ de 15/03/1978) e ementa conferem com o compilado "Legislações de Saúde" da SES-RJ (jan. 2019). O SILEP recusou conexão e o leisestaduais.com.br bloqueia acesso automatizado (403). A Ester abriu o link em 13/10/2026: apesar do endereço dizer "este ato ainda não está disponível no sistema", a página traz o texto do decreto, e ela confirmou que está em vigor. Alterações citadas em buscas (Decretos 6.438/1982, 9.519/1986, 21.231/1994 e 48.556/2023) não foram conferidas.',
+  },
+  {
+    name: 'Decreto nº 8.902/2025 - Duque de Caxias',
+    authority: 'DUQUE DE CAXIAS (RJ)',
+    summary: 'Regulamenta o licenciamento sanitário no Município de Duque de Caxias, com critérios e listas de CNAE por grau de risco para licenciamento e ações de pós-mercado.',
+    url: 'https://portalcontribuinte.duquedecaxias.rj.gov.br/pdfs/Alvara/Decreto%20Municipal%208.902%20-%202025.pdf',
+    abnt: `DUQUE DE CAXIAS (RJ). Decreto nº 8.902, de 11 de agosto de 2025. Regulamenta o processo de licenciamento sanitário no Município de Duque de Caxias, estabelecendo os critérios e listas de Classificação Nacional de Atividades Econômicas, CNAE, conforme o grau de risco, para fins de licenciamento e ações de pós-mercado. Duque de Caxias: Prefeitura Municipal, 2025. Disponível em: https://portalcontribuinte.duquedecaxias.rj.gov.br/pdfs/Alvara/Decreto%20Municipal%208.902%20-%202025.pdf.`,
+    destaque: 'Decreto nº 8.902, de 11 de agosto de 2025',
+    uf: 'RJ',
+    municipio: 'Duque de Caxias',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes:
+      'Revisão das referências dos planejamentos, item N111. PDF oficial assinado pelo prefeito no Portal do Contribuinte: "DECRETO Nº 8.902, DE 11 DE AGOSTO DE 2025", publicado no Boletim Oficial de 11/08/2025; o art. 17 revoga o Decreto nº 6.999/2018. A lista da Prefeitura e o FAQ da Vigilância citam o mesmo ato como "Decreto nº 9.002"; a Ester não achou nenhum 9.002 e decidiu, em 13/10/2026, citar o 8.902 (texto assinado). O Decreto nº 3.043/1997, citado em planejamento antigo, ficou fora do banco: segundo a página consultada pela Ester, não tem mais efeito prático (conteúdo temporal).',
+  },
+  {
+    name: 'Decreto nº 182/2022 - Ribeirão Preto',
+    authority: 'RIBEIRÃO PRETO (SP)',
+    summary: 'Regulamenta a Lei Complementar nº 2.963/2019 (Código Sanitário de Ribeirão Preto) para disciplinar o processo administrativo sanitário.',
+    url: 'https://leis.org/0xsdq',
+    abnt: `RIBEIRÃO PRETO (SP). Decreto nº 182, de 27 de julho de 2022. Regulamenta a Lei Complementar nº 2.963, de 6 de maio de 2019, que institui o Código Sanitário do Município de Ribeirão Preto, para disciplinar o processo administrativo sanitário. Ribeirão Preto: Prefeitura Municipal, 2022. Disponível em: https://leis.org/0xsdq.`,
+    destaque: 'Decreto nº 182, de 27 de julho de 2022',
+    uf: 'SP',
+    municipio: 'Ribeirão Preto',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes:
+      'Revisão das referências dos planejamentos, item N121. A ficha oficial da LC nº 2.963/2019 na Câmara de Ribeirão Preto registra o "DECRETO Nº 182, DE 27/07/22", publicado no DOM de 28/07/2022 e republicado em 29/07/2022. A Ester abriu o decreto (leis.org, que bloqueia acesso automatizado) em 13/10/2026 e leu a ementa; ela disse "6 de maio de 2009", mas a lei regulamentada é a LC nº 2.963, de 6 de maio de 2019 (ficha da Câmara), e a referência usa 2019.',
+  },
+  {
+    name: 'Lei nº 865/2008 - Pinhais',
+    authority: 'PINHAIS (PR)',
+    summary: 'Institui o Código Sanitário no Município de Pinhais. Revogada pela Lei nº 1.294/2012 (Código de Vigilância em Saúde).',
+    url: 'https://leis.org/scaki',
+    abnt: `PINHAIS (PR). Lei nº 865, de 23 de abril de 2008. Institui o Código Sanitário no Município de Pinhais.`,
+    destaque: 'Lei nº 865, de 23 de abril de 2008',
+    uf: 'PR',
+    municipio: 'Pinhais',
+    status: 'revogada',
+    replacedBy: 'Lei nº 1.294/2012 - Pinhais (Código de Vigilância em Saúde)',
+    verifiedAt: V15,
+    researchNotes:
+      'Revisão das referências dos planejamentos, item N193. Em 13/10/2026 a Ester abriu o leis.org (bloqueia acesso automatizado) e confirmou que a Lei nº 865/2008 foi revogada pela Lei nº 1.294/2012, que institui o Código de Vigilância em Saúde de Pinhais (o link https://leis.org/scaki, enviado por ela, é o da lei nova). A Lei nº 1.294/2012 ainda não tem verbete: falta conferir data e ementa.',
+  },
+  {
+    name: 'Lei nº 3.400/1998 - Osasco',
+    authority: 'OSASCO (SP)',
+    summary: 'Dispõe sobre a municipalização das ações de Vigilância Sanitária em Osasco; regulamentada pelo Decreto nº 8.675/1998.',
+    url: 'https://leis.org/lfreq',
+    abnt: `OSASCO (SP). Lei nº 3.400, de 19 de janeiro de 1998. Dispõe sobre a municipalização das ações de Vigilância Sanitária. Osasco: Prefeitura Municipal, 1998. Disponível em: https://leis.org/lfreq.`,
+    destaque: 'Lei nº 3.400, de 19 de janeiro de 1998',
+    uf: 'SP',
+    municipio: 'Osasco',
+    segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes:
+      'Revisão das referências dos planejamentos, item N215. A Ester abriu a lei no leis.org (bloqueia acesso automatizado) em 13/10/2026 e confirmou número, data (19/01/1998) e ementa. Regulamentada pelo Decreto nº 8.675/1998 (link enviado por ela: https://leis.org/qfmdr), que ainda não tem verbete: falta a data do decreto.',
   },
 ];
