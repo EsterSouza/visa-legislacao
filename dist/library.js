@@ -49,6 +49,8 @@ const V11 = '2026-10-08';
 const V12 = '2026-10-09';
 /** Ambulatório de empresa em porto, segunda rodada: SESMT (NR-4) e prazo de resíduo no abrigo (Rio). */
 const V13 = '2026-10-11';
+/** Urgência em ambulatório de empresa no Rio: desfibrilador obrigatório em local de trabalho. */
+const V14 = '2026-10-13';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -772,6 +774,19 @@ export const LEGISLATION_LIBRARY = [
         status: 'vigente',
         verifiedAt: '2026-10-03',
         researchNotes: 'Lei de 18/04/2022, DOM de 19/04/2022. Texto lido em portal agregador; a sanção pelo Executivo regulamenta as multas (art. 2º).',
+    },
+    {
+        name: 'Lei Municipal RJ nº 7.259/2022',
+        authority: 'RIO DE JANEIRO (Município)',
+        summary: 'Torna obrigatória a disponibilização de desfibrilador cardíaco em shopping centers, supermercados, centros empresariais e comerciais, estádios, casas de espetáculos, aeroportos, hotéis, locais de trabalho públicos e privados, academias, clubes, parques, cemitérios e instituições financeiras e de ensino.',
+        abnt: `RIO DE JANEIRO (Município). Lei nº 7.259, de 17 de março de 2022. Torna obrigatória a disponibilização de desfibrilador cardíaco nos locais em que especifica. Diário da Câmara Municipal, Rio de Janeiro, RJ, p. 3, 18 mar. 2022. Disponível em: https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2025/05/Lei-Ordinaria-7259-2022-academia-desfibrilador.pdf`,
+        url: 'https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2025/05/Lei-Ordinaria-7259-2022-academia-desfibrilador.pdf',
+        uf: 'RJ',
+        municipio: 'Rio de Janeiro',
+        segments: ['saude', 'estetica', 'ilpi', 'alimentos'],
+        status: 'vigente',
+        verifiedAt: V14,
+        researchNotes: 'Texto lido em 13/10/2026 na ficha da Câmara Municipal publicada pelo IVISA-RIO, com status "Em Vigor". Promulgada pelo presidente da Câmara (PL 409/2021), sem veto exercido. Art. 1º, I, inclui "locais de trabalho públicos e privados"; art. 2º: o responsável provê aquisição, manutenção e preparação de pessoal; art. 3º: disponível durante todo o período em que houver público; art. 4º: multa de R$ 5.000,00 corrigida anualmente, duplicada na reincidência, e interdição. Não fixa número de aparelhos nem distância. Não localizada ação de inconstitucionalidade no TJRJ (busca aberta, sem consulta ao tribunal).',
     },
     {
         name: 'Lei Municipal RJ nº 3.510/2003',
