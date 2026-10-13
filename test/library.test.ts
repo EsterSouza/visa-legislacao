@@ -44,6 +44,11 @@ describe('integridade da biblioteca', () => {
     expect(semData.map((e) => e.name)).toEqual([]);
   });
 
+  it('o trecho em negrito (destaque) aparece literalmente na referência ABNT', () => {
+    const soltos = LEGISLATION_LIBRARY.filter((e) => e.destaque && !e.abnt?.includes(e.destaque));
+    expect(soltos.map((e) => e.name)).toEqual([]);
+  });
+
   it('município sempre vem acompanhado da UF', () => {
     const soltos = LEGISLATION_LIBRARY.filter((e) => e.municipio && !e.uf);
     expect(soltos.map((e) => e.name)).toEqual([]);

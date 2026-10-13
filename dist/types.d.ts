@@ -27,6 +27,13 @@ export interface LegislationEntry {
      * curta a partir de `authority` + `name` + `summary` + `url`.
      */
     abnt?: string;
+    /**
+     * Trecho da referência `abnt` que vai em negrito pela ABNT NBR 6023:2018:
+     * a epígrafe do ato quando lido no site do órgão; o nome do diário quando
+     * citado pelo DOU; o título do livro ou manual; o nome do periódico.
+     * Aparece literalmente dentro de `abnt`.
+     */
+    destaque?: string;
     /** UF de abrangência; ausente/null = federal ou nacional. */
     uf?: string | null;
     /** Município de abrangência; exige `uf`. Ausente = alcança a UF inteira. */
