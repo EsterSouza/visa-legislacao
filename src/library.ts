@@ -4674,4 +4674,28 @@ Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2
     researchNotes:
       'Revisão das referências dos planejamentos, item N215. A Ester abriu a lei no leis.org (bloqueia acesso automatizado) em 13/10/2026 e confirmou número, data (19/01/1998) e ementa. Regulamentada pelo Decreto nº 8.675/1998 (link enviado por ela: https://leis.org/qfmdr), que ainda não tem verbete: falta a data do decreto.',
   },
+  {
+    name: 'Resolução COFFITO nº 414/2012',
+    authority: 'CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL',
+    summary: 'Dispõe sobre a obrigatoriedade do registro em prontuário pelo fisioterapeuta, da guarda e do seu descarte.',
+    abnt: `CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução COFFITO nº 414, de 19 de maio de 2012. Dispõe sobre a obrigatoriedade do registro em prontuário pelo fisioterapeuta, da guarda e do seu descarte e dá outras providências. Brasília, DF: COFFITO, 2012. Disponível em: https://www.coffito.gov.br/nsite/?p=1727.`,
+    destaque: 'Resolução COFFITO nº 414, de 19 de maio de 2012',
+    url: 'https://www.coffito.gov.br/nsite/?p=1727',
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes: 'Revisão das referências dos planejamentos, item N061. Página oficial do COFFITO: "RESOLUÇÃO Nº 414/2012", D.O.U. nº 99, Seção 1, 23/05/2012, postada em 19/05/2012, sem aviso de revogação. A LegisWeb e a Normas Brasil, que reproduzem o DOU, trazem "Resolução COFFITO Nº 414 DE 19/05/2012", aprovada na 223ª Reunião Plenária Ordinária de 19/05/2012 (sede do CREFITO-8). A Ester indicou 25/03/2012 em 13/10/2026, mas essa data não aparece em nenhuma das fontes; ficou 19 de maio de 2012.',
+  },
+  {
+    name: 'Portaria CVS nº 12/1999',
+    authority: 'SÃO PAULO (Estado). Secretaria da Saúde. Centro de Vigilância Sanitária',
+    summary: 'Dispõe sobre gabinetes de tatuagem e de piercing como estabelecimentos de interesse à saúde.',
+    abnt: `SÃO PAULO (Estado). Secretaria da Saúde. Centro de Vigilância Sanitária. Portaria CVS nº 12, de 30 de julho de 1999. Dispõe sobre os estabelecimentos de interesse à saúde denominados Gabinetes de Tatuagem e de Piercing e dá providências correlatas. Brasília, DF: Câmara dos Deputados, 2007. Disponível em: https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=511681&filename=LegislacaoCitada%20PL%202104/2007.`,
+    destaque: 'Portaria CVS nº 12, de 30 de julho de 1999',
+    url: 'https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=511681&filename=LegislacaoCitada%20PL%202104/2007',
+    uf: 'SP',
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V15,
+    researchNotes: 'Revisão das referências dos planejamentos, item N218. Texto lido no PDF da Câmara dos Deputados (legislação citada do PL 2104/2007), cabeçalho "PORTARIA CVS-12 DE 30-7-99"; a listagem do CVS registra 07/08/1999, provavelmente a publicação no DOE. O art. 23 revoga a Portaria CVS-13/1992. O CVS não a marca como revogada e a Prefeitura de São Paulo segue citando a portaria para tatuagem e piercing. O link da LegisWeb enviado pela Ester em 13/10/2026 (id=169825) é de outro ato (Portaria CVS 12, de 17/08/2009, alojamentos rurais) e não foi usado. O arquivo do próprio CVS (99pcvs12.zip) não abre.',
+  },
 ];
