@@ -53,6 +53,8 @@ const V13 = '2026-10-11';
 const V14 = '2026-10-13';
 /** Conferência na fonte de todas as referências citadas nos planejamentos (Documentos em Elaboração). */
 const V15 = '2026-10-13';
+/** Revisão do planejamento da Yasmin Basilio (Caieiras/SP) contra a fonte. */
+const V16 = '2026-10-17';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -1512,9 +1514,10 @@ Artigos que importam para roteiro de inspeção:
         url: 'https://www.facilitasp.sp.gov.br/wp-content/uploads/2025/06/PORTARIA-CVS-No-5-DE-23-DE-MAIO-DE-2025.pdf',
         uf: 'SP',
         segments: ['saude', 'estetica'],
-        status: 'vigente',
-        verifiedAt: '2026-08-15',
-        researchNotes: 'A republicação inclui o CNAE 8690-9/01 de práticas integrativas e complementares como risco I, com a condicionante de que não compete à vigilância sanitária. A retificação de 27/05/2025 não cita esse CNAE.',
+        status: 'revogada',
+        replacedBy: 'Portaria CVS nº 13/2025',
+        verifiedAt: V16,
+        researchNotes: 'Revogada pelo art. 8º da Portaria CVS nº 13, de 07/11/2025 (conferido no verbete da CVS 13/2025, item N115, e no SKILL.md do planejamento em 17/10/2026). A republicação inclui o CNAE 8690-9/01 de práticas integrativas e complementares como risco I, com a condicionante de que não compete à vigilância sanitária. A retificação de 27/05/2025 não cita esse CNAE.',
     },
     {
         name: 'Portaria CVS nº 15/1999',
@@ -3768,16 +3771,6 @@ Artigos que importam para roteiro de inspeção:
         researchNotes: 'Capa datada de junho de 2012; o nome do arquivo sugere revisão de 11/09/2013. O PDF do CVS recusou acesso automatizado em 14/09/2026 (lido em cópia idêntica da VISA de Jundiaí).',
     },
     {
-        name: 'Manual Anvisa de Limpeza e Desinfecção de Superfícies (2012)',
-        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
-        summary: 'Segurança do paciente em serviços de saúde: limpeza e desinfecção de superfícies.',
-        url: 'https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/manual-de-limpeza-e-desinfeccao-de-superficies.pdf',
-        abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Segurança do paciente em serviços de saúde: limpeza e desinfecção de superfícies. Brasília: ANVISA, 2012. Disponível em: https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/manual-de-limpeza-e-desinfeccao-de-superficies.pdf`,
-        segments: ['saude', 'estetica', 'ilpi'],
-        status: 'vigente',
-        verifiedAt: V2,
-    },
-    {
         name: 'Manual SES/MG de Biossegurança para Serviços de Embelezamento (2024)',
         authority: 'MINAS GERAIS (Estado). Secretaria de Estado de Saúde (SES/MG)',
         summary: 'Manual de Biossegurança para os Serviços de Embelezamento/Estética, Podologia, Colocação de Piercing, Pigmentação Artificial da Pele e Afins.',
@@ -4605,6 +4598,20 @@ Instrumento de inspeção harmonizado: ROI de Odontologia da Anvisa, versão 1.2
         status: 'vigente',
         verifiedAt: V15,
         researchNotes: 'Revisão das referências dos planejamentos, item N218. Texto lido no PDF da Câmara dos Deputados (legislação citada do PL 2104/2007), cabeçalho "PORTARIA CVS-12 DE 30-7-99"; a listagem do CVS registra 07/08/1999, provavelmente a publicação no DOE. O art. 23 revoga a Portaria CVS-13/1992. O CVS não a marca como revogada e a Prefeitura de São Paulo segue citando a portaria para tatuagem e piercing. O link da LegisWeb enviado pela Ester em 13/10/2026 (id=169825) é de outro ato (Portaria CVS 12, de 17/08/2009, alojamentos rurais) e não foi usado. O arquivo do próprio CVS (99pcvs12.zip) não abre.',
+    },
+    {
+        name: 'Lei nº 4.796/2015 - Caieiras',
+        authority: 'CAIEIRAS (SP)',
+        summary: 'Institui a Política Municipal de Gestão Integrada de Resíduos Sólidos de Caieiras; o art. 26 obriga os geradores de RSS a elaborar e implantar o PGRSS.',
+        abnt: `CAIEIRAS (SP). Lei nº 4.796, de 13 de outubro de 2015. Dispõe sobre a Política Municipal de Resíduos Sólidos Urbanos do Município de Caieiras e dá outras providências. Caieiras: Prefeitura Municipal, 2015. Disponível em: https://caieiras.sp.gov.br/secretarias/downloads/meio-ambiente/POLITICAMUNICIPALDERESIDUOSSOLIDOS.pdf.`,
+        destaque: 'Lei nº 4.796, de 13 de outubro de 2015',
+        url: 'https://caieiras.sp.gov.br/secretarias/downloads/meio-ambiente/POLITICAMUNICIPALDERESIDUOSSOLIDOS.pdf',
+        uf: 'SP',
+        municipio: 'Caieiras',
+        segments: ['saude', 'estetica'],
+        status: 'vigente_com_alteracoes',
+        verifiedAt: V16,
+        researchNotes: 'Texto lido em 17/10/2026 no PDF hospedado no site da Prefeitura de Caieiras (impressão do LeisMunicipais, 26 p.): cabeçalho "LEI Nº 4.796, DE 13 DE OUTUBRO DE 2015", sancionada pelo prefeito Roberto Hamamoto. Art. 1º institui a Política Municipal de Gestão Integrada de Resíduos Sólidos, incluídos os perigosos. Seção V, art. 26: "Os geradores de Resíduos de Serviços de Saúde-RSS devem elaborar e implantar o Plano de Gerenciamento de Resíduos de Serviços de Saúde - PGRSS". O próprio PDF remete à Lei nº 5.819/2023, que revogou dispositivo do art. 14. Código sanitário municipal não localizado (a Lei 5.392/2020 é só de fiscalização da covid-19); Caieiras segue o Código Sanitário estadual (Lei 10.083/1998).',
     },
 ];
 //# sourceMappingURL=library.js.map
