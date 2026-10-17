@@ -3066,6 +3066,18 @@ Artigos que importam para roteiro de inspeção:
     researchNotes: 'Conferência na fonte (revisão das referências dos planejamentos, item N219, veredito "revogado"): No Saúde Legis, a RDC nº 55, de 06/08/2008, da Anvisa, abriu com ementa conforme a citação; a página não avisa da revogação. No Anvisalegis, a RDC nº 553, de 30/08/2021 (\'Dispõe sobre o registro de produtos utilizados no procedimento de pigmentação artificial permanente da pele\', situação Vigente), revoga no art. 17, I, a RDC nº 55/2008 e, no art. 17, II, a RDC nº 64/2016. A RDC 553/2021 está em https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000553&seqAto=000&valorAno=2021&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=8542. O verbete atual marcava \'vigente_com_alteracoes\', o que está errado: a RDC 55/2008 está revogada desde a RDC 553/2021 e deve sair dos planejamentos, substituída pela 553/2021.\nResposta na revisão: Ester confirmou a revogação.',
   },
   {
+    name: 'RDC Anvisa nº 553/2021',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Registro de produtos utilizados no procedimento de pigmentação artificial permanente da pele (micropigmentação e tatuagem).',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000553&seqAto=000&valorAno=2021&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=8542',
+    abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 553, de 30 de agosto de 2021. Dispõe sobre o registro de produtos utilizados no procedimento de pigmentação artificial permanente da pele. Diário Oficial da União, Brasília, DF, 31 ago. 2021. Disponível em: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000553&seqAto=000&valorAno=2021&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=8542`,
+    destaque: 'Diário Oficial da União',
+    segments: ['estetica'],
+    status: 'vigente',
+    verifiedAt: V17,
+    researchNotes: 'AnvisaLegis em 17/10/2026: "Vigente". Em vigor desde 01/10/2021 (art. 18). Art. 2º: é obrigatório o registro dos produtos usados na pigmentação artificial permanente da pele. Art. 3º: define a pigmentação como pigmento implantado na derme ou abaixo da epiderme, para embelezamento ou correção estética. Art. 4º: os produtos são dispositivos médicos, classificados pelo risco. Art. 17: revoga a RDC 55/2008 e a RDC 64/2016. Substitui a RDC 55/2008 no item sp-est-104 do suplemento de São Paulo.',
+  },
+  {
     name: 'RDC Anvisa nº 622/2022',
     authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
     summary: 'Dispõe sobre o funcionamento de empresas especializadas na prestação de serviço de controle de vetores e pragas urbanas.',
