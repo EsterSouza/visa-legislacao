@@ -74,6 +74,9 @@ const V15 = '2026-10-13';
 /** Revisão do planejamento da Yasmin Basilio (Caieiras/SP) contra a fonte. */
 const V16 = '2026-10-17';
 
+/** Curadoria de manipulados comprados pela clínica e de tirzepatida (pré-atendimento da TC Estética, Rio). */
+const V17 = '2026-10-17';
+
 export const LEGISLATION_LIBRARY: LegislationEntry[] = [
   // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
   {
@@ -276,7 +279,84 @@ export const LEGISLATION_LIBRARY: LegislationEntry[] = [
     status: 'vigente_com_alteracoes',
     verifiedAt: V,
     researchNotes:
-      'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- anexo I, item 5.10: "desde que comprovada a inexistência do produto no mercado e justificada tecnicamente a necessidade da manipulação" (est-077)\n- anexo I, item 5.10.2: "de preparações utilizadas na atividade clínica ou auxiliar de diagnóstico para uso exclusivamente no estabelecimento do requerente." (est-077)\n- anexo I, item 5.10.3.1: "no lugar do nome do paciente deverá constar do rótulo o nome e endereço da instituição requerente." (est-077)\n- anexo I, item 12.1: "Toda preparação magistral deve ser rotulada com: a) nome do prescritor; b) nome do paciente" (est-077)\n- anexo I, item 13.1: "Os medicamentos termossensíveis devem ser mantidos em condições de temperatura compatíveis com sua conservação, mantendo- se os respectivos registros e controles." (est-071)',
+      'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- regulamento técnico (anexo), item 5.10: "desde que comprovada a inexistência do produto no mercado e justificada tecnicamente a necessidade da manipulação" (est-077)\n- regulamento técnico (anexo), item 5.10.2: "de preparações utilizadas na atividade clínica ou auxiliar de diagnóstico para uso exclusivamente no estabelecimento do requerente." (est-077)\n- regulamento técnico (anexo), item 5.10.3.1: "no lugar do nome do paciente deverá constar do rótulo o nome e endereço da instituição requerente." (est-077)\n- anexo I, item 12.1: "Toda preparação magistral deve ser rotulada com: a) nome do prescritor; b) nome do paciente" (est-077)\n- anexo I, item 13.1: "Os medicamentos termossensíveis devem ser mantidos em condições de temperatura compatíveis com sua conservação, mantendo- se os respectivos registros e controles." (est-071)' +
+      '\n\n' +
+      'Leitura de 17/10/2026 no AnvisaLegis (texto compilado, "Vigente com Alterações"; alterações pelas RDC 87/2008, 21/2009, 24/2008 e 49/2008; nenhuma depois de 2016). Os itens 4 e 5 ficam no regulamento técnico (anexo da RDC); 7.1.5, 10.1, 12.1 e 14.2 ficam no Anexo I. O que a clínica precisa saber como compradora:\n- item 4, preparação magistral: feita "a partir de uma prescrição de profissional habilitado, destinada a um paciente individualizado". Sem receita prévia não é magistral.\n- item 5.8: a licença da farmácia explicita os grupos de atividade; injetável estéril é o Grupo IV (Anexo IV), hormônio e controlado é o Grupo III. Pedir a licença e conferir o grupo.\n- itens 5.10 e 5.10.2: pedido em nome da clínica só em caráter excepcional, comprovada a inexistência do produto no mercado e justificada tecnicamente a manipulação; requisição escrita de profissional habilitado; uso exclusivamente no estabelecimento do requerente.\n- item 5.10.3.1: no atendimento não individualizado, o rótulo traz nome e endereço da instituição requerente no lugar do paciente. 5.10.4: justificativa, contrato e requisição ficam 1 ano na farmácia.\n- item 5.13: a farmácia não dispensa manipulado em substituição a industrializado (referência, genérico ou similar).\n- item 5.17.4: prescrição não pode ter código, símbolo, nome da fórmula ou nome fantasia. 5.17.5: repetição só com duração do tratamento na receita ou confirmação do prescritor.\n- item 5.18.4: a receita traz prescritor com conselho e endereço, paciente com endereço residencial, substância pela DCB ou DCI, concentração, forma, quantidade, posologia, duração, local, data e assinatura. 5.18.5: faltando um, a farmácia pode recusar.\n- Anexo I, 10.1: farmácia comum só mantém estoque mínimo de oficinal do Formulário Nacional e de base galênica; estoque de magistral é só da farmácia hospitalar (10.2).\n- Anexo I, 12.1: rótulo do magistral com prescritor, paciente, nº no Livro de Receituário, datas de manipulação e validade, componentes e quantidades, farmácia, CNPJ, endereço e farmacêutico com CRF. 14.2: receita aviada é carimbada pela farmácia.\n- Revisão anunciada no plano de ação da Anvisa de 06/04/2026 (começando pelo Anexo IV); sem consulta pública nem texto novo até 17/10/2026. Continua valendo.\n- Voto 157/2026/SEI/DIRE3 (ROP 13/2026, 22/07/2026): a Anvisa recusou o item 5.10 como cobertura para farmácia abastecer clínica com tirzepatida em estoque padronizado.',
+  },
+  {
+    name: 'RDC Anvisa nº 471/2021',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Prescrição, dispensação, controle, embalagem e rotulagem de medicamentos de uso sob prescrição com retenção da receita, cujas substâncias estão listadas em Instrução Normativa (antimicrobianos e, desde a RDC 973/2025, agonistas de GLP-1).',
+    url: 'https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000471&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2021&seq_ato=000&cod_modulo=134&cod_menu=1696',
+    abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC nº 471, de 23 de fevereiro de 2021. Dispõe sobre os critérios para a prescrição, dispensação, controle, embalagem e rotulagem de medicamentos à base de substâncias isoladas ou em associação, de uso sob prescrição e retenção da receita, listadas na Instrução Normativa específica. Diário Oficial da União, Brasília, DF, n. 36, seção 1, p. 85, 24 fev. 2021. Disponível em: https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000471&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2021&seq_ato=000&cod_modulo=134&cod_menu=1696`,
+    destaque: 'Diário Oficial da União',
+    segments: ['saude', 'estetica'],
+    status: 'vigente_com_alteracoes',
+    verifiedAt: V17,
+    researchNotes:
+      'AnvisaLegis em 17/10/2026: "Vigente com Alterações"; a ementa e os arts. 1º, 3º, 6º, 7º, 11, 14 a 18, 20, 21 e 22 têm redação da RDC 973, de 23/04/2025 (vigência 60 dias após a publicação, art. 3º da 973). A ementa original era só de antimicrobianos; a lista de substâncias passou para a IN 360/2025.\n' +
+      '- art. 5º: prescrição por profissional legalmente habilitado.\n' +
+      '- art. 6º: "em receituário privativo do prescritor ou do estabelecimento de saúde, não havendo, portanto, modelo de receita específico". Dados da receita: paciente com nome, idade e sexo; medicamento pela DCB, dose, forma, posologia e quantidade; prescritor ou instituição com endereço, telefone, assinatura e carimbo; data.\n' +
+      '- art. 7º: validade conforme a IN (GLP-1: 90 dias, IN 360/2025, art. 2º, § 1º). Parágrafo único: sem limite de itens por receita.\n' +
+      '- art. 9º: tratamento prolongado, a receita vale para novas compras em 90 dias, com "uso contínuo" e quantidade para cada 30 dias.\n' +
+      '- art. 10: a farmácia retém a 2ª via e devolve a 1ª ao paciente; não aceita receita vencida, ilegível ou rasurada.\n' +
+      '- art. 21: vedada a devolução à farmácia, por pessoa física, de medicamento industrializado ou manipulado com substância da IN.\n' +
+      '- art. 22: documentação de compra, venda, transferência, perda e devolução guardada 2 anos.',
+  },
+  {
+    name: 'IN Anvisa nº 360/2025',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Lista as substâncias de uso sob prescrição com retenção da receita da RDC 471/2021: antimicrobianos (receita de 10 dias) e agonistas de GLP-1, entre eles semaglutida e tirzepatida (receita de 90 dias).',
+    url: 'https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000360&sgl_tipo=INM&sgl_orgao=DC/ANVISA/MS&vlr_ano=2025&seq_ato=000&cod_modulo=134&cod_menu=1696',
+    abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Instrução Normativa - IN nº 360, de 23 de abril de 2025. Define a lista de substâncias isoladas ou em associação utilizadas em medicamentos de uso sob prescrição e retenção da receita, de que trata a Resolução de Diretoria Colegiada - RDC nº 471, de 23 de fevereiro de 2021. Diário Oficial da União, Brasília, DF, seção 1, 24 abr. 2025. Disponível em: https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000360&sgl_tipo=INM&sgl_orgao=DC/ANVISA/MS&vlr_ano=2025&seq_ato=000&cod_modulo=134&cod_menu=1696`,
+    destaque: 'Diário Oficial da União',
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V17,
+    researchNotes:
+      'AnvisaLegis em 17/10/2026: "Vigente". Publicada no DOU de 24/04/2025, retificada no DOU de 02/06/2025; em vigor 60 dias após a publicação (art. 4º). Revogou a IN 244/2023 (art. 3º).\n' +
+      '- art. 2º: agonistas do receptor de GLP-1 "isoladas ou em associação": semaglutida, liraglutida, dulaglutida, tirzepatida e lixisenatida.\n' +
+      '- art. 2º, § 1º: receita válida por 90 dias a contar da emissão.\n' +
+      '- art. 1º, § 2º: receita de antimicrobiano válida por 10 dias.\n' +
+      'Vale para o manipulado também: a RDC 471, art. 21, fala em "industrializados ou manipulados". As perguntas e respostas da Anvisa de junho/2025 (perguntas_respostas_glp1_2025_06_v1_final.pdf) confirmam a retenção desde junho de 2025.',
+  },
+  {
+    name: 'Nota Técnica Anvisa nº 200/2025',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Importação, manipulação e controle sanitário de IFAs agonistas de GLP-1 (semaglutida, tirzepatida): quando a farmácia pode manipular, o fluxo de importação e os testes mínimos de qualidade por lote (Anexo I).',
+    url: 'https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-esclarece-e-determina-regras-para-manipulacao-de-canetas-de-glp-1/SEI_3775484_Nota_Tecnica_2002.pdf',
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V17,
+    researchNotes:
+      'NOTA TÉCNICA Nº 200/2025/SEI/GIMED/GGFIS/DIRE4/ANVISA, processo 25351.915871/2025-37. Aprovada pela Diretoria Colegiada no Circuito Deliberativo 898/2025 (Voto 236/2025/SEI/DIRE4, 22/08/2025) e tornada obrigatória pelo Despacho 97/2025 (DOU de 25/08/2025). Prevalece sobre as notas técnicas anteriores (Despacho 97, inciso V). Texto lido em 17/10/2026.\n' +
+      '- tirzepatida é IFA sintético com produto registrado (Mounjaro, 25/09/2023): pode ser manipulada, cumprida toda a RDC 67/2007 (Despacho 97, inciso II).\n' +
+      '- item 2.3: a manipulação "somente poderá ser realizada mediante comprovação da inexistência de produtos equivalentes no mercado, nos termos do item 5.10 da RDC nº 67/2007"; a molécula precisa ter histórico em medicamento registrado (RDC 204/2006). Semaglutida biotecnológica não se estende de um fabricante para outro.\n' +
+      '- item 2.3.1: a farmácia tem Certificado de Análise por lote, de laboratório próprio ou da Reblas, com os testes mínimos do Anexo I: identificação A (CLAE/UV contra padrão) e B (mapa peptídico), pH, teor de 90 a 110%, impurezas totais e agregados, esterilidade e endotoxinas pela Farmacopeia Brasileira; e métodos analíticos validados com padrão primário caracterizado. Os registros ficam na farmácia para a fiscalização.\n' +
+      '- item 2.2.1: importação em canal amarelo, análise no Brasil, laudos enviados por SEI à GIMED/GGFIS antes da liberação. Farmácia não importa direto: compra de importadora ou distribuidora regularizada (RDC 204/2006, IN 62/2020).\n' +
+      '- associação com outros componentes é possível quando justificada clinicamente, o que dá caráter individualizado à fórmula.\n' +
+      'Revisão: notícia da Anvisa de 14/04/2026 anunciou minuta de nota revisada e de nova IN; pedido de vista em 06/05/2026 (só fonte secundária). Até 17/10/2026 nada aprovado; continua valendo. Conferir de novo antes de citar.\n' +
+      'Aplicação pela Anvisa: o Voto 157/2026/SEI/DIRE3 (ROP 13/2026) interditou tirzepatida em estoque sem receita e IFA sem Ofício de Liberação de Importação.',
+  },
+  {
+    name: 'Despacho Anvisa nº 97/2025',
+    authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+    summary: 'Despacho da Diretoria Colegiada que torna obrigatórias as medidas da Nota Técnica 200/2025 para importação e manipulação de IFAs agonistas de GLP-1.',
+    url: 'https://www.in.gov.br/web/dou/-/despacho-n-97-de-22-de-agosto-de-2025-650500119',
+    abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Diretoria Colegiada. Despacho nº 97, de 22 de agosto de 2025. Diário Oficial da União, Brasília, DF, ed. 160, seção 1, p. 95, 25 ago. 2025. Disponível em: https://www.in.gov.br/web/dou/-/despacho-n-97-de-22-de-agosto-de-2025-650500119`,
+    destaque: 'Diário Oficial da União',
+    segments: ['saude', 'estetica'],
+    status: 'vigente',
+    verifiedAt: V17,
+    researchNotes:
+      'Texto lido no DOU em 17/10/2026 (edição 160, seção 1, p. 95, 25/08/2025). Deliberado no Circuito Deliberativo 898/2025, de 22/08/2025. Nenhum ato posterior o revoga até 17/10/2026.\n' +
+      '- inciso I: GLP-1 biotecnológico só de fabricante cujo IFA foi analisado no registro do produto na Anvisa.\n' +
+      '- inciso II: GLP-1 sintético (tirzepatida) pode ser importado para manipulação desde que exista produto registrado com a molécula.\n' +
+      '- inciso III: fluxo de importação do item 2.2.1 da NT 200/2025.\n' +
+      '- inciso IV: testes mínimos do Anexo I da NT 200 pelas importadoras, nas preparações magistrais das farmácias e nos padrões primários.\n' +
+      '- inciso V: a NT 200 prevalece sobre qualquer nota técnica anterior.\n' +
+      '- inciso VI: importadoras, distribuidoras e farmácias de estéreis cumprem a RDC 67/2007, a RDC 204/2006 e a IN 62/2020.\n' +
+      '- inciso VIII: recurso contra a decisão não tem efeito suspensivo.',
   },
   {
     name: 'RDC Anvisa nº 509/2021',
@@ -3338,7 +3418,7 @@ Artigos que importam para roteiro de inspeção:
     segments: ['saude', 'estetica', 'ilpi'],
     status: 'vigente',
     verifiedAt: '2026-10-10',
-    researchNotes: 'Vigência 60 dias após a publicação (art. 27). Alterada pela RDC 1.028/2026, que levou a disponibilização do SNCR para 30/09/2026 (art. 16). Art. 19: Notificações impressas pela autoridade sanitária até a vigência podem ser distribuídas e usadas por prazo indeterminado. Não alterou o capítulo da maleta de emergência da Portaria 6/1999 (arts. 117 a 123). Texto em docs/referencias/textos/rdc-1000-2025.txt do InspecVISA.',
+    researchNotes: 'Vigência 60 dias após a publicação (art. 27). Alterada pela RDC 1.028/2026, que levou a disponibilização do SNCR para 30/09/2026 (art. 16). Art. 19: Notificações impressas pela autoridade sanitária até a vigência podem ser distribuídas e usadas por prazo indeterminado. Não alterou o capítulo da maleta de emergência da Portaria 6/1999 (arts. 117 a 123). Texto em docs/referencias/textos/rdc-1000-2025.txt do InspecVISA. Perguntas e respostas da Anvisa sobre a RDC 1.000 (lidas em 17/10/2026): receita de GLP-1 (IN 360/2025) manuscrita não leva numeração do SNCR; a eletrônica exige assinatura eletrônica avançada ou qualificada. Vale desde 13/02/2026.',
   },
   {
     name: 'RDC Anvisa nº 873/2024',
