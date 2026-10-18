@@ -57,6 +57,8 @@ const V15 = '2026-10-13';
 const V16 = '2026-10-17';
 /** Curadoria de manipulados comprados pela clínica e de tirzepatida (pré-atendimento da TC Estética, Rio). */
 const V17 = '2026-10-17';
+/** Procedimentos injetáveis da clínica de estética: hormônio, enzimas, PMMA e soro (TC Estética, Rio). */
+const V18 = '2026-10-18';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -395,6 +397,39 @@ export const LEGISLATION_LIBRARY = [
         status: 'vigente',
         verifiedAt: V15,
         researchNotes: 'Conferência na fonte (revisão das referências dos planejamentos, item N133, veredito "confirmado"): Aberto no Anvisalegis: RDC nº 916, de 19/09/2024 (DOU 26/09/2024, seção 1), Anvisa, ementa conferida, situação \'Vigente\'. Confirmado que revoga a RDC 45/2003 (art. 129, I) e também a RDC 9/2009 (art. 129, II). Número, data, órgão, ementa e URL corretos. O texto da citação trazia um rótulo (\'Anvisa Legis - texto da RDC nº 916/2024\') no lugar da URL; ajustado no formato ABNT.',
+    },
+    {
+        name: 'RE Anvisa nº 30/2003',
+        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+        summary: 'Suspende a importação, a distribuição, o comércio e o uso de fosfatidilcolina injetável para fins estéticos e proíbe sua manipulação para esse fim.',
+        url: 'https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000030&sgl_tipo=RES&sgl_orgao=RE/ANVISA/MS&vlr_ano=2003&seq_ato=000&cod_modulo=134&cod_menu=1696',
+        abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Resolução-RE nº 30, de 8 de janeiro de 2003. Diário Oficial da União, Brasília, DF, 9 jan. 2003. Disponível em: https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000030&sgl_tipo=RES&sgl_orgao=RE/ANVISA/MS&vlr_ano=2003&seq_ato=000&cod_modulo=134&cod_menu=1696`,
+        segments: ['estetica'],
+        status: 'vigente',
+        verifiedAt: V18,
+        researchNotes: 'AnvisaLegis em 18/10/2026: sem marca de revogação nem notas de alteração. Art. 1º: suspende "importação, distribuição, comércio e uso" do medicamento com fosfatidilcolina "na forma farmacêutica injetável, para fins estéticos". Art. 2º: proíbe a manipulação do injetável estéril para fins estéticos. Ácido desoxicólico: o único registro (Belkyra, RE 583/2018) foi cancelado a pedido pela RE 3.655/2021; não há produto registrado. Usada no item est-131 do roteiro de estética.',
+    },
+    {
+        name: 'RE Anvisa nº 4.353/2024',
+        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA)',
+        summary: 'Proíbe a manipulação, a comercialização e o uso de implantes hormonais de esteroides anabolizantes ou androgênios para fins estéticos, ganho de massa muscular e desempenho esportivo, e a propaganda de implantes hormonais manipulados.',
+        url: 'https://www.in.gov.br/web/dou/-/resolucao-re-n-4.353-de-21-de-novembro-de-2024-597098013',
+        abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Resolução-RE nº 4.353, de 21 de novembro de 2024. Diário Oficial da União, Brasília, DF, ed. 225, seção 1, p. 109, 22 nov. 2024. Disponível em: https://www.in.gov.br/web/dou/-/resolucao-re-n-4.353-de-21-de-novembro-de-2024-597098013`,
+        segments: ['estetica', 'saude'],
+        status: 'vigente',
+        verifiedAt: V18,
+        researchNotes: 'Texto lido no DOU em 18/10/2026; busca no DOU sem ato revogador (no AnvisaLegis o ato aparece como não disponível). Item 1: "Fica proibida a manipulação, comercialização e uso de implantes hormonais à base de esteroides anabolizantes ou hormônios androgênicos, com a finalidade estética, ganho de massa muscular e melhora do desempenho esportivo." Item 2: proíbe a propaganda ao público de implante hormonal manipulado. Art. 2º: não alcança produto registrado. Art. 3º: revoga a RE 3.915/2024, que suspendia todos os implantes manipulados. Regras da prescrição permitida no Despacho Anvisa nº 163/2024. Usada no item est-130.',
+    },
+    {
+        name: 'Despacho Anvisa nº 163/2024',
+        authority: 'BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA). Diretoria Colegiada',
+        summary: 'Diretrizes para a prescrição e a manipulação de implantes hormonais à base de esteroides anabolizantes ou androgênios: CID, receita de controle especial, termo de responsabilidade em 3 vias e notificação de evento adverso.',
+        url: 'https://www.in.gov.br/web/dou/-/despacho-n-163-de-25-de-novembro-de-2024-597938106',
+        abnt: `BRASIL. Agência Nacional de Vigilância Sanitária. Despacho nº 163, de 25 de novembro de 2024. Diário Oficial da União, Brasília, DF, ed. 227, seção 1, p. 91, 26 nov. 2024. Disponível em: https://www.in.gov.br/web/dou/-/despacho-n-163-de-25-de-novembro-de-2024-597938106`,
+        segments: ['estetica', 'saude'],
+        status: 'vigente',
+        verifiedAt: V18,
+        researchNotes: 'Texto lido no DOU em 18/10/2026; busca no DOU sem ato posterior. Item II, a: CID obrigatório na receita, vedada a prescrição para estética, massa e desempenho (CFM 2.333/2023). II, b: médico com CRM, em Receituário de Controle Especial (Portaria 344/1998), com Termo de Responsabilidade/Esclarecimento do anexo. II, c: termo em 3 vias assinado por prescritor, paciente e farmácia: 1ª no prontuário, 2ª na farmácia, 3ª com o paciente. II, d: manipulação pela RDC 67/2007. II, e: evento adverso de notificação compulsória no VigiMed. VIII: recurso contra a RE 4.353/2024 sem efeito suspensivo. Usado no item est-130.',
     },
     {
         name: 'Protocolo MS/Anvisa - Segurança na prescrição, uso e administração de medicamentos (2013)',
@@ -1330,6 +1365,7 @@ Uso prático: sustenta encaminhar o cliente à VISA do município, e não à SUV
         researchNotes: `Curadoria de 03/09/2026. Anexos alterados pela Resolução SES nº 4.001, de 05/05/2026, que NÃO revoga a 2.191/2020 — só troca os anexos. Fundamento declarado: Lei Estadual nº 8.953/2020, IN 66/2020 e resoluções do CGSIM.
 Art. 3º cria três níveis: nível I (baixo risco) dispensa licença sanitária e qualquer ato público de liberação, ficando só o pós-mercado; nível II (médio risco) tem licença emitida automaticamente após o cadastro, sem vistoria prévia; nível III (alto risco) exige vistoria prévia para iniciar a operação. Art. 3º, §§ 4º e 5º: o MEI é dispensado de alvará e de licença sanitária e responde só às ações de pós-mercado. Art. 7º: o órgão de VISA mantém cadastro de todos os estabelecimentos sujeitos.
 Enquadramento do consultório médico: o CNAE 8630-5/02 (atividade médica ambulatorial com recursos para realização de exames complementares) está no Anexo I — ALTO RISCO, com vistoria prévia. O 8630-5/03 (restrito a consultas) não está no alto risco; cai no anexo de risco dependente de informação, que pergunta se há procedimento invasivo. Consultório que insere DIU e implante subdérmico realiza procedimento invasivo — o enquadramento como consulta simples não se sustenta, e a leitura conservadora é alto risco com vistoria prévia. Confirmar o anexo vigente após a Resolução 4.001/2026 antes de afirmar o nível em relatório.
+Anexo IV conferido no LegisWeb em 18/10/2026 (texto de 2020; os anexos trocados pela 4.001/2026 não puderam ser lidos). Colunas alto, médio e baixo. Com procedimento invasivo: 8630-5/03, 8630-5/99, 8650-0/01, 8650-0/99 e 8690-9/99 vão a alto, sem invasivo a médio; 9602-5/02 e 9609-2/99 vão a médio com invasivo e a baixo sem. 8650-0/02 e 8650-0/04: alto se for centro de nutrição ou de reabilitação; fora de consultório isolado não chegam a baixo. A pergunta é respondida no CNAE de quem faz o procedimento. No município do Rio o rito não segue esta tabela: a licença é automática e só os tipos do art. 14 do Decreto Rio 57.501/2026 têm vistoria prévia.
 Cuidado: a classificação por CNAE define o rito do licenciamento, não o conteúdo sanitário exigível, que continua vindo da RDC Anvisa nº 63/2011 e da RDC Anvisa nº 50/2002.` +
             '\n\n' +
             'Conferência na fonte (revisão das referências dos planejamentos, item N022, veredito "corrigido"): Aberto o PDF no site da SES-RJ (saude.rj.gov.br): cabeçalho \'Resolução SES nº 2191 de 02 de dezembro de 2020\', ementa conferida, assinada pelo Secretário Carlos Alberto Chaves de Carvalho, art. 9º vigência na publicação. Número, data, órgão e ementa da citação mais recente (08/10/2026) estão certos, mas ela não tinha link; acrescentado o PDF oficial da SES-RJ. A citação de 25/09/2026 tinha \'dependência de informação\' (o texto diz \'dependente\'). A biblioteca usava LegisWeb (não oficial) e o formato Diário Oficial; trocado pelo site do órgão. Alterações: anexos alterados pela Resolução SES nº 4.001/2026 (ver N023; conferida só no LegisWeb). Nenhuma revogação encontrada.',
@@ -3511,6 +3547,28 @@ Artigos que importam para roteiro de inspeção:
         researchNotes: 'Art. 9º: entra em vigor 180 dias após a publicação (17/09/2026), por volta de 16/03/2027; até lá vale a Resolução CFM nº 1.670/2003, que o art. 8º revoga. Art. 1º: sedação ambulatorial "em todos os seus níveis". Art. 2º: estrutura do grupo 4 da Resolução CFM nº 2.153/2016 mais capnógrafo, videolaringoscópio, aspirador principal e reserva, monitor de ECG contínuo, PNI, bougie, dispositivo de cricotireotomia. Art. 3º: hospital de retaguarda formalmente referenciado. Art. 4º: um médico exclusivo para a sedação e o monitoramento, anestesiologista com RQE; quem faz o procedimento não pode sedar ao mesmo tempo. Consequência prática: consultório sem essa estrutura trabalha só com anestesia local, sem sedativo de nenhuma via.' +
             '\n\n' +
             'Fichas da pesquisa de 05/10/2026 (ações do roteiro de estética do InspecVISA; texto integral em docs/referencias/textos):\n- art. 1º: "a prática segura da sedação em regime ambulatorial, em todos os seus níveis" (est-125)\n- art. 4º, § 2º: "É obrigatório que o médico responsável pela sedação seja especialista em anestesiologia, com Registro de Qualificação de Especialista (RQE)" (est-125)\n- art. 5º, II: "termos de consentimento;" (est-009)\n- art. 6º, parágrafo único: "Deve-se dar ao paciente e ao acompanhante, verbalmente e por escrito, instruções relativas aos cuidados sobre o período pós-procedimento" (est-061)\n- art. 9º: "Esta resolução entra em vigor 180 (cento e oitenta) dias após a data de sua publicação." (est-125)\n- exposição de motivos, quadro de níveis: "1. Sedação mínima" (est-125)',
+    },
+    {
+        name: 'Resolução CFM nº 2.333/2023',
+        authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+        summary: 'Veda ao médico o uso de esteroides androgênicos e anabolizantes com finalidade estética, ganho de massa muscular e melhora do desempenho esportivo.',
+        url: 'https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.333-de-30-de-marco-de-2023-476034798',
+        abnt: `CONSELHO FEDERAL DE MEDICINA. Resolução CFM nº 2.333, de 30 de março de 2023. Diário Oficial da União, Brasília, DF, ed. 69, seção 1, p. 226, 11 abr. 2023. Disponível em: https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.333-de-30-de-marco-de-2023-476034798`,
+        segments: ['estetica', 'saude'],
+        status: 'vigente',
+        verifiedAt: V18,
+        researchNotes: 'Busca no DOU em 18/10/2026 sem revogação; adotada como fundamento pelo Despacho Anvisa nº 163/2024. Art. 2º: reposição de testosterona só com deficiência comprovada. Art. 3º veda: I, testosterona sem comprovação diagnóstica de deficiência; II, anabolizante para fins estéticos; III, para desempenho; IV, formulações "bioidênticas" e "nano"; V, SARMs; VI, cursos e publicidade. Obriga o médico, não os outros conselhos. Gestrinona está na lista C5 (anabolizantes) da Portaria 344/1998, pela RDC 1.036/2026. Usada no item est-130.',
+    },
+    {
+        name: 'Resolução CFM nº 2.461/2026',
+        authority: 'BRASIL. Conselho Federal de Medicina (CFM)',
+        summary: 'Veda ao médico o uso de PMMA como substância injetável para preenchimento cutâneo ou volumização de partes moles, com finalidade estética ou reparadora.',
+        url: 'https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.461-de-21-de-maio-de-2026-709840692',
+        abnt: `CONSELHO FEDERAL DE MEDICINA. Resolução CFM nº 2.461, de 21 de maio de 2026. Diário Oficial da União, Brasília, DF, ed. 102, seção 1, p. 120, 2 jun. 2026. Disponível em: https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.461-de-21-de-maio-de-2026-709840692`,
+        segments: ['estetica', 'saude'],
+        status: 'vigente',
+        verifiedAt: V18,
+        researchNotes: 'Busca no DOU em 18/10/2026 sem revogação. Art. 1º: "É vedado ao médico o uso de produtos à base de polimetilmetacrilato (PMMA) como substância injetável para preenchimento cutâneo ou volumização de partes moles, seja com finalidade estética ou reparadora." Parágrafo único: exceção só para lipodistrofia de pessoa com HIV em unidade de alta complexidade credenciada no SUS. A Anvisa aprova o PMMA só para correção de lipoatrofia por antirretroviral (Informe GGMON 01/2026). Notícia do CFM de 31/07/2026 informa tutela negada pela 21ª Vara Federal/SJDF; a decisão não foi localizada. Usada no item est-131.',
     },
     {
         name: 'Resolução CFP nº 1/2009',
