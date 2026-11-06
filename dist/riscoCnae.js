@@ -393,8 +393,8 @@ export const LUGARES_RISCO_CNAE = [
             "anoUnidade": 2026,
             "faixas": {
                 "geral": {
-                    "min": 384.2,
-                    "max": 384200.0
+                    "min": 10,
+                    "max": 10000
                 }
             },
             "dependeDe": "A lei não divide a multa por leve, grave e gravíssima. Fixa uma faixa única de 10 a 10.000 UFESP. A autoridade gradua o valor pela gravidade do fato, pelas atenuantes e agravantes, pelos antecedentes e pela capacidade econômica do infrator (arts. 116 a 120). A reincidência permite a penalidade máxima (art. 120)."
