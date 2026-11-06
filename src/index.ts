@@ -21,3 +21,15 @@ export {
 } from './query.js';
 
 export { UF_OPTIONS, isRioState, normalizeStateName, toUF } from './uf.js';
+
+export {
+  LUGARES_RISCO_CNAE,
+  RISCO_CNAE,
+  opcoesDoRisco,
+  type FaixaDeMulta,
+  type LugarRiscoCnae,
+  type MultaSanitaria,
+  type OpcaoRiscoCnae,
+  type RiscoCnae,
+  type TaxaSanitaria,
+} from './riscoCnae.js';

@@ -20,6 +20,24 @@ Um `.txt` por ato, com o índice em `README.md` na mesma pasta. O `researchNotes
 cada verbete diz qual artigo sustenta qual item de roteiro; o artigo, na íntegra,
 está lá.
 
+## Risco, multa e taxa por CNAE
+
+`src/riscoCnae.ts` traz, para os 39 CNAEs que a consultoria atende, o risco sanitário (e a
+complexidade, onde a norma usa) em 13 lugares: Rio capital, estado do RJ, São Paulo capital e
+estado, MG, DF, SC, RS, PA, Manaus, AM, BA e o federal (IN Anvisa 66/2020). Cada lugar traz
+também a multa sanitária, a taxa de licença e as normas lidas, com link e como a vigência foi
+conferida (pesquisa de 06/11/2026).
+
+```ts
+import { RISCO_CNAE, LUGARES_RISCO_CNAE, opcoesDoRisco } from '@visa/legislacao';
+
+const r = RISCO_CNAE['federal']['8650-0/01'];
+opcoesDoRisco(r, true); // com procedimento invasivo: nível III
+```
+
+`provisorio` marca o que vem de norma revogada (o Rio usa o Decreto 45.585/2018 até o IVISA
+publicar o enquadramento do 57.501); `segueFederal`, o lugar sem classificação própria.
+
 ## Uso
 
 ```ts
