@@ -10,6 +10,7 @@ describe('risco por CNAE', () => {
         expect(cnae, l.id).toMatch(/^\d{4}-\d\/\d{2}$/);
         expect(r.norma, `${l.id} ${cnae}`).toBeTruthy();
         expect(r.risco || r.complexidade || r.opcoes.length, `${l.id} ${cnae}`).toBeTruthy();
+        expect(new Set(r.opcoes.map((o) => o.se)).size, `${l.id} ${cnae}`).toBe(r.opcoes.length);
       }
     }
   });

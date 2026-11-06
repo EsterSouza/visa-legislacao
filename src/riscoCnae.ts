@@ -5924,58 +5924,20 @@ export const RISCO_CNAE: Record<string, Record<string, RiscoCnae>> = {
       "segueFederal": false
     },
     "8650-0/01": {
-      "risco": "Risco Condicionado",
+      "risco": "Baixo Risco A, Baixo Risco B ou Alto Risco",
       "complexidade": null,
       "condicao": "O decreto não diz qual é a pergunta: o art. 30, § 4º só diz que o risco sai das respostas a perguntas no pedido eletrônico (SLIM), e pode dar Baixo Risco A, Baixo Risco B ou Alto Risco. A coluna de complexidade traz \"*\".",
-      "opcoes": [
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco A",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco B",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Alto Risco",
-          "complexidade": null,
-          "invasivo": null
-        }
-      ],
+      "opcoes": [],
       "norma": "Decreto Manaus 4.648/2019",
       "onde": "Anexo VI, colunas Risco Sanitário (RS) e Tipo de Atividade/Risco à Saúde (Complexidade), linha da especialização 00",
       "provisorio": false,
       "segueFederal": false
     },
     "8650-0/99": {
-      "risco": "Risco Condicionado",
+      "risco": "Baixo Risco A, Baixo Risco B ou Alto Risco",
       "complexidade": null,
       "condicao": "O decreto não diz qual é a pergunta: o art. 30, § 4º só diz que o risco sai das respostas a perguntas no pedido eletrônico (SLIM), e pode dar Baixo Risco A, Baixo Risco B ou Alto Risco. A coluna de complexidade traz \"*\".",
-      "opcoes": [
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco A",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco B",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Alto Risco",
-          "complexidade": null,
-          "invasivo": null
-        }
-      ],
+      "opcoes": [],
       "norma": "Decreto Manaus 4.648/2019",
       "onde": "Anexo VI, colunas Risco Sanitário (RS) e Tipo de Atividade/Risco à Saúde (Complexidade), linha da especialização 00",
       "provisorio": false,
@@ -6022,29 +5984,10 @@ export const RISCO_CNAE: Record<string, Record<string, RiscoCnae>> = {
       "segueFederal": false
     },
     "9602-5/02": {
-      "risco": "Risco Condicionado",
+      "risco": "Baixo Risco A, Baixo Risco B ou Alto Risco",
       "complexidade": null,
       "condicao": "O decreto não diz qual é a pergunta: o art. 30, § 4º só diz que o risco sai das respostas a perguntas no pedido eletrônico (SLIM), e pode dar Baixo Risco A, Baixo Risco B ou Alto Risco. A coluna de complexidade traz \"*\".",
-      "opcoes": [
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco A",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Baixo Risco B",
-          "complexidade": null,
-          "invasivo": null
-        },
-        {
-          "se": "conforme resposta no pedido eletrônico (pergunta não publicada no decreto)",
-          "risco": "Alto Risco",
-          "complexidade": null,
-          "invasivo": null
-        }
-      ],
+      "opcoes": [],
       "norma": "Decreto Manaus 4.648/2019",
       "onde": "Anexo VI, colunas Risco Sanitário (RS) e Tipo de Atividade/Risco à Saúde (Complexidade), linha da especialização 00",
       "provisorio": false,
