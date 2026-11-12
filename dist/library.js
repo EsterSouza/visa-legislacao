@@ -59,6 +59,8 @@ const V16 = '2026-10-17';
 const V17 = '2026-10-17';
 /** Procedimentos injetáveis da clínica de estética: hormônio, enzimas, PMMA e soro (TC Estética, Rio). */
 const V18 = '2026-10-18';
+/** Lei 15.524/2026: estratégia nacional de qualidade da assistência privada e multa diária (art. 8º-A da Lei 9.782). */
+const V19 = '2026-11-12';
 export const LEGISLATION_LIBRARY = [
     // ── ANVISA — estruturantes de serviço de saúde e estética ────────────────
     {
@@ -3078,6 +3080,25 @@ Artigos que importam para roteiro de inspeção:
         researchNotes: 'Conferência na fonte (revisão das referências dos planejamentos, item N007, veredito "confirmado"): Aberto em planalto.gov.br (l15378.htm): \'LEI Nº 15.378, DE 6 DE ABRIL DE 2026\', DOU de 7/4/2026, vigor na publicação (art. 25). Citação mais recente correta. O verbete da biblioteca trazia data errada (27 de março de 2026); citações antigas usavam link da Câmara, trocado pelo Planalto.',
     },
     {
+        name: 'Lei Federal nº 15.524/2026',
+        authority: 'BRASIL',
+        summary: 'Institui a Estratégia Nacional de Controle e Avaliação da Qualidade da Assistência à Saúde prestada pela Iniciativa Privada e cria multa diária por descumprimento dos padrões (art. 8º-A da Lei nº 9.782/1999).',
+        url: 'https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15524.htm',
+        abnt: `BRASIL. Lei nº 15.524, de 28 de setembro de 2026. Dispõe sobre a Estratégia Nacional de Controle e Avaliação da Qualidade da Assistência à Saúde prestada pela Iniciativa Privada; e altera a Lei nº 9.782, de 26 de janeiro de 1999. Brasília, DF: Presidência da República, 2026. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15524.htm.`,
+        destaque: 'Lei nº 15.524, de 28 de setembro de 2026',
+        segments: ['saude', 'estetica'],
+        status: 'vigente',
+        verifiedAt: V19,
+        researchNotes: 'Leitura integral em 12/11/2026 (Planalto; DOU de 29/09/2026, vigor na publicação, art. 8º; sem vetos no texto; origem PL 287/2024, Senado):\n' +
+            '- art. 1º e 2º: estratégia = fixar padrões de qualidade e atributos de qualificação, avaliar os serviços privados e divulgar a avaliação periodicamente.\n' +
+            '- art. 3º: a Anvisa ("órgão nacional de vigilância sanitária") fixa os padrões por tipo de prestador. Diretrizes mínimas: segurança do paciente com "tratamentos efetivos, conforme comprovação científica"; equipe, estrutura e processos em quantidade suficiente para evitar longas esperas; cuidado centrado no paciente; equidade (sem distinção por sexo, religião, etnia, localização ou condição socioeconômica); cumprimento efetivo das normas da Anvisa e da ANS.\n' +
+            '- art. 4º: conduzida pela Anvisa "nos termos de regulamento", podendo contar com estados e municípios.\n' +
+            '- art. 5º: acreditação pode ser um dos elementos da análise, conforme requisitos da Anvisa; não substitui visitas, inspeções e fiscalização dos conselhos profissionais.\n' +
+            '- art. 6º: padrões valem também para estabelecimentos públicos, avaliados e com resultado divulgado (a multa do art. 8º-A fala só de prestadores privados).\n' +
+            '- art. 7º: inclui o art. 8º-A na Lei 9.782/1999: descumprir os padrões da estratégia é infração com multa diária de R$ 5.000,00, aumentável em até 100 vezes (teto R$ 500.000,00/dia) conforme a situação econômica do prestador; sem prejuízo da responsabilidade civil, do CDC e das normas da ANS.\n' +
+            'Leitura para consultoria: a lei não traz padrão nenhum; a obrigação e a multa só ganham conteúdo quando a Anvisa publicar o regulamento (até 12/11/2026 não havia). Não menciona uso off label. Não nomeia estética nem ILPI: alcança "serviços de assistência à saúde" privados, e o recorte por tipo de prestador fica para o regulamento. Segmentos marcados (saude, estetica) por ser estética com procedimento em profissional de saúde; ILPI fora até o regulamento dizer.',
+    },
+    {
         name: 'RDC Anvisa nº 55/2008',
         authority: 'BRASIL. Agência Nacional de Vigilância Sanitária',
         summary: 'Registro de produtos utilizados no procedimento de pigmentação artificial permanente da pele (revogada pela RDC nº 553/2021).',
@@ -3386,6 +3407,8 @@ Artigos que importam para roteiro de inspeção:
         status: 'vigente_com_alteracoes',
         verifiedAt: V15,
         researchNotes: 'Texto compilado no Planalto com diversas alterações pontuais (entre outras, Leis nº 9.986/2000, 13.097/2015 e 13.848/2019); sem revogação integral.' +
+            '\n\n' +
+            'Art. 8º-A incluído pela Lei nº 15.524/2026 (DOU 29/09/2026): multa diária de R$ 5.000,00, aumentável até 100 vezes, ao prestador privado de serviço de saúde que descumprir os padrões de qualidade da Estratégia Nacional fixados pela Anvisa. Ver o verbete da Lei 15.524/2026.' +
             '\n\n' +
             'Conferência na fonte (revisão das referências dos planejamentos, item N159, veredito "confirmado"): Aberto o texto compilado no Planalto: Lei nº 9.782, de 26/01/1999 (conversão da MP 1.791/1998), ementa conferida. Diversos dispositivos foram alterados, incluídos ou revogados (ex.: MP 2.039-24/2000, MP 2.190-34/2001, MP 557/2011); sem revogação total. A citação mais recente resumia a ementa (\'cria a Anvisa\'); restaurada a ementa publicada. Número, data e link corretos.',
     },
