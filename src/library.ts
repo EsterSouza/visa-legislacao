@@ -3180,7 +3180,7 @@ Artigos que importam para roteiro de inspeção:
       '- art. 5º: acreditação pode ser um dos elementos da análise, conforme requisitos da Anvisa; não substitui visitas, inspeções e fiscalização dos conselhos profissionais.\n' +
       '- art. 6º: padrões valem também para estabelecimentos públicos, avaliados e com resultado divulgado (a multa do art. 8º-A fala só de prestadores privados).\n' +
       '- art. 7º: inclui o art. 8º-A na Lei 9.782/1999: descumprir os padrões da estratégia é infração com multa diária de R$ 5.000,00, aumentável em até 100 vezes (teto R$ 500.000,00/dia) conforme a situação econômica do prestador; sem prejuízo da responsabilidade civil, do CDC e das normas da ANS.\n' +
-      'Leitura para consultoria: a lei não traz padrão nenhum; a obrigação e a multa só ganham conteúdo quando a Anvisa publicar o regulamento (até 12/11/2026 não havia). Não menciona uso off label. Não nomeia estética nem ILPI: alcança "serviços de assistência à saúde" privados, e o recorte por tipo de prestador fica para o regulamento. Segmentos marcados (saude, estetica) por ser estética com procedimento em profissional de saúde; ILPI fora até o regulamento dizer.',
+      'Leitura para consultoria: a lei não traz padrão nenhum; a obrigação e a multa só ganham conteúdo quando a Anvisa publicar o regulamento (nenhum localizado na busca de 12/11/2026). Não menciona uso off label. Não nomeia estética nem ILPI: alcança "serviços de assistência à saúde" privados, e o recorte por tipo de prestador fica para o regulamento. Segmentos marcados (saude, estetica) por ser estética com procedimento em profissional de saúde; ILPI fora até o regulamento dizer.',
   },
   {
     name: 'RDC Anvisa nº 55/2008',
